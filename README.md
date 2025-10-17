@@ -250,84 +250,87 @@ front-end/
 └── .gitignore
 ```
 
-📊 Analiza stanu przepisania projektu z React na Next.js
+## 📊 Analiza stanu przepisania projektu z React na Next.js
 
-✅ CO ZOSTAŁO ZROBIONE:
+### ✅ CO ZOSTAŁO ZROBIONE:
 
-Faza 1: Przygotowanie środowiska - ✅ UKOŃCZONA
+**Faza 1: Przygotowanie środowiska - ✅ UKOŃCZONA**
 
-✅ Utworzono kopię zapasową (front-end.OLD)
-✅ Zainicjalizowano projekt Next.js w nowym folderze front-end
-✅ Skonfigurowano Turbopack w package.json ("dev": "next dev --turbopack --port 3001")
-✅ Zainstalowano zależności (Next.js 15.5.0, React 19.1.1)
+- ✅ Utworzono kopię zapasową (front-end.OLD)
+- ✅ Zainicjalizowano projekt Next.js w nowym folderze front-end
+- ✅ Skonfigurowano Turbopack w package.json ("dev": "next dev --turbopack --port 3001")
+- ✅ Zainstalowano zależności (Next.js 15.5.0, React 19.1.1)
 
-Faza 2: Struktura folderów Next.js - ✅ CZĘŚCIOWO UKOŃCZONA
+**Faza 2: Struktura folderów Next.js - ✅ CZĘŚCIOWO UKOŃCZONA**
 
-✅ Utworzono podstawową strukturę App Router (app/)
-✅ Utworzono app/layout.jsx - główny layout
-✅ Utworzono app/page.jsx - strona główna
-✅ Utworzono app/globals.css - globalne style
-❌ BRAKUJE: Stron dla routingu (cart/, favourites/, products/, products/[id]/)
+- ✅ Utworzono podstawową strukturę App Router (app/)
+- ✅ Utworzono app/layout.jsx - główny layout
+- ✅ Utworzono app/page.jsx - strona główna
+- ✅ Utworzono app/globals.css - globalne style
+- ❌ BRAKUJE: Stron dla routingu (cart/, favourites/, products/, products/[id]/)
 
-Faza 3: Migracja komponentów - ✅ CZĘŚCIOWO UKOŃCZONA
+**Faza 3: Migracja komponentów - ✅ CZĘŚCIOWO UKOŃCZONA**
 
-✅ Skopiowano część komponentów z front-end.OLD/src/components/ do front-end/app/components/
-✅ Skopiowano style CSS Modules
-❌ BRAKUJE: Wiele komponentów z oryginalnej aplikacji
+- ✅ Skopiowano część komponentów z front-end.OLD/src/components/ do front-end/app/components/
+- ✅ Skopiowano style CSS Modules
+- ❌ BRAKUJE: Wiele komponentów z oryginalnej aplikacji
+
 Skopiowane komponenty:
 Bestsellers, CategoriesMenu, CenteredContent, CurrencySelector
 Footer, FullWidthButton, Hero, IconMenu, Logo
 MainContent, MainMenu, PageTitle, Product, TopBar
+
 Brakujące komponenty:
 Accordion, Breadcrumbs, Button, CartProduct, CartProductsList
 CartSummary, Detail, ExpandableMenu, FavouriteProduct
 FavouritesList, FlexContainer, Layout, Pagination, Photos, Products
 
-Faza 4: Migracja kontekstów i hooków - ✅ UKOŃCZONA
+**Faza 4: Migracja kontekstów i hooków - ✅ UKOŃCZONA**
 
-✅ Skopiowano contexts/ (CartContext.js, CurrencyContext.js)
-✅ Skopiowano hooks/ (useCart.js, useCurrency.js)
-✅ Skopiowano constants/ (categories.js, curriencies.js, genders.js, mappings.js)
-❌ BRAKUJE: costs.js z constants
-❌ BRAKUJE: Migracja API (tylko addToFavourites.jsx w actions)
+- ✅ Skopiowano contexts/ (CartContext.js, CurrencyContext.js)
+- ✅ Skopiowano hooks/ (useCart.js, useCurrency.js)
+- ✅ Skopiowano constants/ (categories.js, curriencies.js, genders.js, mappings.js)
+- ❌ BRAKUJE: costs.js z constants
+- ❌ BRAKUJE: Migracja API (tylko addToFavourites.jsx w actions)
 
-Faza 6: Stylowanie i assets - ✅ UKOŃCZONA
+**Faza 6: Stylowanie i assets - ✅ UKOŃCZONA**
 
-✅ Skopiowano globals.css i theme.css
-✅ Przeniesiono obrazy do public/ (ikony i obrazy)
-✅ Dostosowano ścieżki do obrazów
+- ✅ Skopiowano globals.css i theme.css
+- ✅ Przeniesiono obrazy do public/ (ikony i obrazy)
+- ✅ Dostosowano ścieżki do obrazów
 
-❌ CO JESZCZE TRZEBA ZROBIĆ:
+### ❌ CO JESZCZE TRZEBA ZROBIĆ:
 
-Faza 2: Struktura folderów Next.js - ⚠️ DO DOKOŃCZENIA
+**Faza 2: Struktura folderów Next.js - ⚠️ DO DOKOŃCZENIA**
 
-❌ Utworzyć app/cart/page.js - strona koszyka
-❌ Utworzyć app/favourites/page.js - strona ulubionych
-❌ Utworzyć app/products/page.js - lista produktów
-❌ Utworzyć app/products/[id]/page.js - szczegóły produktu
-❌ Utworzyć app/not-found.js - strona 404
+- ❌ Utworzyć app/cart/page.js - strona koszyka
+- ❌ Utworzyć app/favourites/page.js - strona ulubionych
+- ❌ Utworzyć app/products/page.js - lista produktów
+- ❌ Utworzyć app/products/[id]/page.js - szczegóły produktu
+- ❌ Utworzyć app/not-found.js - strona 404
 
-Faza 3: Migracja komponentów - ⚠️ DO DOKOŃCZENIA
+**Faza 3: Migracja komponentów - ⚠️ DO DOKOŃCZENIA**
 
-❌ Skopiować pozostałe komponenty z front-end.OLD/src/components/
-❌ Dostosować importy z React Router na Next.js Link
-❌ Dostosować routing do App Router
+- ❌ Skopiować pozostałe komponenty z front-end.OLD/src/components/
+- ❌ Dostosować importy z React Router na Next.js Link
+- ❌ Dostosować routing do App Router
 
-Faza 4: Migracja API - ⚠️ DO DOKOŃCZENIA
+**Faza 4: Migracja API - ⚠️ DO DOKOŃCZENIA**
 
-❌ Skopiować pozostałe pliki API z front-end.OLD/src/api/
-❌ Dostosować do Next.js Server Actions lub API Routes
-❌ Dodać brakujący costs.js do constants
+- ❌ Skopiować pozostałe pliki API z front-end.OLD/src/api/
+- ❌ Dostosować do Next.js Server Actions lub API Routes
+- ❌ Dodać brakujący costs.js do constants
 
-Faza 5: Routing i nawigacja - ❌ NIE ROZPOCZĘTA
+**Faza 5: Routing i nawigacja - ❌ NIE ROZPOCZĘTA**
 
-❌ Zaimplementować App Router dla wszystkich stron
-❌ Dostosować nawigację do Next.js
-❌ Migrować Breadcrumbs do Next.js usePathname
+- ❌ Zaimplementować App Router dla wszystkich stron
+- ❌ Dostosować nawigację do Next.js
+- ❌ Migrować Breadcrumbs do Next.js usePathname
 
-🎯 NASTĘPNE KROKI (wg planu z README.md):
-Dokończyć migrację komponentów - skopiować pozostałe komponenty z front-end.OLD
-Utworzyć strony routingu - dodać brakujące strony w strukturze App Router
-Migrować API - przenieść pozostałe pliki API i dostosować do Next.js
-Dostosować routing - zaimplementować nawigację Next.js
-Testowanie - sprawdzić wszystkie funkcjonalności
+### 🎯 NASTĘPNE KROKI (wg planu z README.md):
+
+- Dokończyć migrację komponentów - skopiować pozostałe komponenty z front-end.OLD
+- Utworzyć strony routingu - dodać brakujące strony w strukturze App Router
+- Migrować API - przenieść pozostałe pliki API i dostosować do Next.js
+- Dostosować routing - zaimplementować nawigację Next.js
+- Testowanie - sprawdzić wszystkie funkcjonalności
