@@ -250,7 +250,7 @@ front-end/
 └── .gitignore
 ```
 
-## 📊 Analiza stanu przepisania projektu z React na Next.js
+## 📊 Analiza stanu przepisania projektu, na 2025-10-17
 
 ### ✅ CO ZOSTAŁO ZROBIONE:
 
