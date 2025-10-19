@@ -1,14 +1,10 @@
-import { useFetcher } from "react-router-dom";
+"use client";
 import { useContext } from "react";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
-import { CartContext } from "../../contexts/CartContext";
-import ICON_DELETE from "../../assets/icon_delete.svg";
-import ICON_CART from "../../assets/icon_cart.svg";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
+import { CartContext } from "@/app/contexts/CartContext";
 import css from "./FavouriteProduct.module.css";
 
 export function FavouriteProduct({ product, favouriteId }) {
-  const fetcher = useFetcher();
-  const { Form } = fetcher;
   const [currency] = useContext(CurrencyContext);
   const [shoppingCart, setShoppingCart] = useContext(CartContext);
 
@@ -53,22 +49,27 @@ export function FavouriteProduct({ product, favouriteId }) {
               <p>{truncateTextSmart(product.description, 100)}</p>
             </div>
             <div className={css.favouritesButtons}>
-              <Form
-                method="DELETE"
-                action={`/usun-z-ulubionych/${favouriteId}`}
-              >
-                <button className={css.favouriteButtonAction}>
-                  <img src={ICON_DELETE} width="14" height="14" />
-                  <span className={css.favouriteIconText}>
-                    Usuń z ulubionych
-                  </span>
-                </button>
-              </Form>
+              <button className={css.favouriteButtonAction}>
+                <img
+                  src="/icons/delete.svg"
+                  width="14"
+                  height="14"
+                  alt="Usuń"
+                  title="Usuń"
+                />
+                <span className={css.favouriteIconText}>Usuń z ulubionych</span>
+              </button>
               <button
                 className={css.favouriteButtonAction}
                 onClick={() => handleAddToCartButton(product.id)}
               >
-                <img src={ICON_CART} width="14" height="14" />
+                <img
+                  src="/icons/cart.svg"
+                  width="14"
+                  height="14"
+                  alt="Koszyk"
+                  title="Koszyk"
+                />
                 {!productAlreadyAddedToCart ? (
                   <span className={css.favouriteIconText}>
                     Dodaj do koszyka

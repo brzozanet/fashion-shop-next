@@ -1,1 +1,3 @@
-"use server";
+export function addToFavourites(favouriteId) {
+  console.log("add", favouriteId);
+}

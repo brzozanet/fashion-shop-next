@@ -1,4 +1,5 @@
 import { CenteredContent } from "../components/CenteredContent/CenteredContent";
+import { FavouritesList } from "../components/FavouritesList/FavouritesList";
 import { PageTitle } from "../components/PageTitle/PageTitle";
 
 export default async function Favourites() {
@@ -9,6 +10,12 @@ export default async function Favourites() {
     (await fetch(`${BACKEND_URL}/products`)).json(),
   ]);
 
+  const userFavouritesProducts = products.filter((product) =>
+    favourites.some((favourite) => favourite.productId === product.id)
+  );
+
+  const userFavouritesIds = favourites;
+
   return (
     <>
       <CenteredContent>
@@ -17,7 +24,9 @@ export default async function Favourites() {
             <PageTitle>
               Ulubione {`(${userFavouritesProducts.length})`}
             </PageTitle>
-            <FavouritesList data={data} />
+            <FavouritesList
+              data={[userFavouritesProducts, userFavouritesIds]}
+            />
           </>
         ) : (
           <PageTitle>Nie masz żadnych ulubionych produktów</PageTitle>
