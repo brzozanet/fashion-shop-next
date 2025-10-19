@@ -1,7 +1,7 @@
+"use client";
 import { useContext } from "react";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
-import { CartContext } from "../../contexts/CartContext";
-import ICON_DELETE from "../../assets/icon_delete.svg";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
+import { CartContext } from "@/app/contexts/CartContext";
 import css from "./CartProduct.module.css";
 
 export function CartProduct({ id, brand, name, image, description, price }) {
@@ -51,7 +51,13 @@ export function CartProduct({ id, brand, name, image, description, price }) {
               className={css.cartButtonAction}
               onClick={() => handleDeleteFromCartButton(id)}
             >
-              <img src={ICON_DELETE} width="14" height="14" />
+              <img
+                src="/icons/delete.svg"
+                width="14"
+                height="14"
+                alt="Usuń"
+                title="Usuń"
+              />
               <span className={css.cartProductIconText}>Usuń z koszyka</span>
             </button>
           </div>

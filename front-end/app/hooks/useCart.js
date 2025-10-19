@@ -9,8 +9,8 @@ export const useCart = () => {
     try {
       const savedShoppingCart = localStorage.getItem("shoppingCart");
       if (savedShoppingCart) {
-        setShoppingCart(savedShoppingCart);
-        // setShoppingCart(JSON.parse(savedShoppingCart));
+        // setShoppingCart(savedShoppingCart);
+        setShoppingCart(JSON.parse(savedShoppingCart));
       }
     } catch (error) {
       console.error("Błąd podczas pobierania koszyka", error);

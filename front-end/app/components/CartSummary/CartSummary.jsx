@@ -1,10 +1,10 @@
-import { FullWidthButton } from "../FullWidthButton/FullWidthButton";
+"use client";
+import { SHIPPING_COST, SHIPPING_FREE } from "@/app/constants/costs";
+import { CartContext } from "@/app/contexts/CartContext";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { useContext } from "react";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
-import { CartContext } from "../../contexts/CartContext";
-import { SHIPPING_COST, SHIPPING_FREE } from "../../constants/costs";
-import ICON_SHIPPING from "../../assets/icon_shipping.svg";
 import css from "./CartSummary.module.css";
+import { FullWidthButton } from "../FullWidthButton/FullWidthButton";
 
 export function CartSummary() {
   const [currency] = useContext(CurrencyContext);
@@ -63,9 +63,11 @@ export function CartSummary() {
         </div>
         <div className={css.freeShipping}>
           <img
-            src={ICON_SHIPPING}
+            src="/icons/shipping.svg"
             width="20"
             height="20"
+            alt="Dostawa"
+            title="Dostawa"
             className={css.freeShippingIcon}
           />
           <p>

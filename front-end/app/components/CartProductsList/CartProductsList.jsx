@@ -1,7 +1,8 @@
-import { CartProduct } from "../CartProduct/CartProduct";
+"use client";
 import { useContext } from "react";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
-import { CartContext } from "../../contexts/CartContext";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
+import { CartContext } from "@/app/contexts/CartContext";
+import { CartProduct } from "../CartProduct/CartProduct";
 import { nanoid } from "nanoid";
 import css from "./CartProductsList.module.css";
 
