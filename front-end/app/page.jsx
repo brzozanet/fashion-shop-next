@@ -1,6 +1,6 @@
 import { Bestsellers } from "./components/Bestsellers/Bestsellers";
 import { Hero } from "./components/Hero/Hero";
-import { GENDERS_MAPPING } from "./constants/mappings";
+// import { GENDERS_MAPPING } from "./constants/mappings";
 
 export default async function Home() {
   const BACKEND_URL = process.env.BACKEND_URL;
