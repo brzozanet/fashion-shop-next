@@ -3,13 +3,11 @@ import { Hero } from "../components/Hero/Hero";
 import { GENDERS_MAPPING } from "../constants/mappings";
 
 export default async function GenderPage({ params }) {
+  const BACKEND_URL = process.env.BACKEND_URL;
   const gender = GENDERS_MAPPING.get((await params).gender);
 
-  const genderResponse = await fetch(`http://localhost:3000/${gender}`);
+  const genderResponse = await fetch(`${BACKEND_URL}/${gender}`);
   const genderProducts = await genderResponse.json();
-
-  console.log(genderResponse);
-  console.log(genderProducts);
 
   return (
     <>
