@@ -16,7 +16,6 @@ export function Product({
   isProductInFavourites,
 }) {
   const params = useParams();
-  console.log(id);
   const [currency] = useContext(CurrencyContext);
 
   return (
@@ -31,7 +30,7 @@ export function Product({
           />
         </Link>
         <button
-          type="submit"
+          type="button"
           className={
             isProductInFavourites ? css.heartIconDisabled : css.heartIcon
           }
