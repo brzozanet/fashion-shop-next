@@ -1,3 +1,3 @@
-export function addToFavourites(favouriteId) {
+export function addToFavourites({ favouriteId }) {
   console.log("add", favouriteId);
 }

@@ -17,10 +17,10 @@ export default async function GenderPage({ params }) {
   return (
     <>
       <Hero imageUrl={genderProducts.heroImageUrl} />
-      {/* <Bestsellers
+      <Bestsellers
         bestsellersData={genderProducts.bestsellers}
         favouritesData={favouriteProducts}
-      /> */}
+      />
     </>
   );
 }

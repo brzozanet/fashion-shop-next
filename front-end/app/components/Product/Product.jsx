@@ -1,8 +1,9 @@
 "use client";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
 import { useContext } from "react";
+import { CurrencyContext } from "../../contexts/CurrencyContext";
+import { addToFavourites } from "@/app/actions/addToFavourites";
 import css from "./Product.module.css";
 
 export function Product({
@@ -15,13 +16,13 @@ export function Product({
   isProductInFavourites,
 }) {
   const params = useParams();
-  const fetcher = useFetcher();
+  console.log(id);
   const [currency] = useContext(CurrencyContext);
 
   return (
     <div className={css.product}>
       <div className={css.productPhotoContainer}>
-        <Link to={`/${params.gender}/${category}/${subcategory}/${id}`}>
+        <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>
           <img
             src={photo}
             alt={name}
@@ -29,21 +30,16 @@ export function Product({
             className={css.productPhotoImg}
           />
         </Link>
-        <fetcher.Form
-          method="POST"
-          action={`/dodaj-do-ulubionych/${id}`}
-          onClick={(event) => event.stopPropagation()}
-        >
-          <button
-            type="submit"
-            className={
-              isProductInFavourites ? css.heartIconDisabled : css.heartIcon
-            }
-            disabled={fetcher.state === "submitting" || isProductInFavourites}
-          />
-        </fetcher.Form>
+        <button
+          type="submit"
+          className={
+            isProductInFavourites ? css.heartIconDisabled : css.heartIcon
+          }
+          disabled={false}
+          onClick={() => addToFavourites(id)}
+        />
       </div>
-      <Link to={`/${params.gender}/${category}/${subcategory}/${id}`}>
+      <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>
         <h3 className={css.productTitle}>{name}</h3>
         <p className={css.productPrice}>
           {price} {currency}
