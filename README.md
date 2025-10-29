@@ -261,7 +261,7 @@ front-end/
 - ✅ Skonfigurowano Turbopack w package.json ("dev": "next dev --turbopack --port 3001")
 - ✅ Zainstalowano zależności (Next.js 15.5.0, React 19.1.1)
 
-**Faza 2: Struktura folderów Next.js - ✅ PRAWIE UKOŃCZONA**
+**Faza 2: Struktura folderów Next.js - ⚠️ PRAWIE UKOŃCZONA**
 
 - ✅ Utworzono podstawową strukturę App Router (app/)
 - ✅ Utworzono app/layout.jsx - główny layout
@@ -299,7 +299,7 @@ Wszystkie skopiowane komponenty:
 - ✅ Product, Products
 - ✅ TopBar
 
-**Faza 4: Migracja kontekstów i hooków - ✅ UKOŃCZONA**
+**Faza 4: Migracja kontekstów i hooków - ⚠️ CZĘŚCIOWO UKOŃCZONA**
 
 - ✅ Skopiowano contexts/ (CartContext.js, CurrencyContext.js)
 - ✅ Skopiowano hooks/ (useCart.js, useCurrency.js)
@@ -485,7 +485,7 @@ Wszystkie skopiowane komponenty:
 
 ---
 
-#### **07-404-not-found** (priorytet: NISKI - opcjonalnie)
+#### **07-not-found** (priorytet: NISKI - opcjonalnie)
 
 **Zakres pracy:**
 
@@ -555,29 +555,7 @@ Wszystkie skopiowane komponenty:
 
 **Sesja 2 (średni priorytet):** 2. `05-navigation-fixes` - naprawić nawigację 3. `06-styles-improvements` - poprawić style
 
-**Sesja 3 (testowanie i dopracowanie):** 4. `08-testing-optimization` - pełne testowanie i optymalizacja 5. `07-404-not-found` (opcjonalnie) - strona 404 6. `09-finalization` - porządki końcowe
-
-### Komendy Git:
-
-```bash
-# Tworzenie nowych gałęzi z gałęzi 03-pages-routing:
-git checkout 03-pages-routing
-git pull origin 03-pages-routing
-
-# Gałąź 04
-git checkout -b 04-server-actions-errors
-git push -u origin 04-server-actions-errors
-
-# Po zakończeniu pracy na gałęzi:
-git add .
-git commit -m "feat: naprawiono Server Actions i dodano obsługę błędów"
-git push origin 04-server-actions-errors
-
-# Merge do main (po review):
-git checkout main
-git merge 04-server-actions-errors
-git push origin main
-```
+**Sesja 3 (testowanie i dopracowanie):** 4. `08-testing-optimization` - pełne testowanie i optymalizacja 5. `07-not-found` (opcjonalnie) - strona 404 6. `09-finalization` - porządki końcowe
 
 ### Podsumowanie gałęzi:
 
