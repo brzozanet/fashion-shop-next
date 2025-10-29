@@ -1,8 +1,9 @@
-import { Product } from "../Product/Product";
-import { CATEGORIES } from "../../constants/categories";
-import { useParams } from "react-router-dom";
+"use client";
+import { CATEGORIES } from "@/app/constants/categories";
+import { useParams } from "next/navigation";
 import { useContext } from "react";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
+import { Product } from "../Product/Product";
 import css from "./Products.module.css";
 
 export function Products({ products, favourites }) {

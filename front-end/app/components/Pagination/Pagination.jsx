@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import { nanoid } from "nanoid";
+import Link from "next/link";
 import css from "./Pagination.module.css";
 
 export function Pagination() {
@@ -12,9 +12,9 @@ export function Pagination() {
         {pagination.map((page, index) => {
           return (
             <li key={nanoid()}>
-              <NavLink to="" className={css.paginationLink}>
+              <Link href="" className={css.paginationLink}>
                 {index + 1}
-              </NavLink>
+              </Link>
             </li>
           );
         })}

@@ -1,8 +1,9 @@
-import { NavLink, useParams } from "react-router-dom";
+"use client";
+import { GENDERS_TEXT_MAPPING } from "@/app/constants/mappings";
+import { CATEGORIES } from "@/app/constants/categories";
+import { useParams } from "next/navigation";
 import { nanoid } from "nanoid";
-import { GENDERS_TEXT_MAPPING } from "../../constants/mappings";
-import { CATEGORIES } from "../../constants/categories";
-import ICON_ARROW from "../../assets/icon_arrow.svg";
+import Link from "next/link";
 import css from "./Breadcrumbs.module.css";
 
 export function Breadcrumbs({ name }) {
@@ -46,10 +47,14 @@ export function Breadcrumbs({ name }) {
         {breadcrumbs.map((breadcrumb) => {
           return (
             <li key={nanoid()} className={css.breadcrumbsItem}>
-              <NavLink end to={breadcrumb.path} className={css.breadcrumbsLink}>
+              <Link href={breadcrumb.path} className={css.breadcrumbsLink}>
                 {breadcrumb.name}
-                <img src={ICON_ARROW} className={css.breadcrumbsImage} />
-              </NavLink>
+                <img
+                  src="/icons/arrow.svg"
+                  alt="arrow"
+                  className={css.breadcrumbsImage}
+                />
+              </Link>
             </li>
           );
         })}

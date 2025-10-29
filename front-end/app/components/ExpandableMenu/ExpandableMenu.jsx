@@ -1,8 +1,9 @@
-import { NavLink, useParams } from "react-router-dom";
-import { CATEGORIES } from "../../constants/categories";
-import { GENDERS_TEXT_MAPPING } from "../../constants/mappings";
+"use client";
+import { GENDERS_TEXT_MAPPING } from "@/app/constants/mappings";
+import { CATEGORIES } from "@/app/constants/categories";
+import { useParams } from "next/navigation";
 import { nanoid } from "nanoid";
-import ICON_ARROW from "../../assets/icon_arrow.svg";
+import Link from "next/link";
 import css from "./ExpandableMenu.module.css";
 
 export function ExpandableMenu() {
@@ -19,31 +20,32 @@ export function ExpandableMenu() {
             {CATEGORIES.map((category) => {
               return (
                 <li key={nanoid()} className={css.categoriesItem}>
-                  <NavLink
-                    to={`/${params.gender}/${category.path}`}
+                  <Link
+                    href={`/${params.gender}/${category.path}`}
                     className={css.categoriesLink}
                   >
                     {category.name}
                     <img
-                      src={ICON_ARROW}
+                      src="/icons/arrow.svg"
+                      alt="arrow"
                       className={
                         activeCategory === category.path
                           ? css.categoriesIconActive
                           : ""
                       }
                     />
-                  </NavLink>
+                  </Link>
                   {activeCategory === category.path ? (
                     <ul>
                       {category.subcategories.map((subcategory) => {
                         return (
                           <li key={nanoid()} className={css.subCategoriesItem}>
-                            <NavLink
-                              to={`/${params.gender}/${category.path}/${subcategory.path}`}
+                            <Link
+                              href={`/${params.gender}/${category.path}/${subcategory.path}`}
                               className={css.subCategoriesLink}
                             >
                               {subcategory.name}
-                            </NavLink>
+                            </Link>
                           </li>
                         );
                       })}
