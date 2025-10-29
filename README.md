@@ -250,7 +250,7 @@ front-end/
 └── .gitignore
 ```
 
-## 📊 Analiza stanu przepisania projektu, na 2025-10-17
+## 📊 Analiza stanu przepisania projektu - Aktualizacja 2025-10-28
 
 ### ✅ CO ZOSTAŁO ZROBIONE:
 
@@ -261,76 +261,362 @@ front-end/
 - ✅ Skonfigurowano Turbopack w package.json ("dev": "next dev --turbopack --port 3001")
 - ✅ Zainstalowano zależności (Next.js 15.5.0, React 19.1.1)
 
-**Faza 2: Struktura folderów Next.js - ✅ CZĘŚCIOWO UKOŃCZONA**
+**Faza 2: Struktura folderów Next.js - ✅ PRAWIE UKOŃCZONA**
 
 - ✅ Utworzono podstawową strukturę App Router (app/)
 - ✅ Utworzono app/layout.jsx - główny layout
-- ✅ Utworzono app/page.jsx - strona główna
+- ✅ Utworzono app/page.jsx - strona główna (z redirect na /kobieta)
 - ✅ Utworzono app/globals.css - globalne style
-- ❌ BRAKUJE: Stron dla routingu (cart/, favourites/, products/, products/[id]/)
+- ✅ Utworzono app/loading.jsx - komponent ładowania
+- ✅ Utworzono app/koszyk/page.jsx - strona koszyka
+- ✅ Utworzono app/ulubione/page.jsx - strona ulubionych
+- ✅ Utworzono dynamiczne routingi:
+  - ✅ app/[gender]/page.jsx - strona kategorii płci
+  - ✅ app/[gender]/[category]/page.jsx - strona kategorii
+  - ✅ app/[gender]/[category]/[subcategory]/page.jsx - strona podkategorii
+  - ✅ app/[gender]/[category]/[subcategory]/[id]/page.jsx - szczegóły produktu
+- ❌ BRAKUJE: app/not-found.jsx - strona 404
 
-**Faza 3: Migracja komponentów - ✅ CZĘŚCIOWO UKOŃCZONA**
+**Faza 3: Migracja komponentów - ✅ UKOŃCZONA**
 
-- ✅ Skopiowano część komponentów z front-end.OLD/src/components/ do front-end/app/components/
-- ✅ Skopiowano style CSS Modules
-- ❌ BRAKUJE: Wiele komponentów z oryginalnej aplikacji
+- ✅ Skopiowano WSZYSTKIE komponenty z front-end.OLD/src/components/ do front-end/app/components/
+- ✅ Skopiowano style CSS Modules dla wszystkich komponentów
+- ✅ Dostosowano importy z React Router na Next.js Link
+- ✅ Dostosowano routing do App Router
+- ✅ Dostosowano ścieżki do obrazów (użycie /icons/ i /images/)
 
-Skopiowane komponenty:
-Bestsellers, CategoriesMenu, CenteredContent, CurrencySelector
-Footer, FullWidthButton, Hero, IconMenu, Logo
-MainContent, MainMenu, PageTitle, Product, TopBar
+Wszystkie skopiowane komponenty:
 
-Brakujące komponenty:
-Accordion, Breadcrumbs, Button, CartProduct, CartProductsList
-CartSummary, Detail, ExpandableMenu, FavouriteProduct
-FavouritesList, FlexContainer, Layout, Pagination, Photos, Products
+- ✅ Accordion, Bestsellers, Breadcrumbs
+- ✅ CartProduct, CartProductsList, CartSummary
+- ✅ CategoriesMenu, CenteredContent, CurrencySelector
+- ✅ Detail, ExpandableMenu
+- ✅ FavouriteProduct, FavouritesList, FlexContainer
+- ✅ Footer, FullWidthButton
+- ✅ Hero, IconMenu, Logo
+- ✅ MainContent, MainMenu
+- ✅ PageTitle, Pagination, Photos
+- ✅ Product, Products
+- ✅ TopBar
 
 **Faza 4: Migracja kontekstów i hooków - ✅ UKOŃCZONA**
 
 - ✅ Skopiowano contexts/ (CartContext.js, CurrencyContext.js)
 - ✅ Skopiowano hooks/ (useCart.js, useCurrency.js)
-- ✅ Skopiowano constants/ (categories.js, curriencies.js, genders.js, mappings.js)
-- ❌ BRAKUJE: costs.js z constants
-- ❌ BRAKUJE: Migracja API (tylko addToFavourites.jsx w actions)
+- ✅ Skopiowano constants/ (categories.js, costs.js, curriencies.js, genders.js, mappings.js)
+- ⚠️ Server Actions - DO ZROBIONIA:
+  - ❌ app/actions/addToFavourites.jsx (pliki istnieją ale nie działają poprawnie)
+  - ❌ app/actions/deleteFromFavourites.jsx (pliki istnieją ale nie działają poprawnie)
+- ℹ️ UWAGA: Loadery z React Router zostały zastąpione bezpośrednimi fetch() w Server Components
+- ⚠️ BRAKUJE: Obsługa błędów w zapytaniach fetch() do backendu
 
-**Faza 6: Stylowanie i assets - ✅ UKOŃCZONA**
+**Faza 5: Routing i nawigacja - ⚠️ CZĘŚCIOWO UKOŃCZONA**
 
-- ✅ Skopiowano globals.css i theme.css
-- ✅ Przeniesiono obrazy do public/ (ikony i obrazy)
-- ✅ Dostosowano ścieżki do obrazów
+- ✅ Zaimplementowano App Router dla wszystkich stron
+- ✅ Dostosowano nawigację do Next.js (Link zamiast NavLink)
+- ✅ Zaimplementowano dynamiczne routingi z parametrami ([gender], [category], [subcategory], [id])
+- ✅ Użyto useParams() w Client Components
+- ❌ Breadcrumbs - NIE DOSTOSOWANO do Next.js (usePathname())
+- ✅ Przekierowanie ze strony głównej na /kobieta (redirect w page.jsx)
+- ⚠️ PROBLEM: URL-e generowane w menu prowadzą do błędnych lokalizacji
 
-### ❌ CO JESZCZE TRZEBA ZROBIĆ:
+**Faza 6: Stylowanie i assets - ⚠️ CZĘŚCIOWO UKOŃCZONA**
 
-**Faza 2: Struktura folderów Next.js - ⚠️ DO DOKOŃCZENIA**
+- ✅ Skopiowano globals.css i theme.css (w app/styles/)
+- ✅ Przeniesiono wszystkie obrazy do public/ (ikony i obrazy)
+- ✅ Dostosowano ścieżki do obrazów w komponentach
+- ✅ Wszystkie CSS Modules działają poprawnie
+- ⚠️ PROBLEM: Style w menu (zwłaszcza rozwijanym) wymagają poprawek
+- ⚠️ PROBLEM: Style w Breadcrumbs wymagają poprawek
 
-- ❌ Utworzyć app/cart/page.js - strona koszyka
-- ❌ Utworzyć app/favourites/page.js - strona ulubionych
-- ❌ Utworzyć app/products/page.js - lista produktów
-- ❌ Utworzyć app/products/[id]/page.js - szczegóły produktu
-- ❌ Utworzyć app/not-found.js - strona 404
+### ⚠️ CO JESZCZE TRZEBA ZROBIĆ:
 
-**Faza 3: Migracja komponentów - ⚠️ DO DOKOŃCZENIA**
+**Faza 2: Struktura folderów Next.js - ⚠️ DROBNE DOKOŃCZENIE**
 
-- ❌ Skopiować pozostałe komponenty z front-end.OLD/src/components/
-- ❌ Dostosować importy z React Router na Next.js Link
-- ❌ Dostosować routing do App Router
+- ❌ Utworzyć app/not-found.jsx - strona 404 (opcjonalnie)
 
 **Faza 4: Migracja API - ⚠️ DO DOKOŃCZENIA**
 
-- ❌ Skopiować pozostałe pliki API z front-end.OLD/src/api/
-- ❌ Dostosować do Next.js Server Actions lub API Routes
-- ❌ Dodać brakujący costs.js do constants
+- ❌ Naprawić Server Actions:
+  - ❌ app/actions/addToFavourites.jsx - poprawić implementację
+  - ❌ app/actions/deleteFromFavourites.jsx - poprawić implementację
+- ❌ Dodać obsługę błędów w zapytaniach fetch() do backendu:
+  - ❌ Try/catch w Server Components
+  - ❌ Komunikaty błędów dla użytkownika
+  - ❌ Fallback UI przy błędach
 
-**Faza 5: Routing i nawigacja - ❌ NIE ROZPOCZĘTA**
+**Faza 5: Routing i nawigacja - ⚠️ DO DOKOŃCZENIA**
 
-- ❌ Zaimplementować App Router dla wszystkich stron
-- ❌ Dostosować nawigację do Next.js
-- ❌ Migrować Breadcrumbs do Next.js usePathname
+- ❌ Dostosować Breadcrumbs do Next.js (użyć usePathname())
+- ❌ Poprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
 
-### 🎯 NASTĘPNE KROKI (wg planu z README.md):
+**Faza 6: Stylowanie i assets - ⚠️ DO POPRAWY**
 
-- Dokończyć migrację komponentów - skopiować pozostałe komponenty z front-end.OLD
-- Utworzyć strony routingu - dodać brakujące strony w strukturze App Router
-- Migrować API - przenieść pozostałe pliki API i dostosować do Next.js
-- Dostosować routing - zaimplementować nawigację Next.js
-- Testowanie - sprawdzić wszystkie funkcjonalności
+- ❌ Poprawić style w menu (zwłaszcza rozwijanym - ExpandableMenu)
+- ❌ Poprawić style w Breadcrumbs
+
+**Faza 7: Testowanie i debugowanie - ⚠️ DO ROZPOCZĘCIA**
+
+- ⚠️ Przetestować wszystkie strony i funkcjonalności
+- ⚠️ Sprawdzić routing - wszystkie dynamiczne ścieżki
+- ⚠️ Zweryfikować komponenty - czy wszystkie działają poprawnie
+- ⚠️ Przetestować koszyk - dodawanie/usuwanie produktów
+- ⚠️ Przetestować ulubione - dodawanie/usuwanie z ulubionych (po naprawie Server Actions)
+- ⚠️ Sprawdzić responsywność i UX
+- ⚠️ Zoptymalizować wydajność z Turbopack
+- ⚠️ Zoptymalizować ładowanie obrazów (użyć Next.js Image jeśli potrzeba)
+
+### 🎯 NASTĘPNE KROKI (priorytetowo):
+
+1. **Naprawić Server Actions:**
+
+   - Poprawić implementację addToFavourites.jsx
+   - Poprawić implementację deleteFromFavourites.jsx
+   - Dodać prawidłową obsługę błędów
+
+2. **Dodać obsługę błędów:**
+
+   - Try/catch w fetch() w Server Components
+   - Komunikaty błędów dla użytkownika
+   - Fallback UI przy błędach połączenia z backendem
+
+3. **Poprawić nawigację:**
+
+   - Naprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
+   - Dostosować Breadcrumbs do Next.js (usePathname())
+
+4. **Poprawić style:**
+
+   - Naprawić style w menu rozwijanym (ExpandableMenu)
+   - Naprawić style w Breadcrumbs
+
+5. **Utworzyć stronę 404** - app/not-found.jsx (opcjonalnie)
+
+6. **Testowanie funkcjonalności:**
+
+   - Sprawdzić wszystkie dynamiczne routingi
+   - Przetestować koszyk (dodawanie/usuwanie)
+   - Przetestować ulubione (dodawanie/usuwanie) - po naprawie Server Actions
+   - Sprawdzić nawigację między stronami
+
+7. **Debugowanie i optymalizacja:**
+
+   - Naprawić ewentualne błędy
+   - Zoptymalizować wydajność
+   - Sprawdzić responsywność
+
+8. **Finalizacja:**
+   - Usunąć zbędne pliki (np. page.OLD.jsx)
+   - Uporządkować strukturę projektu
+   - Sprawdzić zgodność z oryginalną aplikacją
+
+## 🔀 Plan pracy i gałęzie Git
+
+### Obecna struktura gałęzi:
+
+- `main` - główna gałąź
+- `00-initial` - inicjalizacja projektu
+- `01-next-config` - konfiguracja Next.js
+- `02-main-layout` - główny layout
+- `03-pages-routing` - routing i strony
+
+### Proponowane gałęzie do dokończenia projektu:
+
+#### **04-server-actions-errors** (priorytet: WYSOKI)
+
+**Zakres pracy:**
+
+- Naprawić implementację `app/actions/addToFavourites.jsx`
+- Naprawić implementację `app/actions/deleteFromFavourites.jsx`
+- Dodać obsługę błędów w Server Actions
+- Dodać try/catch w fetch() w Server Components
+- Dodać komunikaty błędów dla użytkownika
+- Dodać Fallback UI przy błędach połączenia z backendem
+
+**Kolejność zadań:**
+
+1. Naprawić Server Actions (działające dodawanie/usuwanie z ulubionych)
+2. Dodać obsługę błędów w Server Components (try/catch w fetch)
+3. Dodać UI do wyświetlania błędów
+4. Przetestować funkcjonalność ulubionych
+
+**Oszacowany czas:** 2-3 godziny
+
+---
+
+#### **05-navigation-fixes** (priorytet: ŚREDNI)
+
+**Zakres pracy:**
+
+- Naprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
+- Dostosować Breadcrumbs do Next.js (użyć usePathname())
+- Sprawdzić wszystkie linki nawigacyjne
+- Naprawić MainMenu i ExpandableMenu (jeśli problem z URL)
+
+**Kolejność zadań:**
+
+1. Zidentyfikować błędne URL-e w menu
+2. Naprawić generowanie URL-i w komponentach menu
+3. Dostosować Breadcrumbs (usePathname() zamiast React Router)
+4. Przetestować wszystkie linki nawigacyjne
+
+**Oszacowany czas:** 1-2 godziny
+
+---
+
+#### **06-styles-improvements** (priorytet: ŚREDNI)
+
+**Zakres pracy:**
+
+- Poprawić style w menu rozwijanym (ExpandableMenu)
+- Poprawić style w Breadcrumbs
+- Sprawdzić responsywność komponentów
+- Upewnić się, że style są spójne z resztą aplikacji
+
+**Kolejność zadań:**
+
+1. Zidentyfikować problemy ze stylami w ExpandableMenu
+2. Naprawić style w ExpandableMenu.module.css
+3. Zidentyfikować problemy ze stylami w Breadcrumbs
+4. Naprawić style w Breadcrumbs.module.css
+5. Sprawdzić responsywność
+
+**Oszacowany czas:** 1-2 godziny
+
+---
+
+#### **07-404-not-found** (priorytet: NISKI - opcjonalnie)
+
+**Zakres pracy:**
+
+- Utworzyć `app/not-found.jsx`
+- Dodać style dla strony 404
+- Sprawdzić czy Next.js automatycznie przekierowuje na not-found
+
+**Kolejność zadań:**
+
+1. Utworzyć komponent not-found.jsx
+2. Dodać style (opcjonalnie)
+3. Przetestować działanie
+
+**Oszacowany czas:** 30 minut
+
+---
+
+#### **08-testing-optimization** (priorytet: WYSOKI)
+
+**Zakres pracy:**
+
+- Przetestować wszystkie strony i funkcjonalności
+- Sprawdzić routing (wszystkie dynamiczne ścieżki)
+- Przetestować koszyk (dodawanie/usuwanie produktów)
+- Przetestować ulubione (dodawanie/usuwanie)
+- Sprawdzić nawigację między stronami
+- Zoptymalizować wydajność
+- Sprawdzić responsywność i UX
+
+**Kolejność zadań:**
+
+1. Testowanie funkcjonalności (pełna lista sprawdzeń)
+2. Debugowanie znalezionych błędów
+3. Optymalizacja wydajności (Turbopack, obrazy)
+4. Testowanie responsywności
+
+**Oszacowany czas:** 2-3 godziny
+
+---
+
+#### **09-finalization** (priorytet: NISKI)
+
+**Zakres pracy:**
+
+- Usunąć zbędne pliki (page.OLD.jsx, inne pliki backupowe)
+- Uporządkować strukturę projektu
+- Sprawdzić zgodność z oryginalną aplikacją React
+- Finalne sprawdzenie kodu
+- Aktualizacja dokumentacji (jeśli potrzeba)
+
+**Kolejność zadań:**
+
+1. Identyfikacja zbędnych plików
+2. Usunięcie zbędnych plików
+3. Porównanie funkcjonalności z oryginalną aplikacją
+4. Finalne sprawdzenie README.md
+
+**Oszacowany czas:** 30 minut - 1 godzina
+
+---
+
+### Kolejność pracy:
+
+**Sesja 1 (wysoki priorytet):**
+
+1. `04-server-actions-errors` - naprawić funkcjonalność i błędy
+
+**Sesja 2 (średni priorytet):** 2. `05-navigation-fixes` - naprawić nawigację 3. `06-styles-improvements` - poprawić style
+
+**Sesja 3 (testowanie i dopracowanie):** 4. `08-testing-optimization` - pełne testowanie i optymalizacja 5. `07-404-not-found` (opcjonalnie) - strona 404 6. `09-finalization` - porządki końcowe
+
+### Komendy Git:
+
+```bash
+# Tworzenie nowych gałęzi z gałęzi 03-pages-routing:
+git checkout 03-pages-routing
+git pull origin 03-pages-routing
+
+# Gałąź 04
+git checkout -b 04-server-actions-errors
+git push -u origin 04-server-actions-errors
+
+# Po zakończeniu pracy na gałęzi:
+git add .
+git commit -m "feat: naprawiono Server Actions i dodano obsługę błędów"
+git push origin 04-server-actions-errors
+
+# Merge do main (po review):
+git checkout main
+git merge 04-server-actions-errors
+git push origin main
+```
+
+### Podsumowanie gałęzi:
+
+| Gałąź | Nazwa                 | Priorytet | Czas     | Status          |
+| ----- | --------------------- | --------- | -------- | --------------- |
+| 04    | server-actions-errors | WYSOKI    | 2-3h     | ⏳ Do zrobienia |
+| 05    | navigation-fixes      | ŚREDNI    | 1-2h     | ⏳ Do zrobienia |
+| 06    | styles-improvements   | ŚREDNI    | 1-2h     | ⏳ Do zrobienia |
+| 07    | 404-not-found         | NISKI     | 30min    | ⏳ Opcjonalnie  |
+| 08    | testing-optimization  | WYSOKI    | 2-3h     | ⏳ Do zrobienia |
+| 09    | finalization          | NISKI     | 30min-1h | ⏳ Do zrobienia |
+
+**Całkowity szacowany czas:** 7-12 godzin pracy
+
+### 📈 **POSTĘP OGÓLNY: ~85%**
+
+- ✅ Środowisko: 100%
+- ✅ Struktura: 95% (brak not-found.jsx)
+- ✅ Komponenty: 100%
+- ✅ Konteksty/Hooki: 100%
+- ⚠️ API/Actions: 60% (Server Components działają, ale Actions wymagają naprawy, brak obsługi błędów)
+- ⚠️ Stylowanie: 90% (wymagane poprawki w menu i breadcrumbs)
+- ⚠️ Routing: 90% (działa, ale URL-e w menu wymagają naprawy, Breadcrumbs nie dostosowane)
+- ⚠️ Testowanie: 0%
+
+### 🎉 **SUKCESY:**
+
+- ✅ Wszystkie komponenty zostały pomyślnie przeniesione i zaadaptowane
+- ✅ Dynamiczne routingi działają poprawnie ([gender], [category], [subcategory], [id])
+- ✅ Koszyk działa (localStorage, wszystkie komponenty funkcjonują)
+- ✅ Server Components działają (pobieranie danych z backendu)
+- ✅ Wszystkie style CSS Modules działają
+- ✅ Assets (obrazy, ikony) działają poprawnie
+- ✅ Linki zostały dostosowane z React Router do Next.js
+
+### ⚠️ **WYMAGAJĄ NAPRAWY:**
+
+- ❌ Server Actions - pliki istnieją ale nie działają poprawnie
+- ❌ Obsługa błędów - brak try/catch w fetch()
+- ❌ URL-e w menu - prowadzą do błędnych lokalizacji
+- ❌ Breadcrumbs - nie dostosowane do Next.js (usePathname())
+- ❌ Style - menu rozwijane i breadcrumbs wymagają poprawek
