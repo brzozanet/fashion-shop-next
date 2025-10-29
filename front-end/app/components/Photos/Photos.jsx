@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+"use client";
 import { nanoid } from "nanoid";
 import { useState } from "react";
 import css from "./Photos.module.css";
@@ -13,7 +13,7 @@ export function Photos({ photos, name }) {
           {photos.map((photo, index) => {
             return (
               <li key={nanoid()}>
-                <Link
+                <div
                   onClick={() => setSelectedPhotoIndex(index)}
                   className={css.photoThumbnailLink}
                 >
@@ -27,7 +27,7 @@ export function Photos({ photos, name }) {
                         : css.photoThumbnailImg
                     }
                   />
-                </Link>
+                </div>
               </li>
             );
           })}

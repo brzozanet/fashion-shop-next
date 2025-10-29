@@ -28,7 +28,7 @@
   display: inline-block; /* lub block, zależnie od potrzeb */
   width: 20px;
   height: 20px;
-  background-image: url("../../assets/icon_shipping.svg");
+  background-image: url("/icons/shipping.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 1rem;
@@ -41,7 +41,7 @@
   display: inline-block; /* lub block, zależnie od potrzeb */
   width: 20px;
   height: 20px;
-  background-image: url("../../assets/icon_return.svg");
+  background-image: url("/icons/shipping.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 1rem;

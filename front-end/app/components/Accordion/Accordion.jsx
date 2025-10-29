@@ -1,7 +1,6 @@
+"use client";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { nanoid } from "nanoid";
-import ICON_ARROW from "../../assets/icon_arrow.svg";
 import css from "./Accordion.module.css";
 
 export function Accordion({ description, maintenanceInfo }) {
@@ -64,13 +63,13 @@ export function Accordion({ description, maintenanceInfo }) {
         {accordionContent.map((accordion, index) => {
           return (
             <li key={nanoid()}>
-              <Link
+              <div
                 className={css.accordionContainer}
                 onClick={() => setAccordionVisibleIndex(index)}
               >
                 <p className={css.accordionTitle}>{accordion.name}</p>
                 <img
-                  src={ICON_ARROW}
+                  src="/icons/arrow.svg"
                   alt="arrow"
                   className={
                     accordionVisibleIndex === index
@@ -78,7 +77,7 @@ export function Accordion({ description, maintenanceInfo }) {
                       : css.accordionImgReverse
                   }
                 />
-              </Link>
+              </div>
               {accordionVisibleIndex === index && (
                 <p className={css.accordionText}>{accordion.text}</p>
               )}

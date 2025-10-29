@@ -1,9 +1,10 @@
-import { useContext } from "react";
-import { Accordion } from "../Accordion/Accordion";
+"use client";
+import { CartContext } from "@/app/contexts/CartContext";
+import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { FullWidthButton } from "../FullWidthButton/FullWidthButton";
-import { CartContext } from "../../contexts/CartContext";
-import { CurrencyContext } from "../../contexts/CurrencyContext";
-import { useParams } from "react-router-dom";
+import { Accordion } from "../Accordion/Accordion";
+import { useParams } from "next/navigation";
+import { useContext } from "react";
 import css from "./Detail.module.css";
 
 export function Detail({ product }) {

@@ -1,0 +1,10 @@
+.productDetailsWithBreadcrumbs {
+  width: 100%;
+}
+
+.productDetailContainer {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  margin-bottom: 4rem;
+}
