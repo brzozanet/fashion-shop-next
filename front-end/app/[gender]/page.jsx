@@ -9,6 +9,11 @@ export default async function GenderPage({ params }) {
   const genderResponse = await fetch(`${BACKEND_URL}/${gender}`);
   const genderProducts = await genderResponse.json();
 
+  const favouriteResponse = await fetch(`${BACKEND_URL}/favourites`);
+  const favouriteProducts = await favouriteResponse.json();
+
+  console.log(favouriteProducts);
+
   return (
     <>
       <Hero imageUrl={genderProducts.heroImageUrl} />
