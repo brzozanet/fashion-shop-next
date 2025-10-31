@@ -6,6 +6,8 @@ import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { Product } from "../Product/Product";
 import css from "./Products.module.css";
 
+// TODO: replace optional chainlink with if statement
+
 export function Products({ products, favourites }) {
   const params = useParams();
   const [currency] = useContext(CurrencyContext);
@@ -16,14 +18,14 @@ export function Products({ products, favourites }) {
     (category) => params.category === category.path
   );
 
-  productsTitle = activeCategory.name;
+  productsTitle = activeCategory?.name;
 
   if (params.subcategory) {
-    const activeSubcategory = activeCategory.subcategories.find(
+    const activeSubcategory = activeCategory?.subcategories.find(
       (subcategory) => params.subcategory === subcategory.path
     );
 
-    productsTitle = activeSubcategory.name;
+    productsTitle = activeSubcategory?.name;
   }
 
   const allFavouritesIds = favourites.map((favourite) => favourite.productId);

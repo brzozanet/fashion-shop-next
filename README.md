@@ -277,13 +277,15 @@ front-end/
   - ✅ app/[gender]/[category]/[subcategory]/[id]/page.jsx - szczegóły produktu
 - ❌ BRAKUJE: app/not-found.jsx - strona 404
 
-**Faza 3: Migracja komponentów - ✅ UKOŃCZONA**
+**Faza 3: Migracja komponentów - ⚠️ CZĘŚCIOWO UKOŃCZONA**
 
 - ✅ Skopiowano WSZYSTKIE komponenty z front-end.OLD/src/components/ do front-end/app/components/
 - ✅ Skopiowano style CSS Modules dla wszystkich komponentów
 - ✅ Dostosowano importy z React Router na Next.js Link
 - ✅ Dostosowano routing do App Router
 - ✅ Dostosowano ścieżki do obrazów (użycie /icons/ i /images/)
+- ⚠️ DO POPRAWY: Breadcrumbs - zamienić optional chaining (`?.`) na `if` dla lepszej kontroli
+- ⚠️ DO DODANIA: Products - komunikat "Brak produktów w kategorii" gdy lista jest pusta
 
 Wszystkie skopiowane komponenty:
 
@@ -317,6 +319,8 @@ Wszystkie skopiowane komponenty:
 - ✅ Zaimplementowano dynamiczne routingi z parametrami ([gender], [category], [subcategory], [id])
 - ✅ Użyto useParams() w Client Components
 - ❌ Breadcrumbs - NIE DOSTOSOWANO do Next.js (usePathname())
+- ⚠️ DO POPRAWY: Breadcrumbs - zamienić optional chaining na `if` (lepsza kontrola, unikanie wyświetlania "undefined")
+- ⚠️ DO DODANIA: Komunikat dla użytkownika "Brak produktów w kategorii" w komponencie Products
 - ✅ Przekierowanie ze strony głównej na /kobieta (redirect w page.jsx)
 - ⚠️ PROBLEM: URL-e generowane w menu prowadzą do błędnych lokalizacji
 
@@ -380,10 +384,12 @@ Wszystkie skopiowane komponenty:
    - Komunikaty błędów dla użytkownika
    - Fallback UI przy błędach połączenia z backendem
 
-3. **Poprawić nawigację:**
+3. **Poprawić nawigację i komponenty:**
 
    - Naprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
    - Dostosować Breadcrumbs do Next.js (usePathname())
+   - Breadcrumbs: zamienić optional chaining (`?.`) na `if` dla lepszej kontroli wyświetlania
+   - Products: dodać komunikat "Brak produktów w kategorii" gdy lista produktów jest pusta
 
 4. **Poprawić style:**
 
@@ -450,6 +456,8 @@ Wszystkie skopiowane komponenty:
 
 - Naprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
 - Dostosować Breadcrumbs do Next.js (użyć usePathname())
+- Breadcrumbs: zamienić optional chaining (`?.`) na `if` dla lepszej kontroli
+- Products: dodać komunikat "Brak produktów w kategorii" gdy lista jest pusta
 - Sprawdzić wszystkie linki nawigacyjne
 - Naprawić MainMenu i ExpandableMenu (jeśli problem z URL)
 
@@ -458,7 +466,9 @@ Wszystkie skopiowane komponenty:
 1. Zidentyfikować błędne URL-e w menu
 2. Naprawić generowanie URL-i w komponentach menu
 3. Dostosować Breadcrumbs (usePathname() zamiast React Router)
-4. Przetestować wszystkie linki nawigacyjne
+4. Breadcrumbs: zamienić `?.` na `if` - lepsza kontrola wyświetlania
+5. Products: dodać komunikat gdy brak produktów
+6. Przetestować wszystkie linki nawigacyjne
 
 **Oszacowany czas:** 1-2 godziny
 

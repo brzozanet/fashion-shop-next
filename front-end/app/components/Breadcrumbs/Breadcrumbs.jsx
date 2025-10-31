@@ -6,6 +6,8 @@ import { nanoid } from "nanoid";
 import Link from "next/link";
 import css from "./Breadcrumbs.module.css";
 
+// TODO: replace optional chainlink with if statement
+
 export function Breadcrumbs({ name }) {
   const params = useParams();
 
@@ -18,18 +20,18 @@ export function Breadcrumbs({ name }) {
   const breadcrumbs = [
     { name: `${genderText}`, path: `/${params.gender}` },
     {
-      name: `${foundCategory.name}`,
+      name: `${foundCategory?.name}`,
       path: `/${params.gender}/${params.category}`,
     },
   ];
 
   if (params.subcategory) {
-    const foundSubcategory = foundCategory.subcategories.find(
+    const foundSubcategory = foundCategory?.subcategories.find(
       (subcategory) => subcategory.path === params.subcategory
     );
 
     breadcrumbs.push({
-      name: `${foundSubcategory.name}`,
+      name: `${foundSubcategory?.name}`,
       path: `/${params.gender}/${params.category}/${params.subcategory}`,
     });
   }
