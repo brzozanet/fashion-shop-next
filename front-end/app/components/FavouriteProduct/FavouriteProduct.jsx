@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
+import { deleteFromFavourites } from "@/app/actions/deleteFromFavourites";
 import css from "./FavouriteProduct.module.css";
 
 export function FavouriteProduct({ product, favouriteId }) {
@@ -49,7 +50,10 @@ export function FavouriteProduct({ product, favouriteId }) {
               <p>{truncateTextSmart(product.description, 100)}</p>
             </div>
             <div className={css.favouritesButtons}>
-              <button className={css.favouriteButtonAction}>
+              <button
+                onClick={() => deleteFromFavourites(favouriteId)}
+                className={css.favouriteButtonAction}
+              >
                 <img
                   src="/icons/delete.svg"
                   width="14"

@@ -17,9 +17,7 @@ export async function addToFavourites(favouriteId) {
       throw new Error("Błąd dodawania do ulubionych");
     }
 
-    return {
-      success: true,
-    };
+    return { success: true };
   } catch (error) {
     return {
       success: false,
