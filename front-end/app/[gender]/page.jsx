@@ -5,7 +5,7 @@ import { GENDERS_MAPPING } from "../constants/mappings";
 import css from "./page.module.css";
 
 export default async function GenderPage({ params }) {
-  const BACKEND_URL = process.env.BACKEND_URLs;
+  const BACKEND_URL = process.env.BACKEND_URL;
   const gender = GENDERS_MAPPING.get((await params).gender);
 
   try {
