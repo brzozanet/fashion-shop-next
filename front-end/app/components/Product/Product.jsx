@@ -4,8 +4,8 @@ import { useParams } from "next/navigation";
 import { useContext, useState } from "react";
 import { CurrencyContext } from "../../contexts/CurrencyContext";
 import { addToFavourites } from "@/app/actions/addToFavourites";
-import { Notify } from "notiflix";
 import css from "./Product.module.css";
+import { Notify } from "notiflix";
 
 export function Product({
   id,
