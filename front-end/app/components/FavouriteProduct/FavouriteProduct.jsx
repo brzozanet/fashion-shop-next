@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
 import css from "./FavouriteProduct.module.css";
+import { Notify } from "notiflix";
 
 export function FavouriteProduct({
   product,
@@ -29,6 +30,7 @@ export function FavouriteProduct({
 
   const handleAddToCartButton = () => {
     setShoppingCart((prevState) => [...prevState, product]);
+    Notify.success("Produkt został dodany do koszyka");
   };
 
   return (

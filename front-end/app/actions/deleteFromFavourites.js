@@ -8,7 +8,7 @@ export async function deleteFromFavourites(favouriteId) {
     });
 
     if (!request.ok) {
-      throw new Error("Błąd podczas usuwania produktu z ulubionych");
+      throw new Error("Błąd podczas usuwania z ulubionych");
     }
 
     return { success: true };

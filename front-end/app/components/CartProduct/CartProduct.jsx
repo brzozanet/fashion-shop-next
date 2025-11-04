@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
 import css from "./CartProduct.module.css";
+import { Notify } from "notiflix";
 
 export function CartProduct({ id, brand, name, image, description, price }) {
   const [currency] = useContext(CurrencyContext);
@@ -24,6 +25,7 @@ export function CartProduct({ id, brand, name, image, description, price }) {
       (product) => product.id !== id
     );
     setShoppingCart(filteredShoppingCart);
+    Notify.success("Produkt został usunięty z koszyka");
   };
 
   return (
