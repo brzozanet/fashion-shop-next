@@ -2,10 +2,13 @@
 import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
-import { deleteFromFavourites } from "@/app/actions/deleteFromFavourites";
 import css from "./FavouriteProduct.module.css";
 
-export function FavouriteProduct({ product, favouriteId }) {
+export function FavouriteProduct({
+  product,
+  favouriteId,
+  deleteFromFavourites,
+}) {
   const [currency] = useContext(CurrencyContext);
   const [shoppingCart, setShoppingCart] = useContext(CartContext);
 
@@ -51,7 +54,7 @@ export function FavouriteProduct({ product, favouriteId }) {
             </div>
             <div className={css.favouritesButtons}>
               <button
-                onClick={() => deleteFromFavourites(favouriteId)}
+                onClick={() => deleteFromFavourites(favouriteId, product.id)}
                 className={css.favouriteButtonAction}
               >
                 <img
