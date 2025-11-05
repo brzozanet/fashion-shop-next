@@ -4,17 +4,20 @@ import { PageTitle } from "../components/PageTitle/PageTitle";
 import css from "./page.module.css";
 
 export default async function Favourites() {
-  const BACKEND_URL = process.env.BACKEND_URLa;
+  const BACKEND_URL = process.env.BACKEND_URL;
 
   try {
-    const [favourites, products] = await Promise.all([
-      (await fetch(`${BACKEND_URL}/favourites`)).json(),
-      (await fetch(`${BACKEND_URL}/products`)).json(),
-    ]);
+    const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
+    const productsResponse = await fetch(`${BACKEND_URL}/products`);
 
-    if (!favourites.ok) {
-      throw new Error(`Błąd połączenia z bazą danych: ${favourites.status}`);
+    if (!favouritesResponse.ok || !productsResponse.ok) {
+      throw new Error(
+        `Błąd połączenia z bazą danych: ${favouritesResponse.status}`
+      );
     }
+
+    const favourites = await favouritesResponse.json();
+    const products = await productsResponse.json();
 
     const userFavouritesProducts = products.filter((product) =>
       favourites.some((favourite) => favourite.productId === product.id)
