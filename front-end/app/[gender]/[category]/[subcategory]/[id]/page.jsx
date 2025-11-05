@@ -10,29 +10,54 @@ export default async function ProductDetailsPage({ params }) {
   const BACKEND_URL = process.env.BACKEND_URL;
   const { id } = await params;
 
-  const productResponse = await fetch(`${BACKEND_URL}/products/${id}`);
-  const product = await productResponse.json();
+  try {
+    const productResponse = await fetch(`${BACKEND_URL}/products/${id}`);
 
-  return (
-    <>
-      <CenteredContent>
-        <FlexContainer>
-          <ExpandableMenu />
-          <div className={css.productDetailsWithBreadcrumbs}>
-            <Breadcrumbs
-              id={product.id}
-              gender={product.gender}
-              category={product.category}
-              subcategory={product.subcategory}
-              name={product.name}
-            />
-            <div className={css.productDetailContainer}>
-              <Photos photos={product.photos} name={product.name} />
-              <Detail product={product} />
+    if (!productResponse) {
+      throw new Error(
+        `Błąd połaczenia z bazą danych: ${productResponse.status}`
+      );
+    }
+
+    const product = await productResponse.json();
+
+    return (
+      <>
+        <CenteredContent>
+          <FlexContainer>
+            <ExpandableMenu />
+            <div className={css.productDetailsWithBreadcrumbs}>
+              <Breadcrumbs
+                id={product.id}
+                gender={product.gender}
+                category={product.category}
+                subcategory={product.subcategory}
+                name={product.name}
+              />
+              <div className={css.productDetailContainer}>
+                <Photos photos={product.photos} name={product.name} />
+                <Detail product={product} />
+              </div>
             </div>
-          </div>
-        </FlexContainer>
+          </FlexContainer>
+        </CenteredContent>
+      </>
+    );
+  } catch (error) {
+    console.log("Błąd połączenia z bazą danych: ", error);
+
+    return (
+      <CenteredContent>
+        <div className={css.container}>
+          <img
+            src="/images/error.png"
+            alt="Błąd połączenia z bazą danych"
+            title="Błąd połączenia z bazą danych"
+          />
+          <h2>Błąd połączenia z bazą danych</h2>
+          <p>Spróbuj ponownie za kilka minut</p>
+        </div>
       </CenteredContent>
-    </>
-  );
+    );
+  }
 }

@@ -42,7 +42,7 @@ export default async function SubcategoryPage({ params }) {
       </>
     );
   } catch (error) {
-    console.error("Błąd połączenia z bazą danych:", error);
+    console.error("Błąd połączenia z bazą danych: ", error);
 
     return (
       <>
