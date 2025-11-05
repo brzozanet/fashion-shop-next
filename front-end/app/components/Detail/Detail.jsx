@@ -6,6 +6,7 @@ import { Accordion } from "../Accordion/Accordion";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
 import css from "./Detail.module.css";
+import { Notify } from "notiflix";
 
 export function Detail({ product }) {
   const params = useParams();
@@ -18,6 +19,7 @@ export function Detail({ product }) {
 
   const handleAddToCartButton = () => {
     setShoppingCart((prevstate) => [...prevstate, product]);
+    Notify.success("Produkt został dodany do koszyka");
   };
 
   return (

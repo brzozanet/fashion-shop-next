@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CurrencyContext } from "../../contexts/CurrencyContext";
 import { addToFavourites } from "@/app/actions/addToFavourites";
 import css from "./Product.module.css";
+import { Notify } from "notiflix";
 
 export function Product({
   id,
@@ -17,6 +18,19 @@ export function Product({
 }) {
   const params = useParams();
   const [currency] = useContext(CurrencyContext);
+  const [productInFavourites, setProductInFavourites] = useState(
+    isProductInFavourites
+  );
+
+  const handleAddToFavouritesButton = async () => {
+    const result = await addToFavourites(id);
+    if (result.success) {
+      setProductInFavourites(true);
+      Notify.success("Produkt został dodany do ulubionych");
+    } else {
+      Notify.failure("Błąd dodawania do ulubionych");
+    }
+  };
 
   return (
     <div className={css.product}>
@@ -32,10 +46,10 @@ export function Product({
         <button
           type="button"
           className={
-            isProductInFavourites ? css.heartIconDisabled : css.heartIcon
+            productInFavourites ? css.heartIconDisabled : css.heartIcon
           }
-          disabled={false}
-          onClick={() => addToFavourites(id)}
+          disabled={productInFavourites}
+          onClick={handleAddToFavouritesButton}
         />
       </div>
       <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>

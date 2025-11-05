@@ -306,7 +306,7 @@ Wszystkie skopiowane komponenty:
 - ✅ Skopiowano contexts/ (CartContext.js, CurrencyContext.js)
 - ✅ Skopiowano hooks/ (useCart.js, useCurrency.js)
 - ✅ Skopiowano constants/ (categories.js, costs.js, curriencies.js, genders.js, mappings.js)
-- ⚠️ Server Actions - DO ZROBIONIA:
+- ⚠️ Server Actions - DO ZROBIENIA:
   - ❌ app/actions/addToFavourites.jsx (pliki istnieją ale nie działają poprawnie)
   - ❌ app/actions/deleteFromFavourites.jsx (pliki istnieją ale nie działają poprawnie)
 - ℹ️ UWAGA: Loadery z React Router zostały zastąpione bezpośrednimi fetch() w Server Components

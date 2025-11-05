@@ -3,8 +3,13 @@ import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
 import css from "./FavouriteProduct.module.css";
+import { Notify } from "notiflix";
 
-export function FavouriteProduct({ product, favouriteId }) {
+export function FavouriteProduct({
+  product,
+  favouriteId,
+  deleteFromFavourites,
+}) {
   const [currency] = useContext(CurrencyContext);
   const [shoppingCart, setShoppingCart] = useContext(CartContext);
 
@@ -25,6 +30,7 @@ export function FavouriteProduct({ product, favouriteId }) {
 
   const handleAddToCartButton = () => {
     setShoppingCart((prevState) => [...prevState, product]);
+    Notify.success("Produkt został dodany do koszyka");
   };
 
   return (
@@ -49,7 +55,10 @@ export function FavouriteProduct({ product, favouriteId }) {
               <p>{truncateTextSmart(product.description, 100)}</p>
             </div>
             <div className={css.favouritesButtons}>
-              <button className={css.favouriteButtonAction}>
+              <button
+                onClick={() => deleteFromFavourites(favouriteId, product.id)}
+                className={css.favouriteButtonAction}
+              >
                 <img
                   src="/icons/delete.svg"
                   width="14"
