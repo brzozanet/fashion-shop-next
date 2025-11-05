@@ -8,7 +8,7 @@ import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import css from "./page.module.css";
 
 export default async function CategoryPage({ params }) {
-  const BACKEND_URL = process.env.BACKEND_URLa;
+  const BACKEND_URL = process.env.BACKEND_URL;
   const gender = GENDERS_MAPPING.get((await params).gender);
   const { category } = await params;
 
@@ -42,7 +42,7 @@ export default async function CategoryPage({ params }) {
       </>
     );
   } catch (error) {
-    console.error("Błąd połaczenia z baza danych:", error);
+    console.error("Błąd połączenia z bazą danych:", error);
 
     return (
       <>
