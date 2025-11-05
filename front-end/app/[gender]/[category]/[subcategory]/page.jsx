@@ -18,7 +18,7 @@ export default async function SubcategoryPage({ params }) {
     );
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
 
-    if (!subcategoryResponse || !favouritesResponse) {
+    if (!subcategoryResponse.ok || !favouritesResponse.ok) {
       throw new Error(
         `Błąd połączenia z bazą danych: ${subcategoryResponse.status}`
       );

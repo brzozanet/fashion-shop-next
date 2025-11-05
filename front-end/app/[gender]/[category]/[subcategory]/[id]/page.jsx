@@ -13,9 +13,9 @@ export default async function ProductDetailsPage({ params }) {
   try {
     const productResponse = await fetch(`${BACKEND_URL}/products/${id}`);
 
-    if (!productResponse) {
+    if (!productResponse.ok) {
       throw new Error(
-        `Błąd połaczenia z bazą danych: ${productResponse.status}`
+        `Błąd połączenia z bazą danych: ${productResponse.status}`
       );
     }
 
@@ -44,7 +44,7 @@ export default async function ProductDetailsPage({ params }) {
       </>
     );
   } catch (error) {
-    console.log("Błąd połączenia z bazą danych: ", error);
+    console.error("Błąd połączenia z bazą danych: ", error);
 
     return (
       <CenteredContent>
