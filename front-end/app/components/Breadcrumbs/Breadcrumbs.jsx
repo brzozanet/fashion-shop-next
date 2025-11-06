@@ -6,8 +6,6 @@ import { nanoid } from "nanoid";
 import Link from "next/link";
 import css from "./Breadcrumbs.module.css";
 
-// TODO: replace optional chainlink with if statement
-
 export function Breadcrumbs({ name }) {
   const params = useParams();
 

@@ -6,8 +6,6 @@ import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { Product } from "../Product/Product";
 import css from "./Products.module.css";
 
-// TODO: replace optional chainlink with if statement
-
 export function Products({ products, favourites }) {
   const params = useParams();
   const [currency] = useContext(CurrencyContext);
@@ -34,26 +32,38 @@ export function Products({ products, favourites }) {
     return allFavouritesIds.includes(productId);
   };
 
+  console.log(products.length);
+
   return (
     <>
       <h2 className={css.productsTitle}>{productsTitle}</h2>
-      <div className={css.products}>
-        {products.map((product) => {
-          return (
-            <Product
-              id={product.id}
-              name={product.name}
-              // NOTE: dynamic access
-              price={`${product[`price${currency}`]}`}
-              photo={product.photos[0]}
-              category={product.category}
-              subcategory={product.subcategory}
-              key={product.id}
-              isProductInFavourites={isProductInFavourites(product.id)}
-            />
-          );
-        })}
-      </div>
+
+      {products.length ? (
+        <div className={css.products}>
+          {products.map((product) => {
+            return (
+              <Product
+                id={product.id}
+                name={product.name}
+                // NOTE: dynamic access
+                price={`${product[`price${currency}`]}`}
+                photo={product.photos[0]}
+                category={product.category}
+                subcategory={product.subcategory}
+                key={product.id}
+                isProductInFavourites={isProductInFavourites(product.id)}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div className={css.noProductsContainer}>
+          <img src="/images/empty-cart.png" width="200" />
+          <h2 className={css.productsSubtitle}>
+            Niestety, nie mamy żadnych produktów w tej kategorii
+          </h2>
+        </div>
+      )}
     </>
   );
 }
