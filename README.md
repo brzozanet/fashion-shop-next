@@ -194,17 +194,16 @@ front-end/
   - ✅ app/[gender]/[category]/page.jsx - strona kategorii
   - ✅ app/[gender]/[category]/[subcategory]/page.jsx - strona podkategorii
   - ✅ app/[gender]/[category]/[subcategory]/[id]/page.jsx - szczegóły produktu
-- ❌ BRAKUJE: app/not-found.jsx - strona 404
+- ⏳ W TRAKCIE: app/not-found.jsx - strona 404
 
-**Faza 3: Migracja komponentów - ⚠️ CZĘŚCIOWO UKOŃCZONA**
+**Faza 3: Migracja komponentów - ✅ UKOŃCZONA**
 
 - ✅ Skopiowano WSZYSTKIE komponenty z front-end.OLD/src/components/ do front-end/app/components/
 - ✅ Skopiowano style CSS Modules dla wszystkich komponentów
 - ✅ Dostosowano importy z React Router na Next.js Link
 - ✅ Dostosowano routing do App Router
 - ✅ Dostosowano ścieżki do obrazów (użycie /icons/ i /images/)
-- ⚠️ DO POPRAWY: Breadcrumbs - zamienić optional chaining (`?.`) na `if` dla lepszej kontroli
-- ⚠️ DO DODANIA: Products - komunikat "Brak produktów w kategorii" gdy lista jest pusta
+- ✅ Dodano komunikat w Products - "Brak produktów w kategorii" gdy lista jest pusta
 
 Wszystkie skopiowane komponenty:
 
@@ -231,47 +230,31 @@ Wszystkie skopiowane komponenty:
 - ℹ️ UWAGA: Loadery z React Router zostały zastąpione bezpośrednimi fetch() w Server Components
 - ✅ Obsługa błędów w zapytaniach fetch() do backendu - zaimplementowana (try/catch, fallback UI)
 
-**Faza 5: Routing i nawigacja - ⚠️ CZĘŚCIOWO UKOŃCZONA**
+**Faza 5: Routing i nawigacja - ✅ UKOŃCZONA**
 
 - ✅ Zaimplementowano App Router dla wszystkich stron
 - ✅ Dostosowano nawigację do Next.js (Link zamiast NavLink)
 - ✅ Zaimplementowano dynamiczne routingi z parametrami ([gender], [category], [subcategory], [id])
 - ✅ Użyto useParams() w Client Components
-- ❌ Breadcrumbs - NIE DOSTOSOWANO do Next.js (usePathname())
-- ⚠️ DO POPRAWY: Breadcrumbs - zamienić optional chaining na `if` (lepsza kontrola, unikanie wyświetlania "undefined")
-- ⚠️ DO DODANIA: Komunikat dla użytkownika "Brak produktów w kategorii" w komponencie Products
+- ✅ Breadcrumbs - Dostosowano do Next.js (useParams())
+- ✅ Komunikat dla użytkownika "Brak produktów w kategorii" w komponencie Products - Dodano
 - ✅ Przekierowanie ze strony głównej na /kobieta (redirect w page.jsx)
-- ⚠️ PROBLEM: URL-e generowane w menu prowadzą do błędnych lokalizacji
+- ✅ Rozwiązano problem URL-e generowane w menu prowadzą do błędnych lokalizacji - naprawiono ścieżki relatywne / bezwzględne
 
-**Faza 6: Stylowanie i assets - ⚠️ CZĘŚCIOWO UKOŃCZONA**
+**Faza 6: Stylowanie i assets - ✅ UKOŃCZONA**
 
 - ✅ Skopiowano globals.css i theme.css (w app/styles/)
 - ✅ Przeniesiono wszystkie obrazy do public/ (ikony i obrazy)
 - ✅ Dostosowano ścieżki do obrazów w komponentach
 - ✅ Wszystkie CSS Modules działają poprawnie
-- ⚠️ PROBLEM: Style w menu (zwłaszcza rozwijanym) wymagają poprawek
-- ⚠️ PROBLEM: Style w Breadcrumbs wymagają poprawek
+- ✅ Style w menu (zwłaszcza rozwijanym) działają poprawnie
+- ✅ Style w Breadcrumbs działają poprawnie
 
 ### ⚠️ CO JESZCZE TRZEBA ZROBIĆ:
 
 **Faza 2: Struktura folderów Next.js - ⚠️ DROBNE DOKOŃCZENIE**
 
-- ❌ Utworzyć app/not-found.jsx - strona 404 (opcjonalnie)
-
-**Faza 4: Migracja API - ✅ UKOŃCZONA**
-
-- ✅ Server Actions - naprawione i działają poprawnie
-- ✅ Obsługa błędów w zapytaniach fetch() do backendu - zaimplementowana
-
-**Faza 5: Routing i nawigacja - ⚠️ DO DOKOŃCZENIA**
-
-- ❌ Dostosować Breadcrumbs do Next.js (użyć usePathname())
-- ❌ Poprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
-
-**Faza 6: Stylowanie i assets - ⚠️ DO POPRAWY**
-
-- ❌ Poprawić style w menu (zwłaszcza rozwijanym - ExpandableMenu)
-- ❌ Poprawić style w Breadcrumbs
+- ⏳ Utworzyć app/not-found.jsx - strona 404 (w trakcie)
 
 **Faza 7: Testowanie i debugowanie - ⚠️ DO ROZPOCZĘCIA**
 
@@ -286,94 +269,29 @@ Wszystkie skopiowane komponenty:
 
 ### 🎯 NASTĘPNE KROKI (priorytetowo):
 
-1. **Poprawić nawigację i komponenty:**
+1. **Utworzyć stronę 404** - app/not-found.jsx (w trakcie)
 
-   - Naprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
-   - Dostosować Breadcrumbs do Next.js (usePathname())
-   - Breadcrumbs: zamienić optional chaining (`?.`) na `if` dla lepszej kontroli wyświetlania
-   - Products: dodać komunikat "Brak produktów w kategorii" gdy lista produktów jest pusta
-
-2. **Poprawić style:**
-
-   - Naprawić style w menu rozwijanym (ExpandableMenu)
-   - Naprawić style w Breadcrumbs
-
-3. **Utworzyć stronę 404** - app/not-found.jsx (opcjonalnie)
-
-4. **Testowanie funkcjonalności:**
+2. **Testowanie funkcjonalności:**
 
    - Sprawdzić wszystkie dynamiczne routingi
    - Przetestować koszyk (dodawanie/usuwanie)
    - Przetestować ulubione (dodawanie/usuwanie) - po naprawie Server Actions
    - Sprawdzić nawigację między stronami
 
-5. **Debugowanie i optymalizacja:**
+3. **Debugowanie i optymalizacja:**
 
    - Naprawić ewentualne błędy
    - Zoptymalizować wydajność
    - Sprawdzić responsywność
 
-6. **Finalizacja:**
+4. **Finalizacja:**
    - Usunąć zbędne pliki (np. page.OLD.jsx)
    - Uporządkować strukturę projektu
    - Sprawdzić zgodność z oryginalną aplikacją
 
 ## 🔀 Plan pracy i gałęzie Git
 
-### Obecna struktura gałęzi:
-
-- `main` - główna gałąź
-- `00-initial` - inicjalizacja projektu
-- `01-next-config` - konfiguracja Next.js
-- `02-main-layout` - główny layout
-- `03-pages-routing` - routing i strony
-
 ### Proponowane gałęzie do dokończenia projektu:
-
-#### **05-navigation-fixes** (priorytet: ŚREDNI)
-
-**Zakres pracy:**
-
-- Naprawić URL-e generowane w menu (prowadzą do błędnych lokalizacji)
-- Dostosować Breadcrumbs do Next.js (użyć usePathname())
-- Breadcrumbs: zamienić optional chaining (`?.`) na `if` dla lepszej kontroli
-- Products: dodać komunikat "Brak produktów w kategorii" gdy lista jest pusta
-- Sprawdzić wszystkie linki nawigacyjne
-- Naprawić MainMenu i ExpandableMenu (jeśli problem z URL)
-
-**Kolejność zadań:**
-
-1. Zidentyfikować błędne URL-e w menu
-2. Naprawić generowanie URL-i w komponentach menu
-3. Dostosować Breadcrumbs (usePathname() zamiast React Router)
-4. Breadcrumbs: zamienić `?.` na `if` - lepsza kontrola wyświetlania
-5. Products: dodać komunikat gdy brak produktów
-6. Przetestować wszystkie linki nawigacyjne
-
-**Oszacowany czas:** 1-2 godziny
-
----
-
-#### **06-styles-improvements** (priorytet: ŚREDNI)
-
-**Zakres pracy:**
-
-- Poprawić style w menu rozwijanym (ExpandableMenu)
-- Poprawić style w Breadcrumbs
-- Sprawdzić responsywność komponentów
-- Upewnić się, że style są spójne z resztą aplikacji
-
-**Kolejność zadań:**
-
-1. Zidentyfikować problemy ze stylami w ExpandableMenu
-2. Naprawić style w ExpandableMenu.module.css
-3. Zidentyfikować problemy ze stylami w Breadcrumbs
-4. Naprawić style w Breadcrumbs.module.css
-5. Sprawdzić responsywność
-
-**Oszacowany czas:** 1-2 godziny
-
----
 
 #### **07-not-found** (priorytet: NISKI - opcjonalnie)
 
@@ -443,32 +361,37 @@ Wszystkie skopiowane komponenty:
 
 1. ✅ `04-server-actions-errors` - naprawić funkcjonalność i błędy - **UKOŃCZONA**
 
-**Sesja 2 (średni priorytet):** 2. ⏳ `05-navigation-fixes` - naprawić nawigację - **W TRAKCIE** 3. `06-styles-improvements` - poprawić style
+**Sesja 2 (średni priorytet):**
 
-**Sesja 3 (testowanie i dopracowanie):** 4. `08-testing-optimization` - pełne testowanie i optymalizacja 5. `07-not-found` (opcjonalnie) - strona 404 6. `09-finalization` - porządki końcowe
+2. ✅ `05-navigation-fixes` - naprawić nawigację - **UKOŃCZONA**
+3. ✅ `06-styles-improvements` - poprawić style - **UKOŃCZONA**
+
+**Sesja 3 (testowanie i dopracowanie):**
+
+4. ⏳ `08-testing-optimization` - pełne testowanie i optymalizacja - **DO ZROBIENIA**
+5. ⏳ `07-not-found` (opcjonalnie) - strona 404 - **W TRAKCIE**
+6. ⏳ `09-finalization` - porządki końcowe - **DO ZROBIENIA**
 
 ### Podsumowanie gałęzi:
 
 | Gałąź | Nazwa                 | Priorytet | Czas     | Status          |
 | ----- | --------------------- | --------- | -------- | --------------- |
 | 04    | server-actions-errors | WYSOKI    | 2-3h     | ✅ Ukończona    |
-| 05    | navigation-fixes      | ŚREDNI    | 1-2h     | ⏳ W trakcie    |
-| 06    | styles-improvements   | ŚREDNI    | 1-2h     | ⏳ Do zrobienia |
-| 07    | 404-not-found         | NISKI     | 30min    | ⏳ Opcjonalnie  |
+| 05    | navigation-fixes      | ŚREDNI    | 1-2h     | ✅ Ukończona    |
+| 06    | styles-improvements   | ŚREDNI    | 1-2h     | ✅ Ukończona    |
+| 07    | 404-not-found         | NISKI     | 30min    | ⏳ W trakcie    |
 | 08    | testing-optimization  | WYSOKI    | 2-3h     | ⏳ Do zrobienia |
 | 09    | finalization          | NISKI     | 30min-1h | ⏳ Do zrobienia |
 
-**Całkowity szacowany czas:** 7-12 godzin pracy
-
-### 📈 **POSTĘP OGÓLNY: ~90%**
+### 📈 **POSTĘP OGÓLNY: ~92%**
 
 - ✅ Środowisko: 100%
 - ✅ Struktura: 95% (brak not-found.jsx)
 - ✅ Komponenty: 100%
 - ✅ Konteksty/Hooki: 100%
 - ✅ API/Actions: 100% (Server Components działają, Actions naprawione, obsługa błędów dodana)
-- ⚠️ Stylowanie: 90% (wymagane poprawki w menu i breadcrumbs)
-- ⚠️ Routing: 90% (działa, ale URL-e w menu wymagają naprawy, Breadcrumbs nie dostosowane)
+- ✅ Stylowanie: 100% (wszystkie style działają poprawnie)
+- ✅ Routing: 100% (działa, URL-e naprawione, Breadcrumbs dostosowane)
 - ⚠️ Testowanie: 0%
 
 ### 🎉 **SUKCESY:**
@@ -482,10 +405,12 @@ Wszystkie skopiowane komponenty:
 - ✅ Linki zostały dostosowane z React Router do Next.js
 - ✅ Server Actions (addToFavourites, deleteFromFavourites) działają poprawnie z obsługą błędów
 - ✅ Obsługa błędów w Server Components (fetch) została zaimplementowana
+- ✅ URL-e w menu naprawione (ścieżki bezwzględne)
+- ✅ Breadcrumbs dostosowane do Next.js
+- ✅ Aktywne linki w menu działają poprawnie
 
-### ⚠️ **WYMAGAJĄ NAPRAWY:**
+### ⚠️ **WYMAGAJĄ UWAGI:**
 
-- ❌ URL-e w menu - prowadzą do błędnych lokalizacji
-- ❌ Breadcrumbs - nie dostosowane do Next.js (usePathname())
-- ❌ Style - menu rozwijane i breadcrumbs wymagają poprawek
-- ❌ Utworzyć app/not-found.jsx - strona 404 (opcjonalnie)
+- ⏳ Strona 404 (not-found.jsx) - w trakcie tworzenia
+- ⚠️ Testowanie - wszystkie funkcjonalności wymagają przetestowania
+- ⚠️ Optymalizacja - wydajność i responsywność wymagają sprawdzenia
