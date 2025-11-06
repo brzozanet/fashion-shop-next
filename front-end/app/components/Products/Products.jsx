@@ -32,8 +32,6 @@ export function Products({ products, favourites }) {
     return allFavouritesIds.includes(productId);
   };
 
-  console.log(products.length);
-
   return (
     <>
       <h2 className={css.productsTitle}>{productsTitle}</h2>

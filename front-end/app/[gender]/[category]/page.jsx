@@ -12,11 +12,17 @@ export default async function CategoryPage({ params }) {
   const gender = GENDERS_MAPPING.get((await params).gender);
   const { category } = await params;
 
+  console.log(category);
+
   try {
     const productsResponse = await fetch(
       `${BACKEND_URL}/products?gender=${gender}&category=${category}`
     );
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
+
+    if (!params.gender || !category) {
+      return <NotFound />;
+    }
 
     if (!productsResponse.ok || !favouritesResponse.ok) {
       throw new Error(
