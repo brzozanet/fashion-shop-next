@@ -62,46 +62,45 @@ Aplikacja składa się z dwóch części:
 
 ```
 project-fashion-shop-next/
-├── front-end/                      # Aplikacja Next.js
+├── front-end/                        # Aplikacja Next.js
 │   ├── app/
-│   │   ├── components/             # Komponenty React
-│   │   │   ├── Bestsellers/       # Sekcja bestsellerów
-│   │   │   ├── Cart*/             # Komponenty koszyka
-│   │   │   ├── Categories*/       # Menu kategorii
-│   │   │   ├── Currency*/         # Selektor walut
-│   │   │   ├── Detail/            # Szczegóły produktu
-│   │   │   ├── Favourite*/        # Komponenty ulubionych
-│   │   │   ├── Hero/              # Sekcja hero
-│   │   │   ├── Product*/          # Komponenty produktów
+│   │   ├── components/               # Komponenty React
+│   │   │   ├── Bestsellers/          # Sekcja bestsellerów
+│   │   │   ├── Cart*/                # Komponenty koszyka
+│   │   │   ├── Categories*/          # Menu kategorii
+│   │   │   ├── Currency*/            # Selektor walut
+│   │   │   ├── Detail/               # Szczegóły produktu
+│   │   │   ├── Favourite*/           # Komponenty ulubionych
+│   │   │   ├── Hero/                 # Sekcja hero
+│   │   │   ├── Product*/             # Komponenty produktów
 │   │   │   └── ...
-│   │   ├── [gender]/              # Dynamiczny routing - kategoria płci
-│   │   │   ├── [category]/        # Dynamiczny routing - kategoria
-│   │   │   │   ├── [subcategory]/ # Dynamiczny routing - podkategoria
-│   │   │   │   │   └── [id]/      # Dynamiczny routing - szczegóły produktu
-│   │   ├── koszyk/                # Strona koszyka
-│   │   ├── ulubione/              # Strona ulubionych
-│   │   ├── actions/               # Server Actions
+│   │   ├── [gender]/                 # Dynamiczny routing - kategoria płci
+│   │   │   ├── [category]/           # Dynamiczny routing - kategoria
+│   │   │   │   ├── [subcategory]/    # Dynamiczny routing - podkategoria
+│   │   │   │   │   └── [id]/         # Dynamiczny routing - szczegóły produktu
+│   │   ├── koszyk/                   # Strona koszyka
+│   │   ├── ulubione/                 # Strona ulubionych
+│   │   ├── actions/                  # Server Actions
 │   │   │   ├── addToFavourites.js
 │   │   │   └── deleteFromFavourites.js
-│   │   ├── contexts/              # React Context
-│   │   │   ├── CartContext.js     # Kontekst koszyka
-│   │   │   └── CurrencyContext.js # Kontekst waluty
-│   │   ├── hooks/                 # Custom hooks
-│   │   ├── constants/             # Stałe aplikacji
-│   │   ├── styles/                # Globalne style
-│   │   ├── layout.jsx             # Główny layout
-│   │   ├── page.jsx               # Strona główna
-│   │   ├── not-found.jsx          # Strona 404
-│   │   └── loading.jsx            # Komponent ładowania
-│   ├── public/                    # Pliki statyczne
-│   │   ├── icons/                 # Ikony SVG
-│   │   └── images/                 # Obrazy
-│   ├── .env                       # W .gitignore (lokalne ustawienia)
+│   │   ├── contexts/                 # React Context
+│   │   │   ├── CartContext.js        # Kontekst koszyka
+│   │   │   └── CurrencyContext.js    # Kontekst waluty
+│   │   ├── hooks/                    # Custom hooks
+│   │   ├── constants/                # Stałe aplikacji
+│   │   ├── styles/                   # Globalne style
+│   │   ├── layout.jsx                # Główny layout
+│   │   ├── page.jsx                  # Strona główna
+│   │   ├── not-found.jsx             # Strona 404
+│   │   └── loading.jsx               # Komponent ładowania
+│   ├── public/                       # Pliki statyczne
+│   │   ├── icons/                    # Ikony SVG
+│   │   └── images/                   # Obrazy
+│   ├── .env                          # .gitignore (lokalne ustawienia)
 │   └── package.json
-├── front-end.OLD/                 # Oryginalna wersja React (referencja)
-├── back-end/                      # JSON Server
-│   ├── db.json                    # Baza danych produktów
-│   ├── public/product-photos/     # Zdjęcia produktów
+├── back-end/                         # JSON Server
+│   ├── db.json                       # Baza danych produktów
+│   ├── public/product-photos/        # Zdjęcia produktów
 │   └── package.json
 └── README.md
 ```
