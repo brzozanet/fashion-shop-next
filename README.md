@@ -274,29 +274,6 @@ Wszystkie skopiowane komponenty:
 
 ### Proponowane gałęzie do dokończenia projektu:
 
-#### **08-testing-optimization** (priorytet: WYSOKI)
-
-**Zakres pracy:**
-
-- Przetestować wszystkie strony i funkcjonalności
-- Sprawdzić routing (wszystkie dynamiczne ścieżki)
-- Przetestować koszyk (dodawanie/usuwanie produktów)
-- Przetestować ulubione (dodawanie/usuwanie)
-- Sprawdzić nawigację między stronami
-- Zoptymalizować wydajność
-- Sprawdzić responsywność i UX
-
-**Kolejność zadań:**
-
-1. Testowanie funkcjonalności (pełna lista sprawdzeń)
-2. Debugowanie znalezionych błędów
-3. Optymalizacja wydajności (Turbopack, obrazy)
-4. Testowanie responsywności
-
-**Oszacowany czas:** 2-3 godziny
-
----
-
 #### **09-finalization** (priorytet: NISKI)
 
 **Zakres pracy:**
