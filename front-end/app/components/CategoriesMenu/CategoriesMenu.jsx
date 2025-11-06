@@ -14,7 +14,7 @@ export function CategoriesMenu() {
           {CATEGORIES.map((category) => {
             return (
               <li className={css.categoryItem} key={nanoid()}>
-                <Link href={`${params.gender}/${category.path}`}>
+                <Link href={`/${params.gender}/${category.path}`}>
                   {category.name}
                 </Link>
               </li>

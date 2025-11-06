@@ -10,7 +10,7 @@ export function MainMenu() {
         {GENDERS.map((category) => {
           return (
             <li key={nanoid()} className={css.mainMenuItem}>
-              <Link href={category.path}>{category.name}</Link>
+              <Link href={`/${category.path}`}>{category.name}</Link>
             </li>
           );
         })}
