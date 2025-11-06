@@ -5,6 +5,8 @@ import { FlexContainer } from "@/app/components/FlexContainer/FlexContainer";
 import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
+import { CATEGORIES } from "@/app/constants/categories";
+import NotFound from "@/app/not-found";
 import css from "./page.module.css";
 
 export default async function SubcategoryPage({ params }) {
@@ -12,11 +14,24 @@ export default async function SubcategoryPage({ params }) {
   const gender = GENDERS_MAPPING.get((await params).gender);
   const { category, subcategory } = await params;
 
+  const checkActiveCategory = CATEGORIES.find(
+    (activeCategory) => activeCategory.path === category
+  );
+
+  const checkValidSubcategory = checkActiveCategory.subcategories.find(
+    (validSubcategories) => validSubcategories.path === subcategory
+  );
+  console.log(checkValidSubcategory);
+
   try {
     const subcategoryResponse = await fetch(
       `${BACKEND_URL}/products?gender=${gender}&category=${category}&subcategory=${subcategory}`
     );
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
+
+    if (!checkValidSubcategory) {
+      return <NotFound />;
+    }
 
     if (!subcategoryResponse.ok || !favouritesResponse.ok) {
       throw new Error(
