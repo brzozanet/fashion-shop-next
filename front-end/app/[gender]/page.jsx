@@ -9,8 +9,6 @@ export default async function GenderPage({ params }) {
   const BACKEND_URL = process.env.BACKEND_URL;
   const gender = GENDERS_MAPPING.get((await params).gender);
 
-  console.log(gender);
-
   try {
     const genderResponse = await fetch(`${BACKEND_URL}/${gender}`);
     const favouriteResponse = await fetch(`${BACKEND_URL}/favourites`);

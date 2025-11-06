@@ -5,6 +5,8 @@ import { FlexContainer } from "@/app/components/FlexContainer/FlexContainer";
 import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
+import { CATEGORIES } from "@/app/constants/categories";
+import NotFound from "@/app/not-found";
 import css from "./page.module.css";
 
 export default async function CategoryPage({ params }) {
@@ -12,7 +14,9 @@ export default async function CategoryPage({ params }) {
   const gender = GENDERS_MAPPING.get((await params).gender);
   const { category } = await params;
 
-  console.log(category);
+  const checkValidCategory = CATEGORIES.find(
+    (validCategory) => validCategory.path === category
+  );
 
   try {
     const productsResponse = await fetch(
@@ -20,7 +24,7 @@ export default async function CategoryPage({ params }) {
     );
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
 
-    if (!params.gender || !category) {
+    if (!checkValidCategory) {
       return <NotFound />;
     }
 
