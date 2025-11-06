@@ -21,7 +21,6 @@ export default async function SubcategoryPage({ params }) {
   const checkValidSubcategory = checkActiveCategory.subcategories.find(
     (validSubcategories) => validSubcategories.path === subcategory
   );
-  console.log(checkValidSubcategory);
 
   try {
     const subcategoryResponse = await fetch(
