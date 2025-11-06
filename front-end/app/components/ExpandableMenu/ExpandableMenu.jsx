@@ -39,7 +39,13 @@ export function ExpandableMenu() {
                     <ul>
                       {category.subcategories.map((subcategory) => {
                         return (
-                          <li key={nanoid()} className={css.subCategoriesItem}>
+                          <li
+                            key={nanoid()}
+                            className={`${css.subCategoriesItem} ${
+                              params.subcategory === subcategory.path &&
+                              css.subCategoriesItemActive
+                            }`}
+                          >
                             <Link
                               href={`/${params.gender}/${category.path}/${subcategory.path}`}
                               className={css.subCategoriesLink}

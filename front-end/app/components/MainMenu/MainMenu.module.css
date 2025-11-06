@@ -14,7 +14,7 @@
   display: block;
 }
 
-.mainMenuItem a:global(.active) {
+.mainMenuItemActive {
   border-bottom: 2px solid var(--color-text-default);
   color: var(--color-text-default);
 }

@@ -13,7 +13,12 @@ export function CategoriesMenu() {
         <ul className={css.categoryList}>
           {CATEGORIES.map((category) => {
             return (
-              <li className={css.categoryItem} key={nanoid()}>
+              <li
+                className={`${css.categoryItem} ${
+                  params.category === category.path && css.categoryItemActive
+                }`}
+                key={nanoid()}
+              >
                 <Link href={`/${params.gender}/${category.path}`}>
                   {category.name}
                 </Link>
