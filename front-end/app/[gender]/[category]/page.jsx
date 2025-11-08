@@ -6,8 +6,7 @@ import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
-import NotFound from "@/app/not-found";
-import css from "./page.module.css";
+import Error from "@/app/components/Error/Error";
 
 export default async function CategoryPage({ params }) {
   const BACKEND_URL = process.env.BACKEND_URL;
@@ -25,7 +24,7 @@ export default async function CategoryPage({ params }) {
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
 
     if (!checkValidCategory) {
-      return <NotFound />;
+      return <Error />;
     }
 
     if (!productsResponse.ok || !favouritesResponse.ok) {
@@ -54,20 +53,6 @@ export default async function CategoryPage({ params }) {
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
 
-    return (
-      <>
-        <CenteredContent>
-          <div className={css.container}>
-            <img
-              src="/images/error.png"
-              alt="Błąd połączenia z bazą danych"
-              title="Błąd połączenia z bazą danych"
-            />
-            <h2>Błąd połączenia z bazą danych</h2>
-            <p>Spróbuj ponownie za kilka minut</p>
-          </div>
-        </CenteredContent>
-      </>
-    );
+    return <Error />;
   }
 }

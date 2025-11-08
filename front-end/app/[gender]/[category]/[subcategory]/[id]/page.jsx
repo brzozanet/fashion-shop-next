@@ -46,20 +46,6 @@ export default async function ProductDetailsPage({ params }) {
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
 
-    return (
-      <>
-        <CenteredContent>
-          <div className={css.container}>
-            <img
-              src="/images/error.png"
-              alt="Błąd połączenia z bazą danych"
-              title="Błąd połączenia z bazą danych"
-            />
-            <h2>Błąd połączenia z bazą danych</h2>
-            <p>Spróbuj ponownie za kilka minut</p>
-          </div>
-        </CenteredContent>
-      </>
-    );
+    return <Error />;
   }
 }
