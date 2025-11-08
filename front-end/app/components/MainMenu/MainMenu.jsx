@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { GENDERS } from "@/app/constants/genders";
 import { nanoid } from "nanoid";

@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { CATEGORIES } from "@/app/constants/categories";
 import { useParams } from "next/navigation";
