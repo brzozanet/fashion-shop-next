@@ -48,7 +48,6 @@ export default async function ProductDetailsPage({ params }) {
     );
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
-
     return <Error />;
   }
 }

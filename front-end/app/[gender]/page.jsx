@@ -1,6 +1,7 @@
 import { Bestsellers } from "../components/Bestsellers/Bestsellers";
 import { Hero } from "../components/Hero/Hero";
 import { GENDERS_MAPPING } from "../constants/mappings";
+import NotFound from "../not-found";
 import Error from "../components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -15,7 +16,7 @@ export default async function GenderPage({ params }) {
     const favouriteResponse = await fetch(`${BACKEND_URL}/favourites`);
 
     if (!gender) {
-      return <Error />;
+      return <NotFound />;
     }
 
     if (!genderResponse.ok || !favouriteResponse.ok) {
@@ -38,7 +39,6 @@ export default async function GenderPage({ params }) {
     );
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
-
     return <Error />;
   }
 }

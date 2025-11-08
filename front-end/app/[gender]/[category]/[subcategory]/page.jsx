@@ -6,6 +6,7 @@ import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
+import NotFound from "@/app/not-found";
 import Error from "@/app/components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -21,7 +22,7 @@ export default async function SubcategoryPage({ params }) {
   );
 
   if (!checkActiveCategory) {
-    return <Error />;
+    return <NotFound />;
   }
 
   const checkValidSubcategory = checkActiveCategory.subcategories.find(
@@ -35,7 +36,7 @@ export default async function SubcategoryPage({ params }) {
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
 
     if (!checkValidSubcategory) {
-      return <Error />;
+      return <NotFound />;
     }
 
     if (!subcategoryResponse.ok || !favouritesResponse.ok) {
@@ -63,7 +64,6 @@ export default async function SubcategoryPage({ params }) {
     );
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
-
     return <Error />;
   }
 }
