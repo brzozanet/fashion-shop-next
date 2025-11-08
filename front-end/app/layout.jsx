@@ -32,8 +32,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pl">
       <body>
-        <CurrencyContext.Provider value={[currency, setCurrency]}>
-          <CartContext.Provider value={[shoppingCart, setShoppingCart]}>
+        <CurrencyContext value={[currency, setCurrency]}>
+          <CartContext value={[shoppingCart, setShoppingCart]}>
             <MainContent>
               <TopBar>
                 <MainMenu />
@@ -47,8 +47,8 @@ export default function RootLayout({ children }) {
               {children}
             </MainContent>
             <Footer />
-          </CartContext.Provider>
-        </CurrencyContext.Provider>
+          </CartContext>
+        </CurrencyContext>
       </body>
     </html>
   );
