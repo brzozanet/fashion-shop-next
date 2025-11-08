@@ -17,6 +17,10 @@ export default async function SubcategoryPage({ params }) {
     (activeCategory) => activeCategory.path === category
   );
 
+  if (!checkActiveCategory) {
+    return <Error />;
+  }
+
   const checkValidSubcategory = checkActiveCategory.subcategories.find(
     (validSubcategories) => validSubcategories.path === subcategory
   );
