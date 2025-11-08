@@ -1,0 +1,20 @@
+.notFoundContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem auto;
+}
+
+.notFoundTitle {
+  margin-bottom: 1rem;
+}
+
+.notFoundLink {
+  cursor: pointer;
+  background-color: var(--color-theme-main);
+  color: var(--color-white);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem;
+}
