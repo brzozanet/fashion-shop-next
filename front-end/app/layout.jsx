@@ -1,5 +1,5 @@
-import { CategoriesMenu } from "./components/CategoriesMenu/CategoriesMenu";
 import ClientProviders from "./components/ClientProviders/ClientProviders";
+import { CategoriesMenu } from "./components/CategoriesMenu/CategoriesMenu";
 import { CurrencySelector } from "./components/CurrencySelector/CurrencySelector";
 import { Footer } from "./components/Footer/Footer";
 import { IconMenu } from "./components/IconMenu/IconMenu";
