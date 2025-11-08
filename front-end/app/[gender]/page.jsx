@@ -1,7 +1,6 @@
 import { Bestsellers } from "../components/Bestsellers/Bestsellers";
 import { Hero } from "../components/Hero/Hero";
 import { GENDERS_MAPPING } from "../constants/mappings";
-import NotFound from "../not-found";
 import Error from "../components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -16,6 +15,8 @@ export default async function GenderPage({ params }) {
     const favouriteResponse = await fetch(`${BACKEND_URL}/favourites`);
 
     if (!gender) {
+      // INFO: Dynamiczny import - komponent i jego CSS są ładowane tylko gdy są potrzebne, co zapobiega niepotrzebnemu preloadowaniu zasobów przez Next.js
+      const NotFound = (await import("../not-found")).default;
       return <NotFound />;
     }
 

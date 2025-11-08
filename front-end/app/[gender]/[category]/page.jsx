@@ -6,7 +6,6 @@ import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
-import NotFound from "@/app/not-found";
 import Error from "@/app/components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -28,6 +27,8 @@ export default async function CategoryPage({ params }) {
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
 
     if (!checkValidCategory) {
+      // INFO: Dynamiczny import - komponent i jego CSS są ładowane tylko gdy są potrzebne, co zapobiega niepotrzebnemu preloadowaniu zasobów przez Next.js
+      const NotFound = (await import("@/app/not-found")).default;
       return <NotFound />;
     }
 

@@ -1,7 +1,7 @@
 import { CenteredContent } from "../components/CenteredContent/CenteredContent";
 import { FavouritesList } from "../components/FavouritesList/FavouritesList";
 import { PageTitle } from "../components/PageTitle/PageTitle";
-import css from "./page.module.css";
+import Error from "../components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
 export const dynamic = "force-dynamic";
@@ -48,21 +48,6 @@ export default async function Favourites() {
     );
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
-
-    return (
-      <>
-        <CenteredContent>
-          <div className={css.container}>
-            <img
-              src="/images/error.png"
-              alt="Błąd połączenia z bazą danych"
-              title="Błąd połączenia z bazą danych"
-            />
-            <h2>Błąd połączenia z bazą danych</h2>
-            <p>Spróbuj ponownie za kilka minut</p>
-          </div>
-        </CenteredContent>
-      </>
-    );
+    return <Error />;
   }
 }
