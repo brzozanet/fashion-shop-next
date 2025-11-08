@@ -6,6 +6,9 @@ import { FlexContainer } from "@/app/components/FlexContainer/FlexContainer";
 import { Photos } from "@/app/components/Photos/Photos";
 import css from "./page.module.css";
 
+// INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
+export const dynamic = "force-dynamic";
+
 export default async function ProductDetailsPage({ params }) {
   const BACKEND_URL = process.env.BACKEND_URL;
   const { id } = await params;

@@ -8,6 +8,9 @@ import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
 import Error from "@/app/components/Error/Error";
 
+// INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
+export const dynamic = "force-dynamic";
+
 export default async function CategoryPage({ params }) {
   const BACKEND_URL = process.env.BACKEND_URL;
   const gender = GENDERS_MAPPING.get((await params).gender);
