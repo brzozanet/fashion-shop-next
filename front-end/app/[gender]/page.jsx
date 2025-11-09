@@ -30,8 +30,6 @@ export default async function GenderPage({ params }) {
     const genderProducts = await genderResponse.json();
     const favouriteProducts = await favouriteResponse.json();
 
-    normalizeImageUrl(genderProducts.heroImageUrl, BACKEND_URL);
-
     const normalizedBestsellers = genderProducts.bestsellers.map((product) => ({
       ...product,
       photos: normalizePhotos(product.photos, BACKEND_URL),
@@ -39,7 +37,6 @@ export default async function GenderPage({ params }) {
 
     return (
       <>
-        {/* <Hero imageUrl={genderProducts.heroImageUrl} /> */}
         <Hero
           imageUrl={normalizeImageUrl(genderProducts.heroImageUrl, BACKEND_URL)}
         />
