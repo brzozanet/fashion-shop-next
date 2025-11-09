@@ -231,6 +231,7 @@ Jeśli chcesz użyć własnej domeny:
 - Upewnij się, że `npm run build` działa lokalnie
 - Sprawdź, czy wszystkie zależności są w `package.json`
 - **Jeśli błąd dotyczy `--turbopack`:** Usuń flagę `--turbopack` z build script w `package.json` (Turbopack jest tylko dla developmentu, nie dla produkcji)
+- **Jeśli błąd "Module not found":** Upewnij się, że wszystkie zależności używane w `front-end` są w `front-end/package.json`, a nie tylko w głównym `package.json` (Vercel buduje tylko folder `front-end`)
 
 ### Problem: "Cannot connect to backend"
 
