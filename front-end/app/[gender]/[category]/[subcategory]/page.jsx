@@ -53,7 +53,6 @@ export default async function SubcategoryPage({ params }) {
     const products = await subcategoryResponse.json();
     const favourites = await favouritesResponse.json();
 
-    // Normalizuj ścieżki obrazków w produktach
     const normalizedProducts = Array.isArray(products)
       ? products.map((product) => ({
           ...product,

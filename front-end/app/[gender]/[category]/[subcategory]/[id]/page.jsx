@@ -25,7 +25,6 @@ export default async function ProductDetailsPage({ params }) {
 
     const product = await productResponse.json();
 
-    // Normalizuj ścieżki obrazków
     const normalizedProduct = {
       ...product,
       photos: normalizePhotos(product.photos, BACKEND_URL),
