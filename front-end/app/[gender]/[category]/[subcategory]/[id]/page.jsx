@@ -4,6 +4,7 @@ import { Detail } from "@/app/components/Detail/Detail";
 import { ExpandableMenu } from "@/app/components/ExpandableMenu/ExpandableMenu";
 import { FlexContainer } from "@/app/components/FlexContainer/FlexContainer";
 import { Photos } from "@/app/components/Photos/Photos";
+import { normalizePhotos } from "@/app/utils/imageUtils";
 import css from "./page.module.css";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -24,6 +25,12 @@ export default async function ProductDetailsPage({ params }) {
 
     const product = await productResponse.json();
 
+    // Normalizuj ścieżki obrazków
+    const normalizedProduct = {
+      ...product,
+      photos: normalizePhotos(product.photos, BACKEND_URL),
+    };
+
     return (
       <>
         <CenteredContent>
@@ -31,15 +38,18 @@ export default async function ProductDetailsPage({ params }) {
             <ExpandableMenu />
             <div className={css.productDetailsWithBreadcrumbs}>
               <Breadcrumbs
-                id={product.id}
-                gender={product.gender}
-                category={product.category}
-                subcategory={product.subcategory}
-                name={product.name}
+                id={normalizedProduct.id}
+                gender={normalizedProduct.gender}
+                category={normalizedProduct.category}
+                subcategory={normalizedProduct.subcategory}
+                name={normalizedProduct.name}
               />
               <div className={css.productDetailContainer}>
-                <Photos photos={product.photos} name={product.name} />
-                <Detail product={product} />
+                <Photos
+                  photos={normalizedProduct.photos}
+                  name={normalizedProduct.name}
+                />
+                <Detail product={normalizedProduct} />
               </div>
             </div>
           </FlexContainer>

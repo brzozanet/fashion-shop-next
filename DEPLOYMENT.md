@@ -246,9 +246,10 @@ Jeśli chcesz użyć własnej domeny:
 
 **Rozwiązanie:**
 
-- Upewnij się, że obrazy są w folderze `public/`
-- Sprawdź ścieżki do obrazów (powinny zaczynać się od `/`)
-- Jeśli obrazy są w backendzie, upewnij się, że backend jest dostępny publicznie
+- Upewnij się, że obrazy są w folderze `back-end/public/product-photos/`
+- Sprawdź, czy backend jest dostępny publicznie (otwórz URL backendu w przeglądarce)
+- **Jeśli obrazy nie ładują się po deploymencie:** Problem może wynikać z tego, że w `db.json` są ścieżki z `http://localhost:3000`. Aplikacja automatycznie normalizuje te ścieżki używając `BACKEND_URL`, więc upewnij się, że zmienna `BACKEND_URL` jest poprawnie ustawiona w Vercel
+- Jeśli masz stare dane w localStorage (koszyk/ulubione), wyczyść je - mogą zawierać stare ścieżki z localhost
 
 ### Problem: "404 on dynamic routes"
 

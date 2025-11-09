@@ -6,6 +6,7 @@ import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
+import { normalizePhotos } from "@/app/utils/imageUtils";
 import Error from "@/app/components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -52,14 +53,25 @@ export default async function SubcategoryPage({ params }) {
     const products = await subcategoryResponse.json();
     const favourites = await favouritesResponse.json();
 
+    // Normalizuj ścieżki obrazków w produktach
+    const normalizedProducts = Array.isArray(products)
+      ? products.map((product) => ({
+          ...product,
+          photos: normalizePhotos(product.photos, BACKEND_URL),
+        }))
+      : products;
+
     return (
       <>
         <CenteredContent>
           <FlexContainer>
             <ExpandableMenu />
             <div>
-              <Breadcrumbs id={products.id} name={products.name} />
-              <Products products={products} favourites={favourites} />
+              <Breadcrumbs
+                id={normalizedProducts.id}
+                name={normalizedProducts.name}
+              />
+              <Products products={normalizedProducts} favourites={favourites} />
               <Pagination />
             </div>
           </FlexContainer>

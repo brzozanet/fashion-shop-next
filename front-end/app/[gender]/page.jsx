@@ -1,6 +1,7 @@
 import { Bestsellers } from "../components/Bestsellers/Bestsellers";
 import { Hero } from "../components/Hero/Hero";
 import { GENDERS_MAPPING } from "../constants/mappings";
+import { normalizePhotos } from "../utils/imageUtils";
 import Error from "../components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -29,11 +30,17 @@ export default async function GenderPage({ params }) {
     const genderProducts = await genderResponse.json();
     const favouriteProducts = await favouriteResponse.json();
 
+    // Normalizuj ścieżki obrazków w bestsellerach
+    const normalizedBestsellers = genderProducts.bestsellers.map((product) => ({
+      ...product,
+      photos: normalizePhotos(product.photos, BACKEND_URL),
+    }));
+
     return (
       <>
         <Hero imageUrl={genderProducts.heroImageUrl} />
         <Bestsellers
-          bestsellersData={genderProducts.bestsellers}
+          bestsellersData={normalizedBestsellers}
           favouritesData={favouriteProducts}
         />
       </>

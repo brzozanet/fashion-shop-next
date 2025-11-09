@@ -1,6 +1,7 @@
 import { CenteredContent } from "../components/CenteredContent/CenteredContent";
 import { FavouritesList } from "../components/FavouritesList/FavouritesList";
 import { PageTitle } from "../components/PageTitle/PageTitle";
+import { normalizePhotos } from "../utils/imageUtils";
 import Error from "../components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
@@ -22,9 +23,14 @@ export default async function Favourites() {
     const favourites = await favouritesResponse.json();
     const products = await productsResponse.json();
 
-    const userFavouritesProducts = products.filter((product) =>
-      favourites.some((favourite) => favourite.productId === product.id)
-    );
+    const userFavouritesProducts = products
+      .filter((product) =>
+        favourites.some((favourite) => favourite.productId === product.id)
+      )
+      .map((product) => ({
+        ...product,
+        photos: normalizePhotos(product.photos, BACKEND_URL),
+      }));
 
     const userFavouritesIds = favourites;
 
