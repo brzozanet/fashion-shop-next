@@ -70,8 +70,15 @@ Wypełnij następujące pola:
 **Build & Deploy:**
 
 - **Environment:** `Node`
-- **Build Command:** `npm install`
+- **Build Command:** `npm install` (lub możesz zostawić puste - Render automatycznie zainstaluje zależności)
 - **Start Command:** `npx json-server --watch db.json --host 0.0.0.0 --port $PORT`
+
+  **⚠️ Ważne:**
+
+  - `$PORT` to zmienna środowiskowa, którą Render automatycznie ustawia (domyślnie `10000`)
+  - **NIE zastępuj** `$PORT` konkretną wartością (np. `3000`) - Render przydziela porty dynamicznie
+  - Aplikacja musi nasłuchiwać na porcie wskazanym przez `$PORT`, inaczej nie będzie działać
+  - Dla json-server nie ma tradycyjnego "buildowania" - to narzędzie runtime, więc Build Command tylko instaluje zależności
 
 **Plan:**
 
