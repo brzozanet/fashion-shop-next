@@ -28,7 +28,7 @@ Oryginalna wersja React znajduje się w w repozytorium: [project-fashion-shop](h
 
 Aplikacja jest dostępna online pod adresem:
 
-**👉 [https://fashion-shop-next-brzozanets-projects.vercel.app](https://fashion-shop-next-brzozanets-projects.vercel.app)**
+**👉 [https://fashion-shop-next-liart.vercel.app/](https://fashion-shop-next-liart.vercel.app/)**
 
 **Platformy:**
 
