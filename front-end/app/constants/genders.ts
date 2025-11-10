@@ -1,4 +1,9 @@
-export const GENDERS = [
+type Gender = {
+  name: string;
+  path: string;
+};
+
+export const GENDERS: Gender[] = [
   {
     name: "Kobieta",
     path: "kobieta",

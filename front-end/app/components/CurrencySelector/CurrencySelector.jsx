@@ -1,7 +1,7 @@
 "use client";
 import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
-import { CURRENCIES } from "@/app/constants/curriencies";
+import { CURRENCIES } from "@/app/constants/currencies";
 import { nanoid } from "nanoid";
 import css from "./CurrencySelector.module.css";
 

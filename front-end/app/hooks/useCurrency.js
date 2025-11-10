@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { DEFAULT_CURRENCY } from "../constants/curriencies";
+import { DEFAULT_CURRENCY } from "../constants/currencies";
 
 export const useCurrency = () => {
   const [currency, setCurrency] = useState(DEFAULT_CURRENCY);

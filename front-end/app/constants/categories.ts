@@ -1,4 +1,15 @@
-export const CATEGORIES = [
+type Subcategory = {
+  name: string;
+  path: string;
+};
+
+type Category = {
+  name: string;
+  path: string;
+  subcategories: Subcategory[];
+};
+
+export const CATEGORIES: Category[] = [
   {
     name: "Odzież",
     path: "odziez",
