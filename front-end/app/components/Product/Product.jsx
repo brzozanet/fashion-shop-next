@@ -6,6 +6,7 @@ import { CurrencyContext } from "../../contexts/CurrencyContext";
 import { addToFavourites } from "@/app/actions/addToFavourites";
 import css from "./Product.module.css";
 import { Notify } from "notiflix";
+import Image from "next/image";
 
 export function Product({
   id,
@@ -36,8 +37,10 @@ export function Product({
     <div className={css.product}>
       <div className={css.productPhotoContainer}>
         <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>
-          <img
+          <Image
             src={photo}
+            width="255"
+            height="400"
             alt={name}
             title={name}
             className={css.productPhotoImg}

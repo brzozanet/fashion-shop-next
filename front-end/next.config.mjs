@@ -9,6 +9,21 @@ const nextConfig = {
       },
     ];
   },
+
+  images: {
+    unoptimized: process.env.NODE_ENV === "development", // Wyłącza optymalizację tylko w dev
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "3000",
+      },
+      {
+        protocol: "https",
+        hostname: "fashion-shop-next-backend.onrender.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
