@@ -1,13 +1,4 @@
-type Subcategory = {
-  name: string;
-  path: string;
-};
-
-type Category = {
-  name: string;
-  path: string;
-  subcategories: Subcategory[];
-};
+import { Category } from "../types/categories";
 
 export const CATEGORIES: Category[] = [
   {
