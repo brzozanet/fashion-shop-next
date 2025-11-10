@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import { DEFAULT_CURRENCY } from "../constants/currencies";
+import { CurrencyContextType } from "../types/currencyContext";
 
-export const useCurrency = () => {
-  const [currency, setCurrency] = useState(DEFAULT_CURRENCY);
+export const useCurrency = (): CurrencyContextType => {
+  const [currency, setCurrency] = useState<string>(DEFAULT_CURRENCY);
 
   // Inicjalizacja z localStorage, wykonywanie tylko w przeglądarce, podczas hydratacji
   useEffect(() => {
@@ -12,7 +13,7 @@ export const useCurrency = () => {
       if (savedUserCurrency) {
         setCurrency(savedUserCurrency);
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error("Błąd podczas pobierania wybranej waluty z pamięci", error);
     }
   }, []);
@@ -21,7 +22,7 @@ export const useCurrency = () => {
   useEffect(() => {
     try {
       localStorage.setItem("selectedCurrency", currency);
-    } catch (error) {
+    } catch (error: unknown) {
       console.error("Błąd podczas zapisu wybranej waluty do pamięci", error);
     }
   }, [currency]);
