@@ -10,11 +10,11 @@ export default function ClientProviders({ children }) {
 
   return (
     <>
-      <CurrencyContext value={[currency, setCurrency]}>
-        <CartContext value={[shoppingCart, setShoppingCart]}>
+      <CurrencyContext.Provider value={[currency, setCurrency]}>
+        <CartContext.Provider value={[shoppingCart, setShoppingCart]}>
           {children}
-        </CartContext>
-      </CurrencyContext>
+        </CartContext.Provider>
+      </CurrencyContext.Provider>
     </>
   );
 }

@@ -4,9 +4,9 @@ import { useParams } from "next/navigation";
 import { useContext, useState } from "react";
 import { CurrencyContext } from "../../contexts/CurrencyContext";
 import { addToFavourites } from "@/app/actions/addToFavourites";
-import css from "./Product.module.css";
 import { Notify } from "notiflix";
 import Image from "next/image";
+import css from "./Product.module.css";
 
 export function Product({
   id,
