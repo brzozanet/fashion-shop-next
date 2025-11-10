@@ -1,8 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Product } from "../types/product";
+import { CartContextType } from "../types/cartContext";
 
-export const useCart = () => {
-  const [shoppingCart, setShoppingCart] = useState([]);
+export const useCart = (): CartContextType => {
+  const [shoppingCart, setShoppingCart] = useState<Product[]>([]);
 
   // Inicjalizacja z localStorage, wykonywanie tylko w przeglądarce, podczas hydratacji
   useEffect(() => {
@@ -12,7 +14,7 @@ export const useCart = () => {
         // setShoppingCart(savedShoppingCart);
         setShoppingCart(JSON.parse(savedShoppingCart));
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error("Błąd podczas pobierania koszyka", error);
     }
   }, []);
@@ -21,7 +23,7 @@ export const useCart = () => {
   useEffect(() => {
     try {
       localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-    } catch (error) {
+    } catch (error: unknown) {
       console.error("Błąd podczas zapisywania koszyka", error);
     }
   }, [shoppingCart]);
