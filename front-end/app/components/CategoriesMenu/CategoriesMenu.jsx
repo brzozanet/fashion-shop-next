@@ -7,7 +7,6 @@ import css from "./CategoriesMenu.module.css";
 
 export function CategoriesMenu() {
   const params = useParams();
-  console.log(params.gender);
 
   // Krótsza wersja używająca operatora || (logiczne OR zwraca pierwszą wartość truthy lub ostatnią falsy)
   const gender = params.gender || "kobieta";
