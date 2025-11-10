@@ -1,4 +1,4 @@
-import { Gender } from "../types/genders";
+import { Gender } from "../types/gender";
 
 export const GENDERS: Gender[] = [
   {
