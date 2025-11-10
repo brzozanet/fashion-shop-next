@@ -5,8 +5,8 @@ import { FullWidthButton } from "../FullWidthButton/FullWidthButton";
 import { Accordion } from "../Accordion/Accordion";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
-import css from "./Detail.module.css";
 import { Notify } from "notiflix";
+import css from "./Detail.module.css";
 
 export function Detail({ product }) {
   const params = useParams();

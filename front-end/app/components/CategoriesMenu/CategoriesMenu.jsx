@@ -7,6 +7,18 @@ import css from "./CategoriesMenu.module.css";
 
 export function CategoriesMenu() {
   const params = useParams();
+  console.log(params.gender);
+
+  // Krótsza wersja używająca operatora || (logiczne OR zwraca pierwszą wartość truthy lub ostatnią falsy)
+  const gender = params.gender || "kobieta";
+
+  // Dłuższa wersja - równoważna powyższej:
+  // let gender;
+  // if (params.gender) {
+  //   gender = params.gender;
+  // } else {
+  //   gender = "kobieta";
+  // }
 
   return (
     <>
@@ -20,7 +32,7 @@ export function CategoriesMenu() {
                 }`}
                 key={nanoid()}
               >
-                <Link href={`/${params.gender}/${category.path}`}>
+                <Link href={`/${gender}/${category.path}`}>
                   {category.name}
                 </Link>
               </li>

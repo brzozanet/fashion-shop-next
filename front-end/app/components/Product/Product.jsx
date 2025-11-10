@@ -39,8 +39,8 @@ export function Product({
         <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>
           <Image
             src={photo}
-            width="255"
-            height="400"
+            width={255}
+            height={400}
             alt={name}
             title={name}
             className={css.productPhotoImg}

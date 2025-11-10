@@ -1,6 +1,7 @@
 "use client";
 import { nanoid } from "nanoid";
 import { useState } from "react";
+import Image from "next/image";
 import css from "./Photos.module.css";
 
 export function Photos({ photos, name }) {
@@ -17,8 +18,10 @@ export function Photos({ photos, name }) {
                   onClick={() => setSelectedPhotoIndex(index)}
                   className={css.photoThumbnailLink}
                 >
-                  <img
+                  <Image
                     src={photo}
+                    width={81}
+                    height={120}
                     alt={name}
                     title={name}
                     className={
@@ -33,9 +36,11 @@ export function Photos({ photos, name }) {
           })}
         </div>
         <div className={css.photoBigContainer}>
-          <img
+          <Image
             src={photos[selectedPhotoIndex]}
             className={css.photoBigImg}
+            width={500}
+            height={700}
             alt={name}
           />
         </div>

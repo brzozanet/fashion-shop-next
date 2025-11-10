@@ -2,8 +2,9 @@
 import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
-import css from "./CartProduct.module.css";
 import { Notify } from "notiflix";
+import Image from "next/image";
+import css from "./CartProduct.module.css";
 
 export function CartProduct({ id, brand, name, image, description, price }) {
   const [currency] = useContext(CurrencyContext);
@@ -33,8 +34,10 @@ export function CartProduct({ id, brand, name, image, description, price }) {
       <div className={css.cartProduct}>
         <div className={css.cartProductBox}>
           <div className={css.cartProductPhoto}>
-            <img
+            <Image
               src={image}
+              width={85}
+              height={140}
               alt={name}
               title={name}
               className={css.cartProductPhotoImg}
