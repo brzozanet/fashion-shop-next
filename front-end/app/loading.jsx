@@ -1,3 +1,4 @@
+"use client";
 import { ThreeCircles } from "react-loader-spinner";
 
 // INFO: Używamy inline styles zamiast CSS Modules, aby zapobiec preloadowaniu CSS przez Next.js
