@@ -1,6 +1,13 @@
 "use server";
-export async function addToFavourites(favouriteId) {
+export async function addToFavourites(favouriteId: number) {
   const BACKEND_URL = process.env.BACKEND_URL;
+
+  if (!BACKEND_URL) {
+    return {
+      success: false,
+      message: "Brak połączenia z backendem. Sprawdź plik .env",
+    };
+  }
 
   try {
     const request = await fetch(`${BACKEND_URL}/favourites`, {
@@ -19,9 +26,15 @@ export async function addToFavourites(favouriteId) {
 
     return { success: true };
   } catch (error) {
+    if (error instanceof Error) {
+      return {
+        success: false,
+        message: error.message,
+      };
+    }
     return {
       success: false,
-      message: error.message,
+      message: "Nieznany błąd",
     };
   }
 }
