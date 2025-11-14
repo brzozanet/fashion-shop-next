@@ -13,7 +13,7 @@ export const useCurrency = (): CurrencyContextType => {
       if (savedUserCurrency) {
         setCurrency(savedUserCurrency);
       }
-    } catch (error: unknown) {
+    } catch (error) {
       console.error("Błąd podczas pobierania wybranej waluty z pamięci", error);
     }
   }, []);
@@ -22,7 +22,7 @@ export const useCurrency = (): CurrencyContextType => {
   useEffect(() => {
     try {
       localStorage.setItem("selectedCurrency", currency);
-    } catch (error: unknown) {
+    } catch (error) {
       console.error("Błąd podczas zapisu wybranej waluty do pamięci", error);
     }
   }, [currency]);

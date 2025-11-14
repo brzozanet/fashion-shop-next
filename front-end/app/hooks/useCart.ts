@@ -14,7 +14,7 @@ export const useCart = (): CartContextType => {
         // setShoppingCart(savedShoppingCart);
         setShoppingCart(JSON.parse(savedShoppingCart));
       }
-    } catch (error: unknown) {
+    } catch (error) {
       console.error("Błąd podczas pobierania koszyka", error);
     }
   }, []);
@@ -23,7 +23,7 @@ export const useCart = (): CartContextType => {
   useEffect(() => {
     try {
       localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-    } catch (error: unknown) {
+    } catch (error) {
       console.error("Błąd podczas zapisywania koszyka", error);
     }
   }, [shoppingCart]);
