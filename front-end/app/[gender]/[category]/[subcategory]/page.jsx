@@ -6,7 +6,7 @@ import { Pagination } from "@/app/components/Pagination/Pagination";
 import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
-import { normalizePhotos } from "@/app/utils/imageUtils";
+import { normalizePhotos } from "@/app/utils/imageNormalize";
 import Error from "@/app/components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)

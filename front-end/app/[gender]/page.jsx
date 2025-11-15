@@ -1,7 +1,7 @@
 import { Bestsellers } from "../components/Bestsellers/Bestsellers";
 import { Hero } from "../components/Hero/Hero";
 import { GENDERS_MAPPING } from "../constants/mappings";
-import { normalizeImageUrl, normalizePhotos } from "../utils/imageUtils";
+import { normalizeImageUrl, normalizePhotos } from "../utils/imageNormalize";
 import Error from "../components/Error/Error";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)

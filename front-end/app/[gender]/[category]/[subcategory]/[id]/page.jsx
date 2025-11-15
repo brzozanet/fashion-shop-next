@@ -4,7 +4,7 @@ import { Detail } from "@/app/components/Detail/Detail";
 import { ExpandableMenu } from "@/app/components/ExpandableMenu/ExpandableMenu";
 import { FlexContainer } from "@/app/components/FlexContainer/FlexContainer";
 import { Photos } from "@/app/components/Photos/Photos";
-import { normalizePhotos } from "@/app/utils/imageUtils";
+import { normalizePhotos } from "@/app/utils/imageNormalize";
 import css from "./page.module.css";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)

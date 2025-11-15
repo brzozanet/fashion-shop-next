@@ -3,38 +3,46 @@ import { GENDERS_TEXT_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
 import { useParams } from "next/navigation";
 import { nanoid } from "nanoid";
+import { getStringParam } from "@/app/utils/getStringParam";
 import Link from "next/link";
 import css from "./Breadcrumbs.module.css";
 
-export function Breadcrumbs({ name }) {
+type BreadcrumbsProps = {
+  name: string;
+};
+
+export function Breadcrumbs({ name }: BreadcrumbsProps) {
   const params = useParams();
 
-  const genderText = GENDERS_TEXT_MAPPING.get(params.gender);
+  const gender = getStringParam(params.gender);
+  const category = getStringParam(params.category);
+  const subcategory = getStringParam(params.subcategory);
+  const id = getStringParam(params.id);
 
-  const foundCategory = CATEGORIES.find(
-    (category) => category.path === params.category
-  );
+  const genderText = GENDERS_TEXT_MAPPING.get(gender);
+
+  const foundCategory = CATEGORIES.find((cat) => cat.path === category);
 
   const breadcrumbs = [
-    { name: `${genderText}`, path: `/${params.gender}` },
+    { name: `${genderText}`, path: `/${gender}` },
     {
       name: `${foundCategory?.name}`,
-      path: `/${params.gender}/${params.category}`,
+      path: `/${gender}/${category}`,
     },
   ];
 
-  if (params.subcategory) {
+  if (subcategory) {
     const foundSubcategory = foundCategory?.subcategories.find(
-      (subcategory) => subcategory.path === params.subcategory
+      (subcat) => subcat.path === subcategory
     );
 
     breadcrumbs.push({
       name: `${foundSubcategory?.name}`,
-      path: `/${params.gender}/${params.category}/${params.subcategory}`,
+      path: `/${gender}/${category}/${subcategory}`,
     });
   }
 
-  if (params.id) {
+  if (id) {
     breadcrumbs.push({
       name: name,
       path: "",
