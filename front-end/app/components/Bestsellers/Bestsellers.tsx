@@ -7,6 +7,7 @@ import { Product } from "../Product/Product";
 import { Product as ProductType } from "@/app/types/product";
 import { Favourites } from "@/app/types/favourites";
 import { CurrencyContextType } from "@/app/types/currencyContext";
+import { getProductPrice } from "@/app/utils/getProductPrice";
 import css from "./Bestsellers.module.css";
 
 type BestsellersProps = {
@@ -19,17 +20,6 @@ export function Bestsellers({
   favouritesData,
 }: BestsellersProps) {
   const [currency] = useContext(CurrencyContext) as CurrencyContextType;
-
-  const getProductPrice = (product: ProductType, currency: string) => {
-    switch (currency) {
-      case "PLN":
-        return product.pricePLN;
-      case "EUR":
-        return product.priceEUR;
-      default:
-        return product.pricePLN;
-    }
-  };
 
   return (
     <>
@@ -46,11 +36,11 @@ export function Bestsellers({
                 <Product
                   id={product.id}
                   name={product.name}
-                  price={getProductPrice(product, currency)}
+                  price={getProductPrice(currency, product)}
                   photo={product.photos[0]}
                   category={product.category}
                   subcategory={product.subcategory}
-                  // NOTE: optional chaining
+                  // optional chaining
                   isProductInFavourites={favouriteRecord?.productId}
                   key={product.id}
                 />

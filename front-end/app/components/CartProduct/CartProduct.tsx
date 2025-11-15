@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
 import { Notify } from "notiflix";
-import Image from "next/image";
-import css from "./CartProduct.module.css";
 import { CurrencyContextType } from "@/app/types/currencyContext";
 import { CartContextType } from "@/app/types/cartContext";
+import Image from "next/image";
+import css from "./CartProduct.module.css";
 
 type CartProductProps = {
   id: number;
