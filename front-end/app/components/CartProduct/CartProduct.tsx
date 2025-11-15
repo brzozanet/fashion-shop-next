@@ -5,12 +5,32 @@ import { CartContext } from "@/app/contexts/CartContext";
 import { Notify } from "notiflix";
 import Image from "next/image";
 import css from "./CartProduct.module.css";
+import { CurrencyContextType } from "@/app/types/currencyContext";
+import { CartContextType } from "@/app/types/cartContext";
 
-export function CartProduct({ id, brand, name, image, description, price }) {
-  const [currency] = useContext(CurrencyContext);
-  const [shoppingCart, setShoppingCart] = useContext(CartContext);
+type CartProductProps = {
+  id: number;
+  brand: string;
+  name: string;
+  image: string;
+  description: string;
+  price: number;
+};
 
-  const truncateTextSmart = (text, maxLength) => {
+export function CartProduct({
+  id,
+  brand,
+  name,
+  image,
+  description,
+  price,
+}: CartProductProps) {
+  const [currency] = useContext(CurrencyContext) as CurrencyContextType;
+  const [shoppingCart, setShoppingCart] = useContext(
+    CartContext
+  ) as CartContextType;
+
+  const truncateTextSmart = (text: string, maxLength: number) => {
     if (text.length <= maxLength) return text;
 
     const truncated = text.slice(0, maxLength);
@@ -21,7 +41,7 @@ export function CartProduct({ id, brand, name, image, description, price }) {
       : truncated.slice(0, lastSpace) + "...";
   };
 
-  const handleDeleteFromCartButton = (id) => {
+  const handleDeleteFromCartButton = (id: number) => {
     const filteredShoppingCart = shoppingCart.filter(
       (product) => product.id !== id
     );
