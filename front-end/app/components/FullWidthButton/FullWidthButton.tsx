@@ -1,6 +1,17 @@
 import css from "./FullWidthButton.module.css";
 
-export function FullWidthButton({ children, onClick, disabled, ...props }) {
+type FullWidthButtonProps = {
+  children: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  disabled?: boolean;
+};
+
+export function FullWidthButton({
+  children,
+  onClick,
+  disabled,
+  ...props
+}: FullWidthButtonProps) {
   return (
     <>
       <button
