@@ -3,12 +3,17 @@ import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CURRENCIES } from "@/app/constants/currencies";
 import { nanoid } from "nanoid";
+import { CurrencyContextType } from "@/app/types/currencyContext";
 import css from "./CurrencySelector.module.css";
 
 export function CurrencySelector() {
-  const [currency, setCurrency] = useContext(CurrencyContext);
+  const [currency, setCurrency] = useContext(
+    CurrencyContext
+  ) as CurrencyContextType;
 
-  const handleCurrencyChange = (event) => {
+  const handleCurrencyChange = (
+    event: React.ChangeEvent<HTMLSelectElement>
+  ) => {
     setCurrency(event.target.value);
   };
 
