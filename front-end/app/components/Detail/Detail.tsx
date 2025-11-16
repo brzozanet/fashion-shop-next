@@ -6,12 +6,22 @@ import { Accordion } from "../Accordion/Accordion";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
 import { Notify } from "notiflix";
+import { Product } from "@/app/types/product";
+import { CurrencyContextType } from "@/app/types/currencyContext";
+import { CartContextType } from "@/app/types/cartContext";
+import { getProductPrice } from "@/app/utils/getProductPrice";
 import css from "./Detail.module.css";
 
-export function Detail({ product }) {
+type DetailProps = {
+  product: Product;
+};
+
+export function Detail({ product }: DetailProps) {
   const params = useParams();
-  const [currency] = useContext(CurrencyContext);
-  const [shoppingCart, setShoppingCart] = useContext(CartContext);
+  const [currency] = useContext(CurrencyContext) as CurrencyContextType;
+  const [shoppingCart, setShoppingCart] = useContext(
+    CartContext
+  ) as CartContextType;
 
   const productAlreadyAddedToCart = shoppingCart.find(
     (product) => product.id === Number(params.id)
@@ -28,7 +38,7 @@ export function Detail({ product }) {
         <h3 className={css.detailBrand}>{product.brand}</h3>
         <p className={css.detailName}>{product.name}</p>
         <p className={css.detailPrice}>
-          {product[`price${currency}`]} {currency}
+          {getProductPrice(currency, product)} {currency}
         </p>
         <div className={css.detailBtnWrapper}>
           {!productAlreadyAddedToCart ? (
