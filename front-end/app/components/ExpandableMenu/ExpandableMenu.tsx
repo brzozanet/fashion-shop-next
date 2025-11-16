@@ -3,13 +3,19 @@ import { GENDERS_TEXT_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
 import { useParams } from "next/navigation";
 import { nanoid } from "nanoid";
+import { getStringParam } from "@/app/utils/getStringParam";
 import Link from "next/link";
 import css from "./ExpandableMenu.module.css";
 
 export function ExpandableMenu() {
   const params = useParams();
-  const activeGenderText = GENDERS_TEXT_MAPPING.get(params.gender);
-  const activeCategory = params.category;
+
+  const gender = getStringParam(params.gender);
+  const category = getStringParam(params.category);
+  const subcategory = getStringParam(params.subcategory);
+
+  const activeGenderText = GENDERS_TEXT_MAPPING.get(gender);
+  const activeCategory = category;
 
   return (
     <>
@@ -21,7 +27,7 @@ export function ExpandableMenu() {
               return (
                 <li key={nanoid()} className={css.categoriesItem}>
                   <Link
-                    href={`/${params.gender}/${category.path}`}
+                    href={`/${gender}/${category.path}`}
                     className={css.categoriesLink}
                   >
                     {category.name}
@@ -37,20 +43,20 @@ export function ExpandableMenu() {
                   </Link>
                   {activeCategory === category.path ? (
                     <ul>
-                      {category.subcategories.map((subcategory) => {
+                      {category.subcategories.map((subcat) => {
                         return (
                           <li
                             key={nanoid()}
                             className={`${css.subCategoriesItem} ${
-                              params.subcategory === subcategory.path &&
+                              subcategory === subcat.path &&
                               css.subCategoriesItemActive
                             }`}
                           >
                             <Link
-                              href={`/${params.gender}/${category.path}/${subcategory.path}`}
+                              href={`/${gender}/${category.path}/${subcat.path}`}
                               className={css.subCategoriesLink}
                             >
-                              {subcategory.name}
+                              {subcat.name}
                             </Link>
                           </li>
                         );
