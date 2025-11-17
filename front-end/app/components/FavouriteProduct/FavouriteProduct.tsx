@@ -11,10 +11,8 @@ import css from "./FavouriteProduct.module.css";
 
 type FavouriteProductProps = {
   product: Product;
-  favouriteId: number;
-  deleteFromFavourites: (
-    favouriteId: number
-  ) => Promise<{ success: boolean; message: string }>;
+  favouriteId: number | undefined;
+  deleteFromFavourites: (favouriteId: number | undefined) => Promise<void>;
 };
 
 export function FavouriteProduct({
@@ -84,7 +82,7 @@ export function FavouriteProduct({
               </button>
               <button
                 className={css.favouriteButtonAction}
-                onClick={() => handleAddToCartButton}
+                onClick={handleAddToCartButton}
               >
                 <img
                   src="/icons/cart.svg"

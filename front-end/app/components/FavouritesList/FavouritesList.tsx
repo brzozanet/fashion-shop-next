@@ -2,22 +2,39 @@
 import { useState } from "react";
 import { FavouriteProduct } from "../FavouriteProduct/FavouriteProduct";
 import { deleteFromFavourites } from "@/app/actions/deleteFromFavourites";
-import css from "./FavouritesList.module.css";
 import { Notify } from "notiflix";
+import { Product } from "@/app/types/product";
+import { Favourites } from "@/app/types/favourites";
+import css from "./FavouritesList.module.css";
+
+type FavouritesListProps = {
+  data: [Product[], Favourites[]];
+};
 
 export function FavouritesList({
   data: [userFavouritesProducts, userFavouritesIds],
-}) {
+}: FavouritesListProps) {
   const [favouritesProducts, setFavouritesProducts] = useState(
     userFavouritesProducts
   );
 
-  const handleDeleteFormFavouritesButton = async (favouriteId, productId) => {
+  const handleDeleteFormFavouritesButton = async (
+    favouriteId: number | undefined
+  ) => {
+    if (!favouriteId) {
+      return;
+    }
+
+    const favouriteRecord = userFavouritesIds.find(
+      (favourite) => favourite.id === favouriteId
+    );
+    const productId = favouriteRecord?.productId;
+
     const result = await deleteFromFavourites(favouriteId);
 
     if (result.success) {
       setFavouritesProducts((prevState) =>
-        prevState.filter((product) => product.id !== productId)
+        prevState.filter((product: Product) => product.id !== productId)
       );
       Notify.success("Produkt został usunięty z ulubionych");
     } else {
