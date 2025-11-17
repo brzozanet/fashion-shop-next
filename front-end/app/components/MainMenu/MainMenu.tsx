@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { GENDERS } from "@/app/constants/genders";
 import { nanoid } from "nanoid";
-import css from "./MainMenu.module.css";
 import { useParams } from "next/navigation";
+import css from "./MainMenu.module.css";
 
 export function MainMenu() {
   const params = useParams();
