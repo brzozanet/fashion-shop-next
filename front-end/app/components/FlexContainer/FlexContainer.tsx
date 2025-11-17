@@ -1,6 +1,10 @@
 import css from "./FlexContainer.module.css";
 
-export function FlexContainer({ children }) {
+type FlexContainerProps = {
+  children: React.ReactNode;
+};
+
+export function FlexContainer({ children }: FlexContainerProps) {
   return (
     <>
       <div className={css.flexContainer}>{children}</div>
