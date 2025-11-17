@@ -4,7 +4,12 @@ import { useState } from "react";
 import Image from "next/image";
 import css from "./Photos.module.css";
 
-export function Photos({ photos, name }) {
+type PhotosProps = {
+  photos: string[];
+  name: string;
+};
+
+export function Photos({ photos, name }: PhotosProps) {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);
 
   return (
