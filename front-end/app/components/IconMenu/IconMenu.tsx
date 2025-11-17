@@ -2,10 +2,11 @@
 import Link from "next/link";
 import { useContext } from "react";
 import { CartContext } from "@/app/contexts/CartContext";
+import { CartContextType } from "@/app/types/cartContext";
 import css from "./IconMenu.module.css";
 
 export function IconMenu() {
-  const [shoppingCart] = useContext(CartContext);
+  const [shoppingCart] = useContext(CartContext) as CartContextType;
 
   return (
     <>
