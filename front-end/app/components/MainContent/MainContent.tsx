@@ -1,6 +1,10 @@
 import css from "./MainContent.module.css";
 
-export function MainContent({ children }) {
+type MainContentProps = {
+  children: React.ReactNode;
+};
+
+export function MainContent({ children }: MainContentProps) {
   return (
     <>
       <div className={css.mainContent}>{children}</div>
