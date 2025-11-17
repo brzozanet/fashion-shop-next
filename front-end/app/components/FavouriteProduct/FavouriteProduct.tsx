@@ -2,18 +2,32 @@
 import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { CartContext } from "@/app/contexts/CartContext";
-import css from "./FavouriteProduct.module.css";
 import { Notify } from "notiflix";
+import { Product } from "@/app/types/product";
+import { CurrencyContextType } from "@/app/types/currencyContext";
+import { CartContextType } from "@/app/types/cartContext";
+import { getProductPrice } from "@/app/utils/getProductPrice";
+import css from "./FavouriteProduct.module.css";
+
+type FavouriteProductProps = {
+  product: Product;
+  favouriteId: number;
+  deleteFromFavourites: (
+    favouriteId: number
+  ) => Promise<{ success: boolean; message: string }>;
+};
 
 export function FavouriteProduct({
   product,
   favouriteId,
   deleteFromFavourites,
-}) {
-  const [currency] = useContext(CurrencyContext);
-  const [shoppingCart, setShoppingCart] = useContext(CartContext);
+}: FavouriteProductProps) {
+  const [currency] = useContext(CurrencyContext) as CurrencyContextType;
+  const [shoppingCart, setShoppingCart] = useContext(
+    CartContext
+  ) as CartContextType;
 
-  const truncateTextSmart = (text, maxLength) => {
+  const truncateTextSmart = (text: string, maxLength: number) => {
     if (text.length <= maxLength) return text;
 
     const truncated = text.slice(0, maxLength);
@@ -56,7 +70,7 @@ export function FavouriteProduct({
             </div>
             <div className={css.favouritesButtons}>
               <button
-                onClick={() => deleteFromFavourites(favouriteId, product.id)}
+                onClick={() => deleteFromFavourites(favouriteId)}
                 className={css.favouriteButtonAction}
               >
                 <img
@@ -70,7 +84,7 @@ export function FavouriteProduct({
               </button>
               <button
                 className={css.favouriteButtonAction}
-                onClick={() => handleAddToCartButton(product.id)}
+                onClick={() => handleAddToCartButton}
               >
                 <img
                   src="/icons/cart.svg"
@@ -94,7 +108,7 @@ export function FavouriteProduct({
         </div>
         <div className={css.favouriteBox}>
           <p className={css.favouritePrice}>
-            {product[`price${currency}`]} {currency}
+            {getProductPrice(currency, product)} {currency}
           </p>
         </div>
       </div>
