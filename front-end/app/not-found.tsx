@@ -2,7 +2,7 @@ import Link from "next/link";
 
 // INFO: Używamy inline styles zamiast CSS Modules, aby zapobiec preloadowaniu CSS przez Next.js
 
-const containerStyle = {
+const containerStyle: React.CSSProperties = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -10,11 +10,11 @@ const containerStyle = {
   margin: "4rem auto",
 };
 
-const titleStyle = {
+const titleStyle: React.CSSProperties = {
   marginBottom: "1rem",
 };
 
-const linkStyle = {
+const linkStyle: React.CSSProperties = {
   cursor: "pointer",
   backgroundColor: "var(--color-theme-main)",
   color: "var(--color-white)",
