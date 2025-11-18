@@ -3,18 +3,18 @@ import { ThreeCircles } from "react-loader-spinner";
 
 // INFO: Używamy inline styles zamiast CSS Modules, aby zapobiec preloadowaniu CSS przez Next.js
 
-const containerStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  flexDirection: "column",
-  margin: "3rem auto",
-};
-
 export default function Loading() {
   return (
     <>
-      <div style={containerStyle}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          margin: "3rem auto",
+        }}
+      >
         <ThreeCircles
           visible={true}
           height="250"
@@ -30,7 +30,7 @@ export default function Loading() {
   );
 }
 
-// INFO: Next.js native loader
+// Next.js native loader
 // export default function Loading() {
 //   return (
 //     <div
