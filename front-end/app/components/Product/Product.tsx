@@ -37,8 +37,6 @@ export function Product({
     isProductInFavourites
   );
 
-  console.log(productInFavourites);
-
   const handleAddToFavouritesButton = async () => {
     const result = await addToFavourites(id);
     if (result.success) {
