@@ -7,13 +7,26 @@ import { Products } from "@/app/components/Products/Products";
 import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
 import { normalizePhotos } from "@/app/utils/imageNormalize";
-import Error from "@/app/components/Error/Error";
+import ErrorComponent from "@/app/components/Error/Error";
+import { Product } from "@/app/types/product";
+import { Favourites } from "@/app/types/favourites";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
 export const dynamic = "force-dynamic";
 
-export default async function SubcategoryPage({ params }) {
+type SubcategoryPageProps = {
+  params: Promise<{ gender: string; category: string; subcategory: string }>;
+};
+
+export default async function SubcategoryPage({
+  params,
+}: SubcategoryPageProps) {
   const BACKEND_URL = process.env.BACKEND_URL;
+
+  if (!BACKEND_URL) {
+    return <ErrorComponent />;
+  }
+
   const gender = GENDERS_MAPPING.get((await params).gender);
   const { category, subcategory } = await params;
 
@@ -50,8 +63,8 @@ export default async function SubcategoryPage({ params }) {
       );
     }
 
-    const products = await subcategoryResponse.json();
-    const favourites = await favouritesResponse.json();
+    const products: Product = await subcategoryResponse.json();
+    const favourites: Favourites = await favouritesResponse.json();
 
     const normalizedProducts = Array.isArray(products)
       ? products.map((product) => ({
@@ -66,10 +79,7 @@ export default async function SubcategoryPage({ params }) {
           <FlexContainer>
             <ExpandableMenu />
             <div>
-              <Breadcrumbs
-                id={normalizedProducts.id}
-                name={normalizedProducts.name}
-              />
+              <Breadcrumbs name={checkValidSubcategory.name} />
               <Products products={normalizedProducts} favourites={favourites} />
               <Pagination />
             </div>
@@ -79,6 +89,6 @@ export default async function SubcategoryPage({ params }) {
     );
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
-    return <Error />;
+    return <ErrorComponent />;
   }
 }

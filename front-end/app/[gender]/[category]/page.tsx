@@ -8,6 +8,8 @@ import { GENDERS_MAPPING } from "@/app/constants/mappings";
 import { CATEGORIES } from "@/app/constants/categories";
 import { normalizePhotos } from "@/app/utils/imageNormalize";
 import ErrorComponent from "@/app/components/Error/Error";
+import { Product } from "@/app/types/product";
+import { Favourites } from "@/app/types/favourites";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
 export const dynamic = "force-dynamic";
@@ -48,8 +50,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       );
     }
 
-    const products = await productsResponse.json();
-    const favourites = await favouritesResponse.json();
+    const products: Product = await productsResponse.json();
+    const favourites: Favourites = await favouritesResponse.json();
 
     const normalizedProducts = Array.isArray(products)
       ? products.map((product) => ({
@@ -64,7 +66,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           <FlexContainer>
             <ExpandableMenu />
             <div>
-              <Breadcrumbs name={normalizedProducts.name} />
+              <Breadcrumbs name={checkValidCategory.name} />
               <Products products={normalizedProducts} favourites={favourites} />
               <Pagination />
             </div>

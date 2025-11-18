@@ -4,6 +4,7 @@ import { GENDERS_MAPPING } from "../constants/mappings";
 import { normalizeImageUrl, normalizePhotos } from "../utils/imageNormalize";
 import ErrorComponent from "../components/Error/Error";
 import { Product } from "../types/product";
+import { Favourites } from "../types/favourites";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
 export const dynamic = "force-dynamic";
@@ -11,6 +12,13 @@ export const dynamic = "force-dynamic";
 type GenderPageProps = {
   params: Promise<{ gender: string }>;
 };
+
+type GenderProductResponse = {
+  bestsellers: Product[];
+  heroImageUrl: string;
+};
+
+type FavouriteProductResponse = Favourites[];
 
 export default async function GenderPage({ params }: GenderPageProps) {
   const BACKEND_URL = process.env.BACKEND_URL;
@@ -37,8 +45,9 @@ export default async function GenderPage({ params }: GenderPageProps) {
       );
     }
 
-    const genderProducts = await genderResponse.json();
-    const favouriteProducts = await favouriteResponse.json();
+    const genderProducts: GenderProductResponse = await genderResponse.json();
+    const favouriteProducts: FavouriteProductResponse =
+      await favouriteResponse.json();
 
     const normalizedBestsellers = genderProducts.bestsellers.map(
       (product: Product) => ({
