@@ -10,6 +10,13 @@ export const dynamic = "force-dynamic";
 export default async function Favourites() {
   const BACKEND_URL = process.env.BACKEND_URL;
 
+  if (!BACKEND_URL) {
+    return {
+      success: false,
+      message: "Brak połączenia z backendem. Sprawdź plik .env",
+    };
+  }
+
   try {
     const favouritesResponse = await fetch(`${BACKEND_URL}/favourites`);
     const productsResponse = await fetch(`${BACKEND_URL}/products`);
