@@ -1,8 +1,10 @@
 import { CenteredContent } from "../components/CenteredContent/CenteredContent";
 import { FavouritesList } from "../components/FavouritesList/FavouritesList";
 import { PageTitle } from "../components/PageTitle/PageTitle";
-import { normalizePhotos } from "../utils/imageUtils";
-import Error from "../components/Error/Error";
+import { normalizePhotos } from "../utils/imageNormalize";
+import ErrorComponent from "../components/Error/Error";
+import { Product } from "../types/product";
+import { Favourites as FavouritesType } from "../types/favourites";
 
 // INFO: Wymusza renderowanie dynamiczne - Next.js nie będzie próbował pre-renderować tej strony podczas buildowania (co wymagałoby dostępu do backendu)
 export const dynamic = "force-dynamic";
@@ -11,10 +13,7 @@ export default async function Favourites() {
   const BACKEND_URL = process.env.BACKEND_URL;
 
   if (!BACKEND_URL) {
-    return {
-      success: false,
-      message: "Brak połączenia z backendem. Sprawdź plik .env",
-    };
+    return <ErrorComponent />;
   }
 
   try {
@@ -31,10 +30,12 @@ export default async function Favourites() {
     const products = await productsResponse.json();
 
     const userFavouritesProducts = products
-      .filter((product) =>
-        favourites.some((favourite) => favourite.productId === product.id)
+      .filter((product: Product) =>
+        favourites.some(
+          (favourite: FavouritesType) => favourite.productId === product.id
+        )
       )
-      .map((product) => ({
+      .map((product: Product) => ({
         ...product,
         photos: normalizePhotos(product.photos, BACKEND_URL),
       }));
@@ -61,6 +62,6 @@ export default async function Favourites() {
     );
   } catch (error) {
     console.error("Błąd połączenia z bazą danych: ", error);
-    return <Error />;
+    return <ErrorComponent />;
   }
 }
