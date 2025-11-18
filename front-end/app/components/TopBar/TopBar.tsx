@@ -1,6 +1,10 @@
 import css from "./TopBar.module.css";
 
-export function TopBar({ children }) {
+type TopBarProps = {
+  children: React.ReactNode;
+};
+
+export function TopBar({ children }: TopBarProps) {
   return (
     <>
       <div className={css.topBar}>{children}</div>
