@@ -4,7 +4,7 @@
 
 Aplikacja Fashion contemporary shop to nowoczesny sklep internetowy umożliwiający przeglądanie produktów, dodawanie ich do ulubionych oraz zarządzanie koszykiem zakupowym.
 
-**✨ Projekt został przepisany z czystego React na Next.js** - migracja obejmuje pełną adaptację komponentów, routingu, zarządzania stanem oraz integrację z Server Components i Server Actions.
+**✨ Projekt został przepisany z czystego React na Next.js oraz z JavaScript na TypeScript** - migracja obejmuje pełną adaptację komponentów, routingu, zarządzania stanem, integrację z Server Components i Server Actions oraz pełne typowanie całej aplikacji.
 
 Projekt obejmuje frontend w Next.js oraz backend z JSON Server do obsługi danych produktów.
 
@@ -21,6 +21,19 @@ Projekt został w całości przepisany z czystego React (React Router, Vite) na 
 - ✅ **Walidacja routingu** - `notFound()` dla nieprawidłowych ścieżek
 
 Oryginalna wersja React znajduje się w w repozytorium: [project-fashion-shop](https://github.com/brzozanet/project-fashion-shop), jako referencja.
+
+## 🔄 Migracja z JavaScript na TypeScript
+
+Projekt został w całości przepisany z **JavaScript** na **TypeScript**. Migracja obejmuje:
+
+- ✅ **Pełne typowanie** - wszystkie komponenty, funkcje i zmienne mają zdefiniowane typy
+- ✅ **Type safety** - kontrola typów na etapie kompilacji
+- ✅ **IntelliSense** - lepsze wsparcie IDE z autouzupełnianiem i podpowiedziami
+- ✅ **Typy dla propsów** - wszystkie komponenty mają zdefiniowane typy propsów
+- ✅ **Typy dla kontekstów** - React Context z pełnym typowaniem
+- ✅ **Typy dla Server Actions** - typowanie funkcji serwerowych
+- ✅ **Type assertions** - bezpieczne typowanie odpowiedzi API (`.json()`)
+- ✅ **Organizacja typów** - centralne miejsce dla definicji typów w folderze `types/`
 
 ## 🌐 Demo
 
@@ -54,6 +67,7 @@ Aplikacja składa się z dwóch części:
 
 - **Next.js** (v15.5.0 - framework React z App Router)
 - **React** (v19.1.1 - biblioteka JavaScript do budowania interfejsów użytkownika)
+- **TypeScript** (typowany nadzbiór JavaScript z kontrolą typów)
 - **Turbopack** (szybki bundler Next.js)
 - **React Context** (zarządzanie stanem aplikacji - koszyk i waluta)
 - **CSS Modules** (lokalne style komponentów)
@@ -62,7 +76,6 @@ Aplikacja składa się z dwóch części:
 - **Modern Normalize** (normalizacja stylów CSS)
 - **Nanoid** (generowanie unikalnych identyfikatorów)
 - **Notiflix** (powiadomienia użytkownika)
-- **JavaScript ES6+** (nowoczesna składnia JavaScript)
 - **HTML5** (semantyczna struktura dokumentu)
 - **CSS3** (zaawansowane style i layout)
 - **LocalStorage** (lokalne przechowywanie danych koszyka)
@@ -74,6 +87,7 @@ Aplikacja składa się z dwóch części:
 
 ### Narzędzia deweloperskie
 
+- **TypeScript** (kompilator i system typów)
 - **ESLint** (linting i kontrola jakości kodu)
 - **Git & GitHub** (kontrola wersji i hosting kodu)
 
@@ -100,18 +114,19 @@ project-fashion-shop-next/
 │   │   ├── koszyk/                   # Strona koszyka
 │   │   ├── ulubione/                 # Strona ulubionych
 │   │   ├── actions/                  # Server Actions
-│   │   │   ├── addToFavourites.js
-│   │   │   └── deleteFromFavourites.js
+│   │   │   ├── addToFavourites.ts
+│   │   │   └── deleteFromFavourites.ts
 │   │   ├── contexts/                 # React Context
-│   │   │   ├── CartContext.js        # Kontekst koszyka
-│   │   │   └── CurrencyContext.js    # Kontekst waluty
+│   │   │   ├── CartContext.ts        # Kontekst koszyka
+│   │   │   └── CurrencyContext.ts    # Kontekst waluty
 │   │   ├── hooks/                    # Custom hooks
+│   │   ├── types/                    # Definicje typów TypeScript
 │   │   ├── constants/                # Stałe aplikacji
 │   │   ├── styles/                   # Globalne style
-│   │   ├── layout.jsx                # Główny layout
-│   │   ├── page.jsx                  # Strona główna
-│   │   ├── not-found.jsx             # Strona 404
-│   │   └── loading.jsx               # Komponent ładowania
+│   │   ├── layout.tsx                # Główny layout
+│   │   ├── page.tsx                  # Strona główna
+│   │   ├── not-found.tsx             # Strona 404
+│   │   └── loading.tsx               # Komponent ładowania
 │   ├── public/                       # Pliki statyczne
 │   │   ├── icons/                    # Ikony SVG
 │   │   └── images/                   # Obrazy
@@ -242,11 +257,11 @@ Szczegółowy przewodnik deploymentu znajduje się w pliku [DEPLOYMENT.md](./DEP
 
 ## 🎯 Status projektu
 
-✅ **Projekt ukończony** - wszystkie funkcjonalności zostały pomyślnie przepisane z React na Next.js i przetestowane.
+✅ **Projekt ukończony** - wszystkie funkcjonalności zostały pomyślnie przepisane z React na Next.js oraz z JavaScript na TypeScript i przetestowane.
 
 ---
 
-**Projekt powstał z przepisania aplikacji z czystego React na Next.js 15 z App Router.**
+**Projekt powstał z przepisania aplikacji z czystego React na Next.js 15 z App Router oraz z JavaScript na TypeScript.**
 
 <br>
 

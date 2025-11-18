@@ -26,8 +26,8 @@ export default async function Favourites() {
       );
     }
 
-    const favourites = await favouritesResponse.json();
-    const products = await productsResponse.json();
+    const favourites: FavouritesType[] = await favouritesResponse.json();
+    const products: Product[] = await productsResponse.json();
 
     const userFavouritesProducts = products
       .filter((product: Product) =>

@@ -63,8 +63,8 @@ export default async function SubcategoryPage({
       );
     }
 
-    const products: Product = await subcategoryResponse.json();
-    const favourites: Favourites = await favouritesResponse.json();
+    const products: Product[] = await subcategoryResponse.json();
+    const favourites: Favourites[] = await favouritesResponse.json();
 
     const normalizedProducts = Array.isArray(products)
       ? products.map((product) => ({
