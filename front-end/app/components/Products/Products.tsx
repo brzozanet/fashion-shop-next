@@ -3,12 +3,21 @@ import { CATEGORIES } from "@/app/constants/categories";
 import { useParams } from "next/navigation";
 import { useContext } from "react";
 import { CurrencyContext } from "@/app/contexts/CurrencyContext";
+import { CurrencyContextType } from "@/app/types/currencyContext";
+import { Favourites } from "@/app/types/favourites";
+import { Product as ProductType } from "@/app/types/product";
 import { Product } from "../Product/Product";
+import { getProductPrice } from "@/app/utils/getProductPrice";
 import css from "./Products.module.css";
 
-export function Products({ products, favourites }) {
+type ProductsProps = {
+  products: ProductType[];
+  favourites: Favourites[];
+};
+
+export function Products({ products, favourites }: ProductsProps) {
   const params = useParams();
-  const [currency] = useContext(CurrencyContext);
+  const [currency] = useContext(CurrencyContext) as CurrencyContextType;
 
   let productsTitle;
 
@@ -28,7 +37,7 @@ export function Products({ products, favourites }) {
 
   const allFavouritesIds = favourites.map((favourite) => favourite.productId);
 
-  const isProductInFavourites = (productId) => {
+  const isProductInFavourites = (productId: number) => {
     return allFavouritesIds.includes(productId);
   };
 
@@ -44,7 +53,8 @@ export function Products({ products, favourites }) {
                 id={product.id}
                 name={product.name}
                 // NOTE: dynamic access
-                price={`${product[`price${currency}`]}`}
+                // price={`${product[`price${currency}`]}`}
+                price={getProductPrice(currency, product)}
                 photo={product.photos[0]}
                 category={product.category}
                 subcategory={product.subcategory}
