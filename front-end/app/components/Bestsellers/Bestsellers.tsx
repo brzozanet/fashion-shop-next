@@ -40,8 +40,9 @@ export function Bestsellers({
                   photo={product.photos[0]}
                   category={product.category}
                   subcategory={product.subcategory}
-                  // optional chaining
-                  isProductInFavourites={favouriteRecord?.productId}
+                  // podwójna negacja konwertuje na boolean:
+                  // jeśli favouriteRecord istnieje → true, jeśli undefined → false
+                  isProductInFavourites={!!favouriteRecord}
                   key={product.id}
                 />
               );

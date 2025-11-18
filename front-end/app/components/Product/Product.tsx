@@ -5,8 +5,20 @@ import { useContext, useState } from "react";
 import { CurrencyContext } from "../../contexts/CurrencyContext";
 import { addToFavourites } from "@/app/actions/addToFavourites";
 import { Notify } from "notiflix";
+import { CurrencyContextType } from "@/app/types/currencyContext";
+import { getStringParam } from "@/app/utils/getStringParam";
 import Image from "next/image";
 import css from "./Product.module.css";
+
+type ProductProps = {
+  id: number;
+  name: string;
+  price: number;
+  photo: string;
+  category: string;
+  subcategory: string;
+  isProductInFavourites: boolean;
+};
 
 export function Product({
   id,
@@ -16,12 +28,16 @@ export function Product({
   category,
   subcategory,
   isProductInFavourites,
-}) {
+}: ProductProps) {
   const params = useParams();
-  const [currency] = useContext(CurrencyContext);
+  const gender = getStringParam(params.gender);
+
+  const [currency] = useContext(CurrencyContext) as CurrencyContextType;
   const [productInFavourites, setProductInFavourites] = useState(
     isProductInFavourites
   );
+
+  console.log(productInFavourites);
 
   const handleAddToFavouritesButton = async () => {
     const result = await addToFavourites(id);
@@ -36,7 +52,7 @@ export function Product({
   return (
     <div className={css.product}>
       <div className={css.productPhotoContainer}>
-        <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>
+        <Link href={`/${gender}/${category}/${subcategory}/${id}`}>
           <Image
             src={photo}
             width={255}
@@ -55,7 +71,7 @@ export function Product({
           onClick={handleAddToFavouritesButton}
         />
       </div>
-      <Link href={`/${params.gender}/${category}/${subcategory}/${id}`}>
+      <Link href={`/${gender}/${category}/${subcategory}/${id}`}>
         <h3 className={css.productTitle}>{name}</h3>
         <p className={css.productPrice}>
           {price} {currency}
