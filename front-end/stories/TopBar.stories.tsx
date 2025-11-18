@@ -10,8 +10,6 @@ export default {
   title: "TopBar",
 };
 
-//Dolorem fugit non harum voluptate pariatur minus aspernatur distinctio. Delectus est suscipit quo quo. Rerum doloribus quibusdam. Velit aperiam laboriosam quisquam. Nesciunt sint reiciendis accusamus voluptatem. Molestiae nam ex odit officia exercitationem.
-
 export const Default = {
   render: () => (
     <ClientProviders>
