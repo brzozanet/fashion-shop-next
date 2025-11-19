@@ -1,3 +1,4 @@
+import ContextProviders from "@/app/components/ContextProviders/ContextProviders";
 import { Product } from "@/app/components/Product/Product";
 
 export default {
@@ -8,15 +9,17 @@ export default {
 export const Default = {
   render: () => {
     return (
-      <Product
-        id={26}
-        name={"Szpilki klasyczne"}
-        price={249}
-        photo={"http://localhost:3000/product-photos/women-shoes-1.jpg"}
-        category={"obuwie"}
-        subcategory={"eleganckie"}
-        isProductInFavourites={true}
-      />
+      <ContextProviders>
+        <Product
+          id={26}
+          name={"Szpilki na obcasie"}
+          price={249}
+          photo={"http://localhost:3000/product-photos/women-shoes-2.jpg"}
+          category={"obuwie"}
+          subcategory={"eleganckie"}
+          isProductInFavourites={true}
+        />
+      </ContextProviders>
     );
   },
 };
