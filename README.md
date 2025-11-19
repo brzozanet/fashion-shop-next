@@ -89,6 +89,7 @@ Aplikacja składa się z dwóch części:
 
 - **TypeScript** (kompilator i system typów)
 - **ESLint** (linting i kontrola jakości kodu)
+- **Storybook** (narzędzie do dokumentowania i testowania komponentów UI w izolacji)
 - **Git & GitHub** (kontrola wersji i hosting kodu)
 
 ## 📂 Struktura aplikacji
@@ -130,6 +131,9 @@ project-fashion-shop-next/
 │   ├── public/                       # Pliki statyczne
 │   │   ├── icons/                    # Ikony SVG
 │   │   └── images/                   # Obrazy
+│   ├── stories/                      # Storybook stories
+│   │   └── *.stories.tsx            # Pliki dokumentacji komponentów
+│   ├── .storybook/                   # Konfiguracja Storybook
 │   ├── .env                          # .gitignore (lokalne ustawienia)
 │   └── package.json
 ├── back-end/                         # JSON Server
@@ -190,6 +194,15 @@ project-fashion-shop-next/
 
    Backend będzie dostępny pod adresem: [http://localhost:3000](http://localhost:3000)
 
+5. (Opcjonalnie) Aby uruchomić Storybook:
+
+   ```bash
+   cd front-end
+   npm run storybook
+   ```
+
+   Storybook będzie dostępny pod adresem: [http://localhost:6006](http://localhost:6006)
+
 ## 🌐 API Endpoints
 
 Backend udostępnia następujące endpointy:
@@ -217,6 +230,7 @@ Backend udostępnia następujące endpointy:
 - 🛡️ Obsługa błędów z fallback UI
 - 🔗 Aktywne linki w menu nawigacyjnym
 - 🚫 Strona 404 dla nieistniejących ścieżek
+- 📚 Storybook - dokumentacja i testowanie komponentów w izolacji
 
 ## 🔄 Różnice między React a Next.js
 
@@ -237,6 +251,17 @@ Backend udostępnia następujące endpointy:
 - Server-side rendering
 - `useRouter()` z `next/navigation` do programowej nawigacji
 - `notFound()` do obsługi błędów routingu
+
+## 📚 Storybook
+
+W projekcie zastosowano **Storybook** - narzędzie do dokumentowania i testowania komponentów UI w izolacji. Storybook umożliwia:
+
+- 📖 **Dokumentację komponentów** - wizualna dokumentacja wszystkich komponentów z przykładami użycia
+- 🧪 **Testowanie w izolacji** - testowanie komponentów bez kontekstu całej aplikacji
+- 🎨 **Wizualne testowanie** - sprawdzanie różnych stanów i wariantów komponentów
+- 🔧 **Mockowanie zależności** - łatwe mockowanie kontekstów, hooków i zewnętrznych zależności
+
+W projekcie dodano stories dla wybranych komponentów, takich jak: `Button`, `Product`, `Products`, `Detail`, `TopBar`, `Hero`, `Accordion`, `Bestsellers`, `Photos` i inne. Każdy story zawiera przykładowe dane i konfigurację potrzebną do wyświetlenia komponentu w izolacji.
 
 ## 📝 Uwagi
 
