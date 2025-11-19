@@ -4,11 +4,11 @@ import { CurrencyContext } from "@/app/contexts/CurrencyContext";
 import { useCart } from "@/app/hooks/useCart";
 import { useCurrency } from "@/app/hooks/useCurrency";
 
-type ClientProvidersProps = {
+type ContextProvidersProps = {
   children: React.ReactNode;
 };
 
-export default function ClientProviders({ children }: ClientProvidersProps) {
+export default function ContextProviders({ children }: ContextProvidersProps) {
   const [currency, setCurrency] = useCurrency();
   const [shoppingCart, setShoppingCart] = useCart();
 

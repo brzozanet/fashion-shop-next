@@ -1,4 +1,4 @@
-import ClientProviders from "./components/ClientProviders/ClientProviders";
+import ContextProviders from "./components/ContextProviders/ContextProviders";
 import { CategoriesMenu } from "./components/CategoriesMenu/CategoriesMenu";
 import { CurrencySelector } from "./components/CurrencySelector/CurrencySelector";
 import { Footer } from "./components/Footer/Footer";
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="pl">
       <body>
-        <ClientProviders>
+        <ContextProviders>
           <MainContent>
             <TopBar>
               <MainMenu />
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <CategoriesMenu />
             {children}
           </MainContent>
-        </ClientProviders>
+        </ContextProviders>
         <Footer />
       </body>
     </html>

@@ -3,7 +3,7 @@ import { MainMenu } from "@/app/components/MainMenu/MainMenu";
 import { Logo } from "@/app/components/Logo/Logo";
 import { CurrencySelector } from "@/app/components/CurrencySelector/CurrencySelector";
 import { IconMenu } from "@/app/components/IconMenu/IconMenu";
-import ClientProviders from "@/app/components/ClientProviders/ClientProviders";
+import ContextProviders from "@/app/components/ContextProviders/ContextProviders";
 
 export default {
   component: TopBar,
@@ -12,7 +12,7 @@ export default {
 
 export const Default = {
   render: () => (
-    <ClientProviders>
+    <ContextProviders>
       <TopBar>
         <MainMenu />
         <Logo />
@@ -21,6 +21,6 @@ export const Default = {
           <IconMenu />
         </div>
       </TopBar>
-    </ClientProviders>
+    </ContextProviders>
   ),
 };
