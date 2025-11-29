@@ -13,5 +13,9 @@
     "front-end": "npm run dev --workspace=front-end",
     "back-end": "npm run dev --workspace=back-end",
     "dev": "npm-run-all --parallel front-end back-end"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1"
   }
 }
