@@ -90,6 +90,7 @@ Aplikacja składa się z dwóch części:
 - **TypeScript** (kompilator i system typów)
 - **ESLint** (linting i kontrola jakości kodu)
 - **Storybook** (narzędzie do dokumentowania i testowania komponentów UI w izolacji)
+- **Playwright** (narzędzie do testów end-to-end)
 - **Git & GitHub** (kontrola wersji i hosting kodu)
 
 ## 📂 Struktura aplikacji
@@ -262,6 +263,10 @@ W projekcie zastosowano **Storybook** - narzędzie do dokumentowania i testowani
 - 🔧 **Mockowanie zależności** - łatwe mockowanie kontekstów, hooków i zewnętrznych zależności
 
 W projekcie dodano stories dla wybranych komponentów, takich jak: `Button`, `Product`, `Products`, `Detail`, `TopBar`, `Hero`, `Accordion`, `Bestsellers`, `Photos` i inne. Każdy story zawiera przykładowe dane i konfigurację potrzebną do wyświetlenia komponentu w izolacji.
+
+## 🧪 Testy end-to-end (E2E)
+
+Aplikacja została poddana testom end-to-end za pomocą narzędzia **Playwright**. Testy E2E weryfikują działanie aplikacji z perspektywy użytkownika końcowego, sprawdzając pełne przepływy funkcjonalności, takie jak dodawanie produktów do koszyka, zmiana waluty czy nawigacja między stronami.
 
 ## 📝 Uwagi
 
