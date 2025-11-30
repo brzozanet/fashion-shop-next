@@ -12,10 +12,13 @@
     "reset": "cp \"./back-end/backup/original_db.json\" ./back-end/db.json",
     "front-end": "npm run dev --workspace=front-end",
     "back-end": "npm run dev --workspace=back-end",
-    "dev": "npm-run-all --parallel front-end back-end"
+    "dev": "npm-run-all --parallel front-end back-end",
+    "test": "jest"
   },
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^24.10.1"
+    "@types/node": "^24.10.1",
+    "cross-env": "^10.1.0",
+    "jest": "^30.2.0"
   }
 }
