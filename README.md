@@ -20,7 +20,7 @@ Projekt został w całości przepisany z czystego React (React Router, Vite) na 
 - ✅ **Optymalizacja** - Turbopack dla szybszego developmentu
 - ✅ **Walidacja routingu** - `notFound()` dla nieprawidłowych ścieżek
 
-Oryginalna wersja React znajduje się w w repozytorium: [project-fashion-shop](https://github.com/brzozanet/project-fashion-shop), jako referencja.
+Oryginalna wersja React znajduje się w w repozytorium: [project-fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
 
 ## 🔄 Migracja z JavaScript na TypeScript
 
@@ -96,7 +96,7 @@ Aplikacja składa się z dwóch części:
 ## 📂 Struktura aplikacji
 
 ```
-project-fashion-shop-next/
+fashion-shop-next/
 ├── front-end/                        # Aplikacja Next.js
 │   ├── app/
 │   │   ├── components/               # Komponenty React
@@ -167,8 +167,8 @@ project-fashion-shop-next/
 1. Sklonuj repozytorium:
 
    ```bash
-   git clone https://github.com/brzozanet/project-fashion-shop-next.git
-   cd project-fashion-shop-next
+   git clone https://github.com/brzozanet/fashion-shop-next.git
+   cd fashion-shop-next
    ```
 
 2. Zainstaluj zależności:
@@ -274,7 +274,7 @@ Aplikacja została poddana testom end-to-end za pomocą narzędzia **Playwright*
 - Dane koszyka są przechowywane lokalnie w localStorage
 - Zdjęcia produktów znajdują się w folderze `back-end/public/product-photos/`
 - Aplikacja wspiera waluty: PLN, EUR
-- Oryginalna wersja React znajduje się w w repozytorium: [project-fashion-shop](https://github.com/brzozanet/project-fashion-shop), jako referencja.
+- Oryginalna wersja React znajduje się w w repozytorium: [fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
 
 ### 🌐 Deployment
 
@@ -295,4 +295,4 @@ Szczegółowy przewodnik deploymentu znajduje się w pliku [DEPLOYMENT.md](./DEP
 
 <br>
 
-![Screenshot App](https://raw.githubusercontent.com/brzozanet/project-fashion-shop-next/refs/heads/main/front-end/public/images/gh-cover-react-shop-online.jpg)
+![Screenshot App](https://raw.githubusercontent.com/brzozanet/fashion-shop-next/refs/heads/main/front-end/public/images/gh-cover-react-shop-online.jpg)
