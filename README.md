@@ -20,7 +20,7 @@ Projekt został w całości przepisany z czystego React (React Router, Vite) na 
 - ✅ **Optymalizacja** - Turbopack dla szybszego developmentu
 - ✅ **Walidacja routingu** - `notFound()` dla nieprawidłowych ścieżek
 
-Oryginalna wersja React znajduje się w w repozytorium: [project-fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
+Oryginalna wersja React znajduje się w w repozytorium: [fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
 
 ## 🔄 Migracja z JavaScript na TypeScript
 
