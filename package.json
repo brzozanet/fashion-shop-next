@@ -16,12 +16,12 @@
     "test": "cross-env NODE_OPTIONS='--experimental-vm-modules' jest"
   },
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.58.2",
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.3.0",
     "cross-env": "^10.1.0",
     "jest": "^30.2.0",
-    "ts-jest": "^29.4.5",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2"
   }
 }
