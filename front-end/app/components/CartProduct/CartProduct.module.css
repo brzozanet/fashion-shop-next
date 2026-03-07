@@ -53,9 +53,22 @@
 }
 
 .cartButtonAction {
-  display: flex;
+  display: inline-flex;
+  align-self: flex-start;
   background: var(--color-surface-alt);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-pill);
   padding: 0.35rem 0.65rem;
+  transition:
+    transform 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.cartButtonAction:hover {
+  transform: translateY(-1px);
+  background-color: #fff8eb;
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
 }

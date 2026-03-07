@@ -1,3 +1,8 @@
+.cartSummaryColumn {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
 .cartSummary,
 .freeShipping {
   background-color: var(--color-surface);
@@ -37,6 +42,11 @@
 }
 
 @media (max-width: 900px) {
+  .cartSummaryColumn {
+    width: 100%;
+    margin-left: 0;
+  }
+
   .cartSummary,
   .freeShipping {
     width: 100%;

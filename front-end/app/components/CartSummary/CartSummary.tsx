@@ -16,7 +16,7 @@ export function CartSummary() {
 
   const productValue = shoppingCart.reduce(
     (sum, product) => sum + getProductPrice(currency, product),
-    0
+    0,
   );
 
   let shippingCost;
@@ -42,7 +42,7 @@ export function CartSummary() {
 
   return (
     <>
-      <div>
+      <div className={css.cartSummaryColumn}>
         <div className={css.cartSummary}>
           <h2 className={css.cartSummaryTitle}>Podsumowanie</h2>
           <div className={css.cartSummaryRow}>

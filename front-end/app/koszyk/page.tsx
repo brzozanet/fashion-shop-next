@@ -21,8 +21,8 @@ export default function Cart() {
         )}
 
         <FlexContainer>
-          <CartProductsList />
           <CartSummary />
+          <CartProductsList />
         </FlexContainer>
       </CenteredContent>
     </>

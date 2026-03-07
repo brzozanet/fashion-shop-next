@@ -27,7 +27,7 @@ export function CartProduct({
 }: CartProductProps) {
   const [currency] = useContext(CurrencyContext) as CurrencyContextType;
   const [shoppingCart, setShoppingCart] = useContext(
-    CartContext
+    CartContext,
   ) as CartContextType;
 
   const truncateTextSmart = (text: string, maxLength: number) => {
@@ -43,7 +43,7 @@ export function CartProduct({
 
   const handleDeleteFromCartButton = (id: number) => {
     const filteredShoppingCart = shoppingCart.filter(
-      (product) => product.id !== id
+      (product) => product.id !== id,
     );
     setShoppingCart(filteredShoppingCart);
     Notify.success("Produkt został usunięty z koszyka");
@@ -76,13 +76,13 @@ export function CartProduct({
               className={css.cartButtonAction}
               onClick={() => handleDeleteFromCartButton(id)}
             >
-              <img
+              {/* <img
                 src="/icons/delete.svg"
                 width="14"
                 height="14"
                 alt="Usuń"
                 title="Usuń"
-              />
+              /> */}
               <span className={css.cartProductIconText}>Usuń z koszyka</span>
             </button>
           </div>
