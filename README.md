@@ -39,7 +39,7 @@ Projekt został w całości przepisany z **JavaScript** na **TypeScript**. Migra
 
 Aplikacja jest dostępna online pod adresem:
 
-**👉 [https://fashion-shop-next-liart.vercel.app/](https://fashion-shop-next-liart.vercel.app/)**
+**👉 [https://contemporary-fashion.vercel.app/](https://contemporary-fashion.vercel.app/)**
 
 **Platformy:**
 
