@@ -294,7 +294,3 @@ Szczegółowy przewodnik deploymentu znajduje się w pliku [DEPLOYMENT.md](./DEP
 ---
 
 **Projekt powstał z przepisania aplikacji z czystego React na Next.js 16 z App Router oraz z JavaScript na TypeScript.**
-
-<br>
-
-![Screenshot App](https://raw.githubusercontent.com/brzozanet/fashion-shop-next/refs/heads/main/front-end/public/images/gh-cover-react-shop-online.jpg)
