@@ -1,8 +1,6 @@
-# 🛒 Fashion contemporary shop
+# 🛒 Fashion contemporary shop next
 
-### Projekt sklepu internetowego z koszykiem zakupowym
-
-Aplikacja Fashion contemporary shop to nowoczesny sklep internetowy umożliwiający przeglądanie produktów, dodawanie ich do ulubionych oraz zarządzanie koszykiem zakupowym.
+Sklep internetowy z dynamicznym routingiem, koszykiem zakupowym, systemem ulubionych oraz obsługą wielu walut. Projekt świadomie migrowany z React (Vite, React Router) do Next.js (App Router) oraz z JavaScript do TypeScript, co pozwoliło na porównanie CSR i SSR oraz przebudowę architektury aplikacji. Kod udokumentowany w Storybooku i pokryty testami E2E w Playwright.
 
 **✨ Projekt został przepisany z czystego React na Next.js oraz z JavaScript na TypeScript** - migracja obejmuje pełną adaptację komponentów, routingu, zarządzania stanem, integrację z Server Components i Server Actions oraz pełne typowanie całej aplikacji.
 
@@ -10,7 +8,7 @@ Projekt obejmuje frontend w Next.js oraz backend z JSON Server do obsługi danyc
 
 ## 🔄 Migracja z React na Next.js
 
-Projekt został w całości przepisany z czystego React (React Router, Vite) na **Next.js 15** z App Router. Migracja obejmuje:
+Projekt został w całości przepisany z czystego React (React Router, Vite) na **Next.js 16** z App Router. Migracja obejmuje:
 
 - ✅ **Server Components** - pobieranie danych po stronie serwera
 - ✅ **Server Actions** - mutacje danych (dodawanie/usuwanie z ulubionych)
@@ -20,7 +18,7 @@ Projekt został w całości przepisany z czystego React (React Router, Vite) na 
 - ✅ **Optymalizacja** - Turbopack dla szybszego developmentu
 - ✅ **Walidacja routingu** - `notFound()` dla nieprawidłowych ścieżek
 
-Oryginalna wersja React znajduje się w w repozytorium: [fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
+Oryginalna wersja React znajduje się w repozytorium: [fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
 
 ## 🔄 Migracja z JavaScript na TypeScript
 
@@ -65,8 +63,8 @@ Aplikacja składa się z dwóch części:
 
 ### Frontend
 
-- **Next.js** (v15.5.0 - framework React z App Router)
-- **React** (v19.1.1 - biblioteka JavaScript do budowania interfejsów użytkownika)
+- **Next.js** (v16.1.6 - framework React z App Router)
+- **React** (v19.2.4 - biblioteka JavaScript do budowania interfejsów użytkownika)
 - **TypeScript** (typowany nadzbiór JavaScript z kontrolą typów)
 - **Turbopack** (szybki bundler Next.js)
 - **React Context** (zarządzanie stanem aplikacji - koszyk i waluta)
@@ -208,6 +206,8 @@ fashion-shop-next/
 
 Backend udostępnia następujące endpointy:
 
+- `GET /products` - Lista wszystkich produktów
+- `GET /products/:id` - Szczegóły produktu
 - `GET /women` - Lista produktów dla kobiet
 - `GET /men` - Lista produktów dla mężczyzn
 - `GET /children` - Lista produktów dla dzieci
@@ -274,7 +274,7 @@ Aplikacja została poddana testom end-to-end za pomocą narzędzia **Playwright*
 - Dane koszyka są przechowywane lokalnie w localStorage
 - Zdjęcia produktów znajdują się w folderze `back-end/public/product-photos/`
 - Aplikacja wspiera waluty: PLN, EUR
-- Oryginalna wersja React znajduje się w w repozytorium: [fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
+- Oryginalna wersja React znajduje się w repozytorium: [fashion-shop](https://github.com/brzozanet/fashion-shop), jako referencja.
 
 ### 🌐 Deployment
 
@@ -291,7 +291,7 @@ Szczegółowy przewodnik deploymentu znajduje się w pliku [DEPLOYMENT.md](./DEP
 
 ---
 
-**Projekt powstał z przepisania aplikacji z czystego React na Next.js 15 z App Router oraz z JavaScript na TypeScript.**
+**Projekt powstał z przepisania aplikacji z czystego React na Next.js 16 z App Router oraz z JavaScript na TypeScript.**
 
 <br>
 
