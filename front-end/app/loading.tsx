@@ -19,7 +19,7 @@ export default function Loading() {
           visible={true}
           height="250"
           width="250"
-          color="#4fa94d"
+          color="#b89352"
           ariaLabel="three-circles-loading"
           wrapperStyle={{}}
           wrapperClass=""

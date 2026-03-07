@@ -1,12 +1,34 @@
-body {
+:root {
   --font-size-default: 16px;
-  --font-family-default: Helvetica, Arial, sans-serif;
+  --font-family-default:
+    "Manrope", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-display:
+    "Cormorant Garamond", "Times New Roman", Georgia, serif;
 
-  --color-text-default: #222020;
-  --color-text-grey: #7a7a7a;
-  --color-yellow: #ffde00;
+  --color-text-default: #171512;
+  --color-text-grey: #6f665a;
+  --color-yellow: #c7a35d;
   --color-white: #ffffff;
-  --color-grey: #f4f4f4;
-  --color-theme-main: #056943;
-  --color-price: #c60c0c;
+  --color-grey: #f1ece3;
+  --color-theme-main: #8b6a33;
+  --color-theme-dark: #20170f;
+  --color-theme-soft: #efe4d2;
+  --color-price: #8e1f1f;
+  --color-accent: #b89352;
+
+  --color-surface: #fffdfa;
+  --color-surface-alt: #f7f2ea;
+  --color-border: #dfd1bd;
+  --color-overlay: rgba(18, 12, 8, 0.58);
+
+  --radius-sm: 0.45rem;
+  --radius-md: 0.85rem;
+  --radius-lg: 1.1rem;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 8px 22px rgba(34, 24, 15, 0.08);
+  --shadow-md: 0 16px 34px rgba(34, 24, 15, 0.13);
+  --shadow-lg: 0 26px 56px rgba(22, 16, 11, 0.18);
+
+  --content-width: 100rem;
 }

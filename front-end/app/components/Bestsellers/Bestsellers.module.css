@@ -1,12 +1,14 @@
 .bestsellers {
-  margin-bottom: 10rem;
+  margin-bottom: 5.5rem;
 }
 
 .bestsellersTitle {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 
 .bestsellersList {
   display: flex;
   justify-content: space-between;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }

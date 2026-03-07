@@ -4,7 +4,15 @@
 
 .productDetailContainer {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex: 1;
   margin-bottom: 4rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .productDetailContainer {
+    flex-direction: column;
+    margin-bottom: 2.2rem;
+  }
 }

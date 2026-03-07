@@ -2,20 +2,30 @@
   min-width: 12rem;
   width: 12rem;
   margin-top: 1rem;
+  padding: 0.9rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 }
 
 .genderTitle {
   margin-bottom: 1rem;
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.09em;
+  color: var(--color-text-grey);
 }
 
 .categoriesItem {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
 }
 
 .categoriesLink {
   display: flex;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .categoriesIconActive {
@@ -23,10 +33,12 @@
 }
 
 .subCategoriesItem {
-  padding-top: 0.5rem;
-  padding-left: 2rem;
+  padding-top: 0.45rem;
+  padding-left: 1.4rem;
+  color: var(--color-text-grey);
 }
 
 .subCategoriesItemActive a {
   font-weight: 700;
+  color: var(--color-theme-main);
 }

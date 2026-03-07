@@ -4,7 +4,17 @@ export function Footer() {
   return (
     <>
       <div className={css.footer}>
-        <p>Developed with ❤️ by brzoza.net</p>
+        <p>
+          Made with ❤️ by{" "}
+          <a
+            href="https://brzoza.net"
+            target="_blank"
+            rel="noreferrer noopener"
+            className={css.footerLink}
+          >
+            brzoza.net
+          </a>
+        </p>
       </div>
     </>
   );

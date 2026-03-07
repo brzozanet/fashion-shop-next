@@ -1,3 +1,27 @@
 .currencySelector {
-  padding: 0.5rem;
+  appearance: none;
+  border: 1px solid rgba(184, 147, 82, 0.45);
+  background-color: #fffaf2;
+  color: var(--color-text-default);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 2.1rem 0.45rem 0.85rem;
+  box-shadow: var(--shadow-sm);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-text-grey) 50%),
+    linear-gradient(135deg, var(--color-text-grey) 50%, transparent 50%);
+  background-position:
+    calc(100% - 0.95rem) calc(50% - 2px),
+    calc(100% - 0.65rem) calc(50% - 2px);
+  background-size:
+    6px 6px,
+    6px 6px;
+  background-repeat: no-repeat;
+}
+
+.currencySelector:hover {
+  border-color: var(--color-accent);
 }

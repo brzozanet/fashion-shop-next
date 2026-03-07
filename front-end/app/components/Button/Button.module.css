@@ -1,10 +1,22 @@
 .button {
-  border: none;
-  background: none;
-  background-color: var(--color-theme-main);
-  color: var(--color-white);
-  font-weight: 700;
+  border: 1px solid #3a2b18;
+  background: linear-gradient(135deg, #2a1e13, #181008);
+  color: #ecd9b4;
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.85rem 1.3rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
   cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  color: #f3e7d0;
 }

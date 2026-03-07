@@ -1,9 +1,12 @@
 .cartProduct {
-  border-bottom: 1px solid var(--color-text-default);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  padding: 0.9rem;
 }
 
 .cartProductBox:nth-child(2) {
@@ -23,6 +26,8 @@
 .cartProductPhoto {
   width: 85px;
   height: 140px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 }
 
 .cartProductPhotoImg {
@@ -34,10 +39,12 @@
 .cartProductTitle {
   font-size: var(--font-size-default);
   margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .cartProductPrice {
   font-weight: 700;
+  color: var(--color-price);
 }
 
 .cartProductIconText {
@@ -47,6 +54,8 @@
 
 .cartButtonAction {
   display: flex;
-  background: none;
-  border: none;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem 0.65rem;
 }

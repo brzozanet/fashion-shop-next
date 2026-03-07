@@ -1,26 +1,30 @@
 .detail {
-  width: 100%;
+  flex: 1 1 auto;
+  min-width: 0;
+  width: auto;
   padding-right: 1rem;
+  padding-top: 0.35rem;
 }
 
 .detailBrand {
-  font-size: 2rem;
+  font-size: clamp(1.9rem, 1.6rem + 0.9vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 
 .detailName {
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+  color: var(--color-text-grey);
 }
 
 .detailPrice {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 1.4rem + 1vw, 2.3rem);
   color: var(--color-price);
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
 }
 
 .detailBtnWrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 1.7rem;
 }
 
 .detailShipping::before {
@@ -31,8 +35,8 @@
   background-image: url("/icons/shipping.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
   vertical-align: middle; /* wyrównanie z tekstem */
 }
 
@@ -44,7 +48,17 @@
   background-image: url("/icons/shipping.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0.5rem;
   vertical-align: middle; /* wyrównanie z tekstem */
+}
+
+.detailShipping,
+.detailReturn {
+  color: var(--color-text-grey);
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.7rem;
+  background: var(--color-surface);
 }

@@ -4,6 +4,11 @@
   align-items: center;
   flex-direction: column;
   margin: 4rem auto;
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
 }
 
 .errorTitle {
@@ -12,9 +17,13 @@
 
 .errorLink {
   cursor: pointer;
-  background-color: var(--color-theme-main);
+  background: linear-gradient(135deg, #138377, var(--color-theme-main));
   color: var(--color-white);
-  font-weight: bold;
+  border: 1px solid var(--color-theme-main);
+  font-weight: 800;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
 }

@@ -7,7 +7,11 @@
   width: 85px;
   height: 140px;
   display: block;
-  padding-bottom: 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .photoThumbnailImg,
@@ -19,10 +23,24 @@
 }
 
 .photoThumbnailImgActive {
-  border: 2px solid var(--color-text-default);
+  border: 2px solid var(--color-theme-main);
 }
 
 .photoBigContainer {
-  width: 500px;
-  height: 700px;
+  width: clamp(320px, 42vw, 500px);
+  aspect-ratio: 5 / 7;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 900px) {
+  .photos {
+    flex-direction: column-reverse;
+  }
+
+  .photoBigContainer {
+    width: 100%;
+  }
 }

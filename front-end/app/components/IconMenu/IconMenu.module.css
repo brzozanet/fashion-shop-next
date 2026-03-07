@@ -1,26 +1,54 @@
 .iconMenuList {
   display: flex;
-  align-content: center;
-  padding: 1rem;
-  gap: 1rem;
+  align-items: center;
+  padding: 0.4rem 0;
+  gap: 0.6rem;
 }
 
 .iconMenuItem {
   position: relative;
 }
 
-.iconCounter {
-  background-color: var(--color-yellow);
+.iconMenuItem a {
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
-  width: 1.25rem;
-  height: 1.25rem;
+  border: 1px solid rgba(184, 147, 82, 0.38);
+  background: linear-gradient(145deg, #2a1f13, #19120b);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.iconMenuItem a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.iconMenuItem img {
+  width: 1.1rem;
+  height: 1.1rem;
+  filter: brightness(0) saturate(100%) invert(86%) sepia(17%) saturate(507%)
+    hue-rotate(352deg) brightness(92%) contrast(88%);
+}
+
+.iconCounter {
+  background: linear-gradient(135deg, #edd5a6, var(--color-accent));
+  border-radius: 50%;
+  min-width: 1.3rem;
+  height: 1.3rem;
   font-weight: 700;
-  font-size: 0.6rem;
-  font-weight: 700;
+  font-size: 0.68rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: -0.5rem;
-  right: -0.5rem;
+  bottom: -0.35rem;
+  right: -0.35rem;
+  color: #251b0f;
+  border: 2px solid #fff7ea;
 }

@@ -15,7 +15,7 @@
           "http://localhost:3000/product-photos/women-shoes-2.jpg",
           "http://localhost:3000/product-photos/women-shoes-3.jpg"
         ],
-        "description": "Eleganckie szpilki wykonane z wysokiej jakości skóry naturalnej. Wysokość obcasa 8 cm zapewnia komfort podczas noszenia. Idealne do eleganckich strojów i wyjść wieczorowych. Dostępne w kilku kolorach.",
+        "description": "Eleganckie szpilki wykonane z wysokiej jakości skóry naturalnej. Wysokość obcasa 8 cm zapewnia komfort podczas noszenia. Idealne do eleganckich strojów i wyjść wieczorowych. Dostępne w kilku kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Czyścić miękką szmatką. Unikać kontaktu z wodą. Przechowywać w oryginalnym pudełku. Używać specjalnych wkładek do butów."
       },
       {
@@ -32,7 +32,7 @@
           "http://localhost:3000/product-photos/women-shoes-3.jpg",
           "http://localhost:3000/product-photos/women-shoes-1.jpg"
         ],
-        "description": "Stylowe szpilki z obcasem 10 cm, wykonane z ekologicznej skóry. Miękka wyściółka zapewnia komfort podczas długiego noszenia. Perfekcyjne dopasowanie i elegancki wygląd.",
+        "description": "Stylowe szpilki z obcasem 10 cm, wykonane z ekologicznej skóry. Miękka wyściółka zapewnia komfort podczas długiego noszenia. Perfekcyjne dopasowanie i elegancki wygląd. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Czyścić delikatnie wilgotną szmatką. Unikać mokrych powierzchni. Przechowywać w suchym miejscu. Używać sprayu ochronnego."
       },
       {
@@ -49,7 +49,7 @@
           "http://localhost:3000/product-photos/women-trousers-2.jpg",
           "http://localhost:3000/product-photos/women-trousers-1.jpg"
         ],
-        "description": "Miękki sweter oversize wykonany z 100% wełny merynos. Luźny krój zapewnia komfort i swobodę ruchów. Idealny na chłodniejsze dni. Dostępny w kilku pastelowych kolorach.",
+        "description": "Miękki sweter oversize wykonany z 100% wełny merynos. Luźny krój zapewnia komfort i swobodę ruchów. Idealny na chłodniejsze dni. Dostępny w kilku pastelowych kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie ręczne w chłodnej wodzie. Nie wykręcać. Suszyć na płasko. Nie używać wybielacza. Prasować przez wilgotną tkaninę."
       },
       {
@@ -66,11 +66,11 @@
           "http://localhost:3000/product-photos/women-trousers-2.jpg",
           "http://localhost:3000/product-photos/women-trousers-2.jpg"
         ],
-        "description": "Eleganckie spodnie o prostym kroju, wykonane z wysokiej jakości materiału stretch. Idealne do biura i codziennego noszenia. Wygodne i dopasowane, dostępne w kilku kolorach.",
+        "description": "Eleganckie spodnie o prostym kroju, wykonane z wysokiej jakości materiału stretch. Idealne do biura i codziennego noszenia. Wygodne i dopasowane, dostępne w kilku kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 30°C. Nie używać wybielacza. Prasować w średniej temperaturze. Można suszyć w suszarce bębnowej w niskiej temperaturze."
       }
     ],
-    "description": "Odkryj naszą kolekcję mody damskiej - eleganckie ubrania i akcesoria dla nowoczesnych kobiet. Wysokiej jakości produkty w atrakcyjnych cenach.",
+    "description": "Odkryj naszą kolekcję mody damskiej - eleganckie ubrania i akcesoria dla nowoczesnych kobiet. Wysokiej jakości produkty w atrakcyjnych cenach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
     "maintenanceInfo": "Wszystkie produkty są wykonane z najlepszych materiałów i przetestowane pod kątem jakości. Zachęcamy do zapoznania się z instrukcjami pielęgnacji przy każdym produkcie.",
     "heroImageUrl": "http://localhost:3000/product-photos/women.jpg"
   },
@@ -90,7 +90,7 @@
           "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
           "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
         ],
-        "description": "Klasyczny t-shirt wykonany z 100% bawełny organicznej. Miękki i przewiewny materiał zapewnia komfort podczas noszenia. Idealny na co dzień, dostępny w wielu kolorach.",
+        "description": "Klasyczny t-shirt wykonany z 100% bawełny organicznej. Miękki i przewiewny materiał zapewnia komfort podczas noszenia. Idealny na co dzień, dostępny w wielu kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 40°C. Można suszyć w suszarce bębnowej. Prasować w średniej temperaturze. Nie używać wybielacza."
       },
       {
@@ -107,7 +107,7 @@
           "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
           "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
         ],
-        "description": "Wysokiej jakości t-shirt wykonany z mieszanki bawełny i poliestru. Odporny na zagniecenia, idealny do codziennego noszenia. Dostępny w wielu kolorach.",
+        "description": "Wysokiej jakości t-shirt wykonany z mieszanki bawełny i poliestru. Odporny na zagniecenia, idealny do codziennego noszenia. Dostępny w wielu kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 40°C. Można suszyć w suszarce bębnowej. Prasować w średniej temperaturze. Nie używać wybielacza."
       },
       {
@@ -124,7 +124,7 @@
           "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
           "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
         ],
-        "description": "Funkcjonalny t-shirt sportowy wykonany z oddychającego materiału. Idealny do treningów i aktywności fizycznej. Wygodny i elastyczny.",
+        "description": "Funkcjonalny t-shirt sportowy wykonany z oddychającego materiału. Idealny do treningów i aktywności fizycznej. Wygodny i elastyczny. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 30°C. Można suszyć w suszarce bębnowej. Prasować w niskiej temperaturze. Nie używać wybielacza."
       },
       {
@@ -141,11 +141,11 @@
           "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
           "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
         ],
-        "description": "Wygodny t-shirt casual wykonany z miękkiej bawełny. Luźny krój, idealny na co dzień. Dostępny w wielu kolorach i wzorach.",
+        "description": "Wygodny t-shirt casual wykonany z miękkiej bawełny. Luźny krój, idealny na co dzień. Dostępny w wielu kolorach i wzorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 40°C. Można suszyć w suszarce bębnowej. Prasować w średniej temperaturze. Nie używać wybielacza."
       }
     ],
-    "description": "Odkryj naszą kolekcję mody męskiej - stylowe ubrania i akcesoria dla nowoczesnych mężczyzn. Wysokiej jakości produkty w atrakcyjnych cenach.",
+    "description": "Odkryj naszą kolekcję mody męskiej - stylowe ubrania i akcesoria dla nowoczesnych mężczyzn. Wysokiej jakości produkty w atrakcyjnych cenach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
     "maintenanceInfo": "Wszystkie produkty są wykonane z najlepszych materiałów i przetestowane pod kątem jakości. Zachęcamy do zapoznania się z instrukcjami pielęgnacji przy każdym produkcie.",
     "heroImageUrl": "http://localhost:3000/product-photos/men.jpg"
   },
@@ -165,7 +165,7 @@
           "http://localhost:3000/product-photos/children-shoes-2.jpg",
           "http://localhost:3000/product-photos/children-shoes-3.jpg"
         ],
-        "description": "Eleganckie buty dla dzieci wykonane z miękkiej skóry. Wygodne i bezpieczne dla małych stóp. Idealne na specjalne okazje. Dostępne w różnych rozmiarach i kolorach.",
+        "description": "Eleganckie buty dla dzieci wykonane z miękkiej skóry. Wygodne i bezpieczne dla małych stóp. Idealne na specjalne okazje. Dostępne w różnych rozmiarach i kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Czyścić wilgotną szmatką. Unikać mokrych powierzchni. Przechowywać w suchym miejscu. Regularnie sprawdzać rozmiar."
       },
       {
@@ -182,7 +182,7 @@
           "http://localhost:3000/product-photos/children-shoes-1.jpg",
           "http://localhost:3000/product-photos/children-shoes-3.jpg"
         ],
-        "description": "Wygodne sneakersy dla dzieci z antypoślizgową podeszwą. Lekkie i elastyczne, idealne do zabawy i aktywności fizycznej. Wykonane z oddychających materiałów.",
+        "description": "Wygodne sneakersy dla dzieci z antypoślizgową podeszwą. Lekkie i elastyczne, idealne do zabawy i aktywności fizycznej. Wykonane z oddychających materiałów. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Czyścić miękką szczoteczką z wodą. Unikać prania w pralce. Suszyć w temperaturze pokojowej. Regularnie sprawdzać stan podeszwy."
       },
       {
@@ -199,7 +199,7 @@
           "http://localhost:3000/product-photos/children-trousers-2.jpg",
           "http://localhost:3000/product-photos/children-trousers-3.jpg"
         ],
-        "description": "Wygodne spodnie dżinsowe dla dzieci wykonane z miękkiej bawełny. Elastyczne i trwałe, idealne do codziennego noszenia. Dostępne w różnych rozmiarach i kolorach.",
+        "description": "Wygodne spodnie dżinsowe dla dzieci wykonane z miękkiej bawełny. Elastyczne i trwałe, idealne do codziennego noszenia. Dostępne w różnych rozmiarach i kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 30°C. Przewracać na lewą stronę. Nie używać wybielacza. Suszyć w temperaturze pokojowej. Prasować w niskiej temperaturze."
       },
       {
@@ -216,11 +216,11 @@
           "http://localhost:3000/product-photos/children-trousers-3.jpg",
           "http://localhost:3000/product-photos/children-trousers-1.jpg"
         ],
-        "description": "Funkcjonalne spodnie sportowe dla dzieci wykonane z oddychającego materiału. Elastyczne i wygodne, idealne do aktywności fizycznej. Dostępne w wielu kolorach.",
+        "description": "Funkcjonalne spodnie sportowe dla dzieci wykonane z oddychającego materiału. Elastyczne i wygodne, idealne do aktywności fizycznej. Dostępne w wielu kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
         "maintenanceInfo": "Pranie w temperaturze 30°C. Można suszyć w suszarce bębnowej w niskiej temperaturze. Nie używać wybielacza. Prasować w niskiej temperaturze."
       }
     ],
-    "description": "Odkryj naszą kolekcję mody dziecięcej - wygodne i bezpieczne ubrania dla najmłodszych. Wysokiej jakości produkty w atrakcyjnych cenach.",
+    "description": "Odkryj naszą kolekcję mody dziecięcej - wygodne i bezpieczne ubrania dla najmłodszych. Wysokiej jakości produkty w atrakcyjnych cenach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
     "maintenanceInfo": "Wszystkie produkty są wykonane z najlepszych materiałów i przetestowane pod kątem jakości. Zachęcamy do zapoznania się z instrukcjami pielęgnacji przy każdym produkcie.",
     "heroImageUrl": "http://localhost:3000/product-photos/children.jpg"
   },
@@ -239,7 +239,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -256,7 +256,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -273,7 +273,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -290,7 +290,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -307,7 +307,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -324,7 +324,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -341,7 +341,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -358,7 +358,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -375,7 +375,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -392,7 +392,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -409,7 +409,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -426,7 +426,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -443,7 +443,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -460,7 +460,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -477,7 +477,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -494,7 +494,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -511,7 +511,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -528,7 +528,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -545,7 +545,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -562,7 +562,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -579,7 +579,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -596,7 +596,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -613,7 +613,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -630,7 +630,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -647,7 +647,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-4.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -663,7 +663,7 @@
         "http://localhost:3000/product-photos/women-shoes-1.jpg",
         "http://localhost:3000/product-photos/women-shoes-2.jpg"
       ],
-      "description": "Opis produktu pobrany z back endu ;)",
+      "description": "Opis produktu pobrany z back endu ;). Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Informacje o konserwacji pobrane z back-endu"
     },
     {
@@ -680,7 +680,7 @@
         "http://localhost:3000/product-photos/women-shoes-3.jpg",
         "http://localhost:3000/product-photos/women-shoes-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -697,7 +697,7 @@
         "http://localhost:3000/product-photos/women-shoes-2.jpg",
         "http://localhost:3000/product-photos/women-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -714,7 +714,7 @@
         "http://localhost:3000/product-photos/women-trousers-2.jpg",
         "http://localhost:3000/product-photos/women-trousers-2.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -731,7 +731,7 @@
         "http://localhost:3000/product-photos/women-shoes-2.jpg",
         "http://localhost:3000/product-photos/women-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -748,7 +748,7 @@
         "http://localhost:3000/product-photos/women-sweater-1.jpg",
         "http://localhost:3000/product-photos/women-sweater-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -765,7 +765,7 @@
         "http://localhost:3000/product-photos/women-sweater-1.jpg",
         "http://localhost:3000/product-photos/women-sweater-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -782,7 +782,7 @@
         "http://localhost:3000/product-photos/women-trousers-2.jpg",
         "http://localhost:3000/product-photos/women-trousers-2.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -799,7 +799,7 @@
         "http://localhost:3000/product-photos/women-shoes-3.jpg",
         "http://localhost:3000/product-photos/women-shoes-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -816,7 +816,7 @@
         "http://localhost:3000/product-photos/women-sweater-1.jpg",
         "http://localhost:3000/product-photos/women-sweater-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -833,7 +833,7 @@
         "http://localhost:3000/product-photos/women-trousers-2.jpg",
         "http://localhost:3000/product-photos/women-trousers-2.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -850,7 +850,7 @@
         "http://localhost:3000/product-photos/women-shoes-2.jpg",
         "http://localhost:3000/product-photos/women-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -867,7 +867,7 @@
         "http://localhost:3000/product-photos/women-shoes-3.jpg",
         "http://localhost:3000/product-photos/women-shoes-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -884,7 +884,7 @@
         "http://localhost:3000/product-photos/women-sweater-1.jpg",
         "http://localhost:3000/product-photos/women-sweater-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -901,7 +901,7 @@
         "http://localhost:3000/product-photos/women-trousers-2.jpg",
         "http://localhost:3000/product-photos/women-trousers-2.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -918,7 +918,7 @@
         "http://localhost:3000/product-photos/women-shoes-3.jpg",
         "http://localhost:3000/product-photos/women-shoes-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -935,7 +935,7 @@
         "http://localhost:3000/product-photos/women-sweater-1.jpg",
         "http://localhost:3000/product-photos/women-sweater-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -952,7 +952,7 @@
         "http://localhost:3000/product-photos/women-trousers-2.jpg",
         "http://localhost:3000/product-photos/women-trousers-2.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -969,7 +969,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -986,7 +986,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1003,7 +1003,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1020,7 +1020,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1037,7 +1037,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1054,7 +1054,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1071,7 +1071,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1088,7 +1088,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1105,7 +1105,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1122,7 +1122,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1139,7 +1139,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1156,7 +1156,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1173,7 +1173,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1190,7 +1190,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1207,7 +1207,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1224,7 +1224,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1241,7 +1241,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1258,7 +1258,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1275,7 +1275,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1292,7 +1292,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1309,7 +1309,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1326,7 +1326,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1343,7 +1343,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1360,7 +1360,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1377,7 +1377,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1394,7 +1394,7 @@
         "http://localhost:3000/product-photos/children-shoes-1.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1411,7 +1411,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1428,7 +1428,7 @@
         "http://localhost:3000/product-photos/children-trousers-3.jpg",
         "http://localhost:3000/product-photos/children-trousers-1.jpg"
       ],
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum.",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla facilis aperiam, magnam dolorum sit expedita nihil nostrum, voluptates temporibus voluptatum atque ullam molestiae provident dolore eligendi? Esse amet dolore illum. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu"
     },
     {
@@ -1445,7 +1445,7 @@
         "http://localhost:3000/product-photos/man-t-shirt-2.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-3.jpg"
       ],
-      "description": "Ciepły sweter męski wykonany z mieszanki wełny i akrylu. Klasyczny krój, idealny na chłodniejsze dni. Wygodny i stylowy, dostępny w kilku kolorach.",
+      "description": "Ciepły sweter męski wykonany z mieszanki wełny i akrylu. Klasyczny krój, idealny na chłodniejsze dni. Wygodny i stylowy, dostępny w kilku kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Pranie ręczne w chłodnej wodzie. Suszyć na płasko. Nie używać wybielacza. Prasować przez wilgotną tkaninę."
     },
     {
@@ -1462,7 +1462,7 @@
         "http://localhost:3000/product-photos/man-shorts-2.jpg",
         "http://localhost:3000/product-photos/man-t-shirt-1.jpg"
       ],
-      "description": "Klasyczne spodnie dżinsowe wykonane z wysokiej jakości denimu. Dopasowany krój, wygodne i trwałe. Idealne na co dzień, dostępne w różnych rozmiarach.",
+      "description": "Klasyczne spodnie dżinsowe wykonane z wysokiej jakości denimu. Dopasowany krój, wygodne i trwałe. Idealne na co dzień, dostępne w różnych rozmiarach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Pranie w temperaturze 30°C. Przewracać na lewą stronę. Nie używać wybielacza. Suszyć w temperaturze pokojowej."
     },
     {
@@ -1479,7 +1479,7 @@
         "http://localhost:3000/product-photos/man-shoes-3.jpg",
         "http://localhost:3000/product-photos/man-shoes-1.jpeg"
       ],
-      "description": "Eleganckie buty męskie wykonane z wysokiej jakości skóry. Idealne do garnituru i formalnych okazji. Wygodne i trwałe, dostępne w kilku kolorach.",
+      "description": "Eleganckie buty męskie wykonane z wysokiej jakości skóry. Idealne do garnituru i formalnych okazji. Wygodne i trwałe, dostępne w kilku kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić specjalną pastą do butów. Unikać mokrych powierzchni. Przechowywać w oryginalnym pudełku. Używać wkładek."
     },
     {
@@ -1496,7 +1496,7 @@
         "http://localhost:3000/product-photos/man-shoes-3.jpg",
         "http://localhost:3000/product-photos/man-shoes-1.jpeg"
       ],
-      "description": "Wygodne sneakersy męskie z antypoślizgową podeszwą. Idealne do codziennego noszenia i aktywności fizycznej. Wykonane z oddychających materiałów.",
+      "description": "Wygodne sneakersy męskie z antypoślizgową podeszwą. Idealne do codziennego noszenia i aktywności fizycznej. Wykonane z oddychających materiałów. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić miękką szczoteczką z wodą. Unikać prania w pralce. Suszyć w temperaturze pokojowej. Regularnie sprawdzać stan podeszwy."
     },
     {
@@ -1513,7 +1513,7 @@
         "http://localhost:3000/product-photos/man-bag-2.jpg",
         "http://localhost:3000/product-photos/man-bag-1.jpg"
       ],
-      "description": "Stylowa torba męska wykonana z wysokiej jakości materiału. Wiele kieszeni, idealna do pracy i podróży. Wygodna i pojemna, dostępna w kilku kolorach.",
+      "description": "Stylowa torba męska wykonana z wysokiej jakości materiału. Wiele kieszeni, idealna do pracy i podróży. Wygodna i pojemna, dostępna w kilku kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić wilgotną szmatką. Unikać mokrych powierzchni. Przechowywać w suchym miejscu. Regularnie czyścić zewnętrzne powierzchnie."
     },
     {
@@ -1530,7 +1530,7 @@
         "http://localhost:3000/product-photos/man-watch-1.jpg",
         "http://localhost:3000/product-photos/man-watch-1.jpg"
       ],
-      "description": "Elegancki zegarek męski z klasycznym designem. Wodoodporny, z wytrzymałą bransoletą. Idealny do codziennego noszenia i specjalnych okazji.",
+      "description": "Elegancki zegarek męski z klasycznym designem. Wodoodporny, z wytrzymałą bransoletą. Idealny do codziennego noszenia i specjalnych okazji. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić miękką szmatką. Unikać kontaktu z chemikaliami. Regularnie sprawdzać baterię. Przechowywać w suchym miejscu."
     },
     {
@@ -1547,7 +1547,7 @@
         "http://localhost:3000/product-photos/women-trousers-1.jpg",
         "http://localhost:3000/product-photos/women-trousers-2.jpg"
       ],
-      "description": "Miękka koszulka damska wykonana z 100% bawełny organicznej. Przewiewna i wygodna, idealna na co dzień. Dostępna w wielu kolorach i rozmiarach.",
+      "description": "Miękka koszulka damska wykonana z 100% bawełny organicznej. Przewiewna i wygodna, idealna na co dzień. Dostępna w wielu kolorach i rozmiarach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Pranie w temperaturze 30°C. Można suszyć w suszarce bębnowej. Prasować w średniej temperaturze. Nie używać wybielacza."
     },
     {
@@ -1564,7 +1564,7 @@
         "http://localhost:3000/product-photos/women-shoes-1.jpg",
         "http://localhost:3000/product-photos/women-shoes-2.jpg"
       ],
-      "description": "Stylowe sneakersy damskie z lekką podeszwą. Wygodne i elastyczne, idealne do codziennego noszenia. Wykonane z oddychających materiałów.",
+      "description": "Stylowe sneakersy damskie z lekką podeszwą. Wygodne i elastyczne, idealne do codziennego noszenia. Wykonane z oddychających materiałów. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić miękką szczoteczką z wodą. Unikać prania w pralce. Suszyć w temperaturze pokojowej. Regularnie sprawdzać stan podeszwy."
     },
     {
@@ -1581,7 +1581,7 @@
         "http://localhost:3000/product-photos/womens-shoes-3.jpg",
         "http://localhost:3000/product-photos/women-shoes-1.jpg"
       ],
-      "description": "Profesjonalne buty sportowe dla kobiet z systemem amortyzacji. Idealne do biegania i treningów. Wykonane z technicznych materiałów.",
+      "description": "Profesjonalne buty sportowe dla kobiet z systemem amortyzacji. Idealne do biegania i treningów. Wykonane z technicznych materiałów. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić miękką szczoteczką z wodą. Unikać prania w pralce. Suszyć w temperaturze pokojowej. Regularnie sprawdzać stan podeszwy."
     },
     {
@@ -1598,7 +1598,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Miękka koszulka dla dzieci wykonana z bezpiecznej bawełny. Bezpieczna dla delikatnej skóry, idealna na co dzień. Dostępna w wielu kolorach.",
+      "description": "Miękka koszulka dla dzieci wykonana z bezpiecznej bawełny. Bezpieczna dla delikatnej skóry, idealna na co dzień. Dostępna w wielu kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Pranie w temperaturze 30°C. Można suszyć w suszarce bębnowej. Prasować w niskiej temperaturze. Nie używać wybielacza."
     },
     {
@@ -1615,7 +1615,7 @@
         "http://localhost:3000/product-photos/children-trousers-2.jpg",
         "http://localhost:3000/product-photos/children-trousers-3.jpg"
       ],
-      "description": "Ciepły sweter dla dzieci wykonany z miękkiej wełny. Wygodny i bezpieczny, idealny na chłodniejsze dni. Dostępny w wielu kolorach.",
+      "description": "Ciepły sweter dla dzieci wykonany z miękkiej wełny. Wygodny i bezpieczny, idealny na chłodniejsze dni. Dostępny w wielu kolorach. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Pranie ręczne w chłodnej wodzie. Suszyć na płasko. Nie używać wybielacza. Prasować przez wilgotną tkaninę."
     },
     {
@@ -1632,7 +1632,7 @@
         "http://localhost:3000/product-photos/children-shoes-2.jpg",
         "http://localhost:3000/product-photos/children-shoes-3.jpg"
       ],
-      "description": "Wygodne buty sportowe dla dzieci z antypoślizgową podeszwą. Idealne do aktywności fizycznej i zabawy. Wykonane z bezpiecznych materiałów.",
+      "description": "Wygodne buty sportowe dla dzieci z antypoślizgową podeszwą. Idealne do aktywności fizycznej i zabawy. Wykonane z bezpiecznych materiałów. Ten model laczy styl i wygode, dlatego sprawdzi sie zarowno na co dzien, jak i przy specjalnych okazjach.",
       "maintenanceInfo": "Czyścić miękką szczoteczką z wodą. Unikać prania w pralce. Suszyć w temperaturze pokojowej. Regularnie sprawdzać rozmiar."
     }
   ],
