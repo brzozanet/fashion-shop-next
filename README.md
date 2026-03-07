@@ -41,7 +41,7 @@ Projekt został w całości przepisany z **JavaScript** na **TypeScript**. Migra
 
 Aplikacja jest dostępna online pod adresem:
 
-**👉 [https://contemporary-fashion.vercel.app/](https://contemporary-fashion.vercel.app/)**
+**👉 [https://fashion-contemporary.vercel.app/](https://fashion-contemporary.vercel.app/)**
 
 **Platformy:**
 
