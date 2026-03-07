@@ -4,11 +4,21 @@
   display: flex;
   margin-bottom: 1.35rem;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.35rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+
+.breadcrumbsItem {
+  flex: 0 0 auto;
 }
 
 .breadcrumbsLink {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
   text-transform: uppercase;
   font-size: 0.76rem;
   font-weight: 700;
