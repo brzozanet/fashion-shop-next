@@ -22,7 +22,7 @@ export function FavouriteProduct({
 }: FavouriteProductProps) {
   const [currency] = useContext(CurrencyContext) as CurrencyContextType;
   const [shoppingCart, setShoppingCart] = useContext(
-    CartContext
+    CartContext,
   ) as CartContextType;
 
   const truncateTextSmart = (text: string, maxLength: number) => {
@@ -37,7 +37,7 @@ export function FavouriteProduct({
   };
 
   const productAlreadyAddedToCart = shoppingCart.find(
-    (productFromCart) => productFromCart.id === product.id
+    (productFromCart) => productFromCart.id === product.id,
   );
 
   const handleAddToCartButton = () => {
@@ -71,26 +71,26 @@ export function FavouriteProduct({
                 onClick={() => deleteFromFavourites(favouriteId)}
                 className={css.favouriteButtonAction}
               >
-                <img
+                {/* <img
                   src="/icons/delete.svg"
                   width="14"
                   height="14"
                   alt="Usuń"
                   title="Usuń"
-                />
+                /> */}
                 <span className={css.favouriteIconText}>Usuń z ulubionych</span>
               </button>
               <button
                 className={css.favouriteButtonAction}
                 onClick={handleAddToCartButton}
               >
-                <img
+                {/* <img
                   src="/icons/cart.svg"
                   width="14"
                   height="14"
                   alt="Koszyk"
                   title="Koszyk"
-                />
+                /> */}
                 {!productAlreadyAddedToCart ? (
                   <span className={css.favouriteIconText}>
                     Dodaj do koszyka
