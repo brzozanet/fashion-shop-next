@@ -2,7 +2,7 @@
 
 ![Screenshot App](https://raw.githubusercontent.com/brzozanet/fashion-shop-next/refs/heads/main/front-end/public/images/gh-cover-react-shop-online.jpg)
 
-Sklep internetowy z dynamicznym routingiem, koszykiem zakupowym, systemem ulubionych oraz obsługą wielu walut. Projekt świadomie migrowany z React (Vite, React Router) do Next.js (App Router) oraz z JavaScript do TypeScript, co pozwoliło na porównanie CSR i SSR oraz przebudowę architektury aplikacji. Kod udokumentowany w Storybooku i pokryty testami E2E w Playwright..
+Sklep internetowy z dynamicznym routingiem, koszykiem zakupowym, systemem ulubionych oraz obsługą wielu walut. Projekt świadomie migrowany z React (Vite, React Router) do Next.js (App Router) oraz z JavaScript do TypeScript, co pozwoliło na porównanie CSR i SSR oraz przebudowę architektury aplikacji. Kod udokumentowany w Storybooku i pokryty testami E2E w Playwright.
 
 **✨ Projekt został przepisany z czystego React na Next.js oraz z JavaScript na TypeScript** - migracja obejmuje pełną adaptację komponentów, routingu, zarządzania stanem, integrację z Server Components i Server Actions oraz pełne typowanie całej aplikacji.
 
