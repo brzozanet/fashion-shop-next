@@ -43,23 +43,12 @@ Aplikacja jest dostępna online pod adresem:
 
 **👉 [https://fashion-contemporary.vercel.app/](https://fashion-contemporary.vercel.app/)**
 
-**Platformy:**
-
-- **Frontend**: [Vercel](https://vercel.com) - hosting Next.js
-- **Backend**: [Render](https://render.com) - hosting JSON Server
-
-**⚠️ Ważne informacje:**
-
-- **Cold Start**: Przy pierwszym uruchomieniu (lub po dłuższym czasie bezczynności) aplikacja może ładować się dłużej (15-30 sekund). To normalne zjawisko na darmowych planach - serwisy "zasypiają" po 15 minutach bezczynności i wymagają przebudzenia.
-- **Backend**: Backend na Render może również wymagać kilku sekund na pierwsze uruchomienie po okresie bezczynności.
-- **Cierpliwość**: Jeśli strona nie ładuje się od razu, odczekaj chwilę i odśwież stronę - kolejne requesty będą znacznie szybsze.
-
 ### 📦 Architektura
 
 Aplikacja składa się z dwóch części:
 
 - **Frontend**: Interfejs użytkownika w Next.js (App Router) - hostowany na Vercel
-- **Backend**: JSON Server z bazą danych produktów - hostowany na Render
+- **Backend**: JSON Server z bazą danych produktów - hostowany na Railway
 
 ## 🛠 Użyte technologie
 
@@ -283,9 +272,7 @@ Aplikacja została poddana testom end-to-end za pomocą narzędzia **Playwright*
 Projekt jest zdeployowany na:
 
 - **Frontend**: Vercel (automatyczny deployment z GitHub)
-- **Backend**: Render (automatyczny deployment z GitHub)
-
-Szczegółowy przewodnik deploymentu znajduje się w pliku [DEPLOYMENT.md](./DEPLOYMENT.md).
+- **Backend**: Railway (automatyczny deployment z GitHub)
 
 ## 🎯 Status projektu
 
