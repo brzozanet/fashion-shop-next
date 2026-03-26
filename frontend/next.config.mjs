@@ -20,7 +20,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "fasion-shop-backend.up.railway.app",
+        hostname: "fashion-shop-backend.up.railway.app",
       },
     ],
   },
