@@ -10,8 +10,8 @@
   },
   "scripts": {
     "reset": "cp \"./backend/backup/original_db.json\" ./backend/db.json",
-    "front-end": "npm run dev --workspace=frontend",
-    "back-end": "npm run dev --workspace=backend",
+    "frontend": "npm run dev --workspace=frontend",
+    "backend": "npm run dev --workspace=backend",
     "dev": "npm-run-all --parallel frontend backend",
     "test": "cross-env NODE_OPTIONS='--experimental-vm-modules' jest"
   },
