@@ -1,6 +1,6 @@
 # 🛒 Fashion contemporary shop next
 
-![Screenshot App](https://raw.githubusercontent.com/brzozanet/fashion-shop-next/refs/heads/main/front-end/public/images/gh-cover-react-shop-online.jpg)
+![Screenshot App](https://raw.githubusercontent.com/brzozanet/fashion-shop-next/refs/heads/main/frontend/public/images/gh-cover-react-shop-online.jpg)
 
 Sklep internetowy z dynamicznym routingiem, koszykiem zakupowym, systemem ulubionych oraz obsługą wielu walut. Projekt świadomie migrowany z React (Vite, React Router) do Next.js (App Router) oraz z JavaScript do TypeScript, co pozwoliło na porównanie CSR i SSR oraz przebudowę architektury aplikacji. Kod udokumentowany w Storybooku i pokryty testami E2E w Playwright.
 
